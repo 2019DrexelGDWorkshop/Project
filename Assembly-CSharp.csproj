@@ -68,6 +68,9 @@
     <Compile Include="Assets\Codes\Scripts\PlayerInput.cs" />
     <Compile Include="Assets\Codes\Scripts\ThirdPersonCamera.cs" />
     <Compile Include="Assets\Codes\Scripts\TriggerAnim.cs" />
+    <Reference Include="Cinemachine">
+      <HintPath>C:/Users/skynervous/Desktop/Drexel/DevelopWorkshop/Project/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>C:/Users/skynervous/Desktop/Drexel/DevelopWorkshop/Project/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
@@ -77,17 +80,14 @@
     <Reference Include="Unity.CollabProxy.Editor">
       <HintPath>C:/Users/skynervous/Desktop/Drexel/DevelopWorkshop/Project/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="com.unity.cinemachine.editor">
+      <HintPath>C:/Users/skynervous/Desktop/Drexel/DevelopWorkshop/Project/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.TextMeshPro">
       <HintPath>C:/Users/skynervous/Desktop/Drexel/DevelopWorkshop/Project/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.DataPrivacy">
       <HintPath>C:/Users/skynervous/Desktop/Drexel/DevelopWorkshop/Project/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
-    </Reference>
-    <Reference Include="Cinemachine">
-      <HintPath>C:/Users/skynervous/Desktop/Drexel/DevelopWorkshop/Project/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
-    </Reference>
-    <Reference Include="com.unity.cinemachine.editor">
-      <HintPath>C:/Users/skynervous/Desktop/Drexel/DevelopWorkshop/Project/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.10f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>

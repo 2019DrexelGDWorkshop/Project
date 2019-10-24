@@ -33,20 +33,16 @@ public class PlayerInput : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-        if (GameManager.gameManager.cameraState == 0)
-            characterMovement.yRotate = targetCamera.transform.eulerAngles.y;
-        else
-            characterMovement.yRotate = Camera2D.transform.eulerAngles.y;
-
         UpdateJumpInput();
         UpdateMovementInput();
 
-    }
+        if (GameManager.gameManager.cameraState == 0)
+            characterMovement.updateTargetDirection(targetCamera.transform);
+        else
+            characterMovement.updateTargetDirection(Camera2D.transform);
 
-    private void FixedUpdate()
-    {
         characterMovement.updateMontion();
+
     }
 
     void UpdateMovementInput()
