@@ -11,6 +11,13 @@ public class GameManager : MonoBehaviour
 
     public Camera Camera2D;
     public Camera Camera3D;
+    public static GameManager Instance;
+    public Transform lastCheckPoint;
+
+    private void Awake()
+    {
+        Instance = this;
+    }
 
     // Start is called before the first frame update
     void Start()

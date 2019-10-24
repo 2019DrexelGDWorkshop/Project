@@ -5,9 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class DeadZone : MonoBehaviour
 {
+    public Transform startPos;
     private void OnTriggerEnter(Collider other)
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        other.gameObject.transform.position = GameManager.Instance.lastCheckPoint.position;
     } 
     
 }
