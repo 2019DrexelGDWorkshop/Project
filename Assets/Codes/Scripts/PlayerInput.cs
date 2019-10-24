@@ -7,14 +7,12 @@ public class PlayerInput : MonoBehaviour
     [Header("Input Settings")]
     public string horizontalInput = "Horizontal";
     public string verticallInput = "Vertical";
-    public KeyCode jumpInput = KeyCode.Space;
+    public string jumpInput = "Jump";
     
 
     [Header("Camera Settings")]
-    public string rotateCameraXInput = "Mouse X";
-    public string rotateCameraYInput = "Mouse Y";
-    public ThirdPersonCamera targetCamera;
 
+    public Camera targetCamera;
     public Camera Camera2D;
 
     private CharacterMovement characterMovement;
@@ -27,7 +25,6 @@ public class PlayerInput : MonoBehaviour
 
     void Init()
     {
-        targetCamera.Init();
 
         characterMovement = GetComponent<CharacterMovement>();
         characterMovement.Init();
@@ -36,31 +33,17 @@ public class PlayerInput : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-        UpdateCameraInput();
-        UpdateCameraMovement();
-
-        if (GameManager.gameManager.cameraState == 0)
-            characterMovement.yRotate = targetCamera.transform.eulerAngles.y;
-        else
-            characterMovement.yRotate = Camera2D.transform.eulerAngles.y;
-
         UpdateJumpInput();
         UpdateMovementInput();
+
+        if (GameManager.gameManager.cameraState == 0)
+            characterMovement.updateTargetDirection(targetCamera.transform);
+        else
+            characterMovement.updateTargetDirection(Camera2D.transform);
+
         characterMovement.updateMontion();
-    }
 
-    void UpdateCameraInput()
-    {
-        targetCamera.rotateX = Input.GetAxis(rotateCameraXInput);
-        targetCamera.rotateY = Input.GetAxis(rotateCameraYInput);
     }
-
-    void UpdateCameraMovement()
-    {
-        targetCamera.Movement();
-    }
-
 
     void UpdateMovementInput()
     {
@@ -73,9 +56,8 @@ public class PlayerInput : MonoBehaviour
 
     void UpdateJumpInput()
     {
-        if (Input.GetKeyDown(jumpInput))
+        if (Input.GetButtonDown(jumpInput))
             characterMovement.Jump();
-
     }
     
 }
