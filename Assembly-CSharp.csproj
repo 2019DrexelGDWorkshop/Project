@@ -68,6 +68,7 @@
     <Compile Include="Assets\Codes\Scripts\DeathWallDelay.cs" />
     <Compile Include="Assets\Codes\Scripts\GameManager.cs" />
     <Compile Include="Assets\Codes\Scripts\IncreaseIn2D.cs" />
+    <Compile Include="Assets\Codes\Scripts\MainMenuEvents.cs" />
     <Compile Include="Assets\Codes\Scripts\PlayerInput.cs" />
     <Compile Include="Assets\Codes\Scripts\ThirdPersonCamera.cs" />
     <Compile Include="Assets\Codes\Scripts\Timer.cs" />
