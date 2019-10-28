@@ -10,6 +10,8 @@ public class CharacterMovement : MonoBehaviour
     public float jumpUpTime = 0.5f;
     public float gravity = 10.0f;
 
+    public float groundMargin = 1.2f;
+
     [HideInInspector]
     public Vector2 motion;
     public bool isjumping = false;
@@ -23,25 +25,40 @@ public class CharacterMovement : MonoBehaviour
         cc = GetComponent<CharacterController>();
     }
 
+    bool IsGrounded()
+    {
+        return Physics.Raycast(transform.position, -Vector3.up, groundMargin, 1, QueryTriggerInteraction.Ignore);   // Watch out the layer!!!
+    }
+
+    Vector3 moveVec = new Vector3(0.0f, 0.0f, 0.0f);
     public void updateMontion()
     {
+        //Debug.Log(IsGrounded());
+        
         updateRotation();
 
         float tmpSpeed = Mathf.Abs(motion.x) + Mathf.Abs(motion.y);
         tmpSpeed = Mathf.Clamp(tmpSpeed, 0, 1f);
-        Vector3 moveVec = transform.forward * tmpSpeed * moveSpeed;
+
+        float tmpy = moveVec.y;
+
+        moveVec = transform.forward * tmpSpeed * moveSpeed;
 
         if (isjumping)
         {
             jumpCountDown -= Time.deltaTime;
             if (jumpCountDown <= 0.0f)
+            {
                 isjumping = false;
-            moveVec.y = jumpSpeed;
+                moveVec.y = 0;
+            }
+            moveVec.y = Mathf.Lerp(0, jumpSpeed, jumpCountDown / jumpUpTime);
         }
-        
-        moveVec.y -= gravity * Time.deltaTime;
-
-        cc.Move(moveVec);
+        else if (!isjumping && !IsGrounded())
+            moveVec.y = tmpy - gravity * Time.deltaTime;
+        else
+            moveVec.y = 0;
+        cc.Move(moveVec * Time.deltaTime);
         
     }
 
@@ -68,7 +85,7 @@ public class CharacterMovement : MonoBehaviour
     private float jumpCountDown = 0.0f;
     public void Jump()
     {
-        if (!cc.isGrounded)
+        if (!IsGrounded())
             return;
         isjumping = true;
         jumpCountDown = jumpUpTime;
