@@ -60,6 +60,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Art Folder\Switcher2DMesh.cs" />
     <Compile Include="Assets\Art Folder\Technical Art Folder\Arm Folder\Arms Scripts\LineClamper.cs" />
     <Compile Include="Assets\Art Folder\Technical Art Folder\Arm Folder\Arms Scripts\RB_Fixer.cs" />
     <Compile Include="Assets\Art Folder\Technical Art Folder\Arm Folder\Arms Scripts\RB_Fixer_SecondJoint.cs" />
