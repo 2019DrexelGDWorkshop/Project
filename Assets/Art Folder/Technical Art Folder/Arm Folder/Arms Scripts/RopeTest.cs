@@ -6,7 +6,7 @@ public class RopeTest : MonoBehaviour
 {
     public Transform[] links;
     //public Rigidbody thisOnesrb;
-    const float dst = 2;
+    const float dst = .5f;
 
     void Update()
     {
