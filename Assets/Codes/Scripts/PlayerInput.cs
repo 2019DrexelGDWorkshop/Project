@@ -50,6 +50,9 @@ public class PlayerInput : MonoBehaviour
         float tmpx = Input.GetAxis(horizontalInput);
         float tmpy = Input.GetAxis(verticallInput);
 
+        if (GameManager.gameManager.cameraState == GameManager.cameraState2D)
+            tmpy = 0;
+
         characterMovement.motion.x = tmpx;
         characterMovement.motion.y = tmpy;
     }

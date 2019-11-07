@@ -14,6 +14,9 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance;
     public Transform lastCheckPoint;
 
+    public static int cameraState3D = 0;
+    public static int cameraState2D = 1;
+
     private void Awake()
     {
         Instance = this;
@@ -35,12 +38,12 @@ public class GameManager : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(1))
             cameraState = (cameraState + 1) % 2;
-        if (cameraState == 0)
+        if (cameraState == 0)   // 3D
         {
             Camera2D.gameObject.SetActive(false);
             Camera3D.gameObject.SetActive(true);
         }
-        else
+        else    // 2D
         {
             Camera2D.gameObject.SetActive(true);
             Camera3D.gameObject.SetActive(false);
