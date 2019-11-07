@@ -41,8 +41,11 @@ public class CharacterMovement : MonoBehaviour
         tmpSpeed = Mathf.Clamp(tmpSpeed, 0, 1f);
 
         float tmpy = moveVec.y;
-
-        moveVec = transform.forward * tmpSpeed * moveSpeed;
+        
+        if (GameManager.gameManager.cameraState == GameManager.cameraState2D)
+            moveVec = targetDirection * tmpSpeed * moveSpeed;
+        else
+            moveVec = transform.forward * tmpSpeed * moveSpeed;
 
         if (isjumping)
         {
