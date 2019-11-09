@@ -47,7 +47,7 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 498}
   m_MaxSize: {x: 14004, y: 14048}
   vertical: 0
-  controlID: 12
+  controlID: 87
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -218,7 +218,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 498}
   m_MaxSize: {x: 10002, y: 14048}
   vertical: 1
-  controlID: 90
+  controlID: 88
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -243,7 +243,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 224}
   m_MaxSize: {x: 8006, y: 4024}
   vertical: 0
-  controlID: 91
+  controlID: 89
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -336,20 +336,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Codes/Scripts
+    - Assets/Art Folder
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Codes/Scripts
+  - Assets/Art Folder
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\skynervous\Desktop\Drexel\DevelopWorkshop\Project
+  m_LastProjectPath: N:\Project
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 76}
-    m_SelectedIDs: 2e0d0000
-    m_LastClickedID: 3374
-    m_ExpandedIDs: 000000001e0b0000b20b0000280c0000d80c0000500d0000fe0d00003a0e0000b00f0000c00f000000ca9a3b
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 82290000
+    m_LastClickedID: 10626
+    m_ExpandedIDs: 00000000cc2700005e280000d228000082290000fa290000a62a0000de2a0000542c0000622c000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -377,7 +377,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000001e0b0000b20b0000280c0000d80c0000500d0000fe0d00003a0e0000b00f0000c00f0000
+    m_ExpandedIDs: 00000000cc2700005e280000d228000082290000fa290000a62a0000de2a0000542c0000622c0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -496,23 +496,23 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
+      m_SelectedIDs: 04280000
       m_LastClickedID: 0
-      m_ExpandedIDs: 4aecfeff6cecfefff6edfeff5cf2feff62f4feff84f4feff0ef6feff74fafeff3875ffff267affff5a90ffff7a90ffff3095ffff4095ffff70a2ffff3ea6ffffb6a8ffffeab1ffff0cb2ffff16b2ffff92b2ffffb4b2ffffe4b5ffff0eb7ffff30b7ffffa0bbffff7efbffffd4fbffff12120000521200007012000082cd000020d00000cce00000
+      m_ExpandedIDs: e2f8ffffd4fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: Player
-        m_OriginalName: Player
+        m_Name: 
+        m_OriginalName: 
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: -35528
+        m_UserData: 0
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 0
+        m_OriginalEventType: 11
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 4}
       m_SearchString: 
@@ -583,13 +583,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: -0.10056699, y: 0.675811, z: -0.09386058, w: -0.7241244}
+    m_Target: {x: -0.10056699, y: 0.675811, z: -0.09386059, w: -0.7241244}
     speed: 2
-    m_Value: {x: -0.10056699, y: 0.675811, z: -0.09386058, w: -0.7241244}
+    m_Value: {x: -0.10056699, y: 0.675811, z: -0.09386059, w: -0.7241244}
   m_Size:
-    m_Target: 69.56367
+    m_Target: 158.87637
     speed: 2
-    m_Value: 69.56367
+    m_Value: 158.87637
   m_Ortho:
     m_Target: 0
     speed: 2
