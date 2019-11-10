@@ -65,6 +65,7 @@
     <Compile Include="Assets\Art Folder\Technical Art Folder\Arm Folder\Arms Scripts\RB_Fixer.cs" />
     <Compile Include="Assets\Art Folder\Technical Art Folder\Arm Folder\Arms Scripts\RB_Fixer_SecondJoint.cs" />
     <Compile Include="Assets\Art Folder\Technical Art Folder\Arm Folder\Arms Scripts\RopeTest.cs" />
+    <Compile Include="Assets\Art Folder\Technical Art Folder\Clouds Folder\RLGScriptZ.cs" />
     <Compile Include="Assets\Codes\Scripts\camera2DFollow.cs" />
     <Compile Include="Assets\Codes\Scripts\ChangeSceneTrigger.cs" />
     <Compile Include="Assets\Codes\Scripts\CharacterMovement.cs" />

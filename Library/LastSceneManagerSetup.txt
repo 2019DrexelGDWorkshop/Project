@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Art Folder/VisualBuild2_1.unity
+- path: Assets/Art Folder/gregCloudTest.unity
   isLoaded: 1
   isActive: 1
