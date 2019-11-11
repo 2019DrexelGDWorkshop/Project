@@ -22,6 +22,7 @@ public class RLGScriptZ : MonoBehaviour
                 j.transform.position = j.transform.position + new Vector3(0, 0, Random.Range(lowMinusZ, highMinusZ));
                 cloud.transform.parent = cloudMaster.transform;
                 cloud.GetComponent<Renderer>().material = MatsForPrefabs[Random.Range(0, MatsForPrefabs.Length)];
+                cloud.GetComponent<Renderer>().receiveShadows = false;
             }
             
         }
