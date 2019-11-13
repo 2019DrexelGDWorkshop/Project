@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Art Folder/gregEndLevelTest.unity
+- path: Assets/Art Folder/ScenesByGreg/gregEndLevelTest.unity
   isLoaded: 1
   isActive: 1
