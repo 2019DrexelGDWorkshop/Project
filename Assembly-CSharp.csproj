@@ -82,6 +82,7 @@
     <Compile Include="Assets\Codes\Scripts\Timer.cs" />
     <Compile Include="Assets\Codes\Scripts\TriggerAnim.cs" />
     <Compile Include="Assets\Codes\Scripts\wINtEXT.cs" />
+    <Compile Include="Assets\sfxLiarScript.cs" />
     <None Include="Assets\Art Folder\Shaders\toonShader.shader" />
     <Reference Include="Cinemachine">
       <HintPath>E:/GameDev/Project/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
