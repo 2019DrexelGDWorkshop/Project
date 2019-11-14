@@ -10,7 +10,9 @@ public class CharacterMovement : MonoBehaviour
     public float jumpUpTime = 0.5f;
     public float gravity = 10.0f;
 
+    //public bool isGrounded = false;
     public float groundMargin = 1.2f;
+    public float groundDetectRadius = 0.5f;
 
     [HideInInspector]
     public Vector2 motion;
@@ -25,9 +27,31 @@ public class CharacterMovement : MonoBehaviour
         cc = GetComponent<CharacterController>();
     }
 
+    /*public void changeGroundState(bool newState)
+    {
+        isGrounded = newState;
+    }*/
+
     bool IsGrounded()
     {
-        return Physics.Raycast(transform.position, -Vector3.up, groundMargin, 1, QueryTriggerInteraction.Ignore);   // Watch out the layer!!!
+        Vector3 pointBottom = transform.position - transform.up * groundMargin + transform.up * groundDetectRadius;
+        Vector3 pointTop = transform.position + transform.up * groundDetectRadius;
+        LayerMask ignoreMask = ~(1 << 9);
+
+        //Debug.DrawLine(pointBottom, pointTop, Color.green);
+        //Debug.Log(Physics.OverlapCapsule(pointBottom, pointTop, groundDetectRadius, ignoreMask, QueryTriggerInteraction.Ignore)[0]);
+        if (Physics.OverlapCapsule(pointBottom, pointTop, groundDetectRadius, ignoreMask, QueryTriggerInteraction.Ignore).Length != 0)
+        {
+            //Debug.Log(Physics.OverlapCapsule(pointBottom, pointTop, groundDetectRadius, ignoreMask, QueryTriggerInteraction.Ignore)[0]);
+            return true;
+        }
+        else
+            return false;
+
+        //return isGrounded;
+        //isGrounded |= Physics.Raycast(transform.position, -Vector3.up, groundMargin, 1, QueryTriggerInteraction.Ignore);
+        //isGrounded |= Physics.Raycast(transform.position + transform.forward, -Vector3.up, groundMargin, 1, QueryTriggerInteraction.Ignore);
+        //return Physics.Raycast(transform.position, -Vector3.up, groundMargin, 1, QueryTriggerInteraction.Ignore);   // Watch out the layer!!!
     }
 
     Vector3 moveVec = new Vector3(0.0f, 0.0f, 0.0f);
