@@ -69,6 +69,7 @@
     <Compile Include="Assets\Codes\Scripts\ChangeSceneTrigger.cs" />
     <Compile Include="Assets\Codes\Scripts\CharacterMovement.cs" />
     <Compile Include="Assets\Codes\Scripts\CheckPoint.cs" />
+    <Compile Include="Assets\Codes\Scripts\CircularPlatMovement.cs" />
     <Compile Include="Assets\Codes\Scripts\CodifyPlatform.cs" />
     <Compile Include="Assets\Codes\Scripts\DeadZone.cs" />
     <Compile Include="Assets\Codes\Scripts\DeathWallDelay.cs" />
@@ -77,6 +78,7 @@
     <Compile Include="Assets\Codes\Scripts\MainMenu.cs" />
     <Compile Include="Assets\Codes\Scripts\PausedMenu.cs" />
     <Compile Include="Assets\Codes\Scripts\PlayerInput.cs" />
+    <Compile Include="Assets\Codes\Scripts\RisingPlatform.cs" />
     <Compile Include="Assets\Codes\Scripts\ThirdPersonCamera.cs" />
     <Compile Include="Assets\Codes\Scripts\Timer.cs" />
     <Compile Include="Assets\Codes\Scripts\TriggerAnim.cs" />
