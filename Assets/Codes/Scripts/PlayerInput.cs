@@ -57,10 +57,19 @@ public class PlayerInput : MonoBehaviour
         characterMovement.motion.y = tmpy;
     }
 
+    private int jumpCount = -1;
     void UpdateJumpInput()
     {
-        if (Input.GetButtonDown(jumpInput))
+        if (Input.GetButton(jumpInput))
+        {
             characterMovement.Jump();
+            jumpCount = 15;
+        }/*
+        if (jumpCount > 0)
+        {
+            characterMovement.Jump();
+        }
+        jumpCount -= 1;*/
     }
     
 }
