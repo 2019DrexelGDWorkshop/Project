@@ -60,11 +60,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Art Folder\CamLG1.cs" />
+    <Compile Include="Assets\Art Folder\Eyes\EyesOpenScript.cs" />
+    <Compile Include="Assets\Art Folder\LerpLieMenuEscape.cs" />
     <Compile Include="Assets\Art Folder\Switcher2DMesh.cs" />
     <Compile Include="Assets\Art Folder\Technical Art Folder\Arm Folder\Arms Scripts\LineClamper.cs" />
     <Compile Include="Assets\Art Folder\Technical Art Folder\Arm Folder\Arms Scripts\RB_Fixer.cs" />
     <Compile Include="Assets\Art Folder\Technical Art Folder\Arm Folder\Arms Scripts\RB_Fixer_SecondJoint.cs" />
     <Compile Include="Assets\Art Folder\Technical Art Folder\Arm Folder\Arms Scripts\RopeTest.cs" />
+    <Compile Include="Assets\Art Folder\Technical Art Folder\Clouds Folder\HardCodedCloudAnimationsScript.cs" />
     <Compile Include="Assets\Art Folder\Technical Art Folder\Clouds Folder\RLGScriptZ.cs" />
     <Compile Include="Assets\Codes\Scripts\camera2DFollow.cs" />
     <Compile Include="Assets\Codes\Scripts\ChangeSceneTrigger.cs" />
@@ -82,6 +86,7 @@
     <Compile Include="Assets\Codes\Scripts\Timer.cs" />
     <Compile Include="Assets\Codes\Scripts\TriggerAnim.cs" />
     <Compile Include="Assets\Codes\Scripts\wINtEXT.cs" />
+    <Compile Include="Assets\menuSceneLoader.cs" />
     <Compile Include="Assets\sfxLiarScript.cs" />
     <None Include="Assets\Art Folder\Shaders\toonShader.shader" />
     <Reference Include="Cinemachine">
