@@ -54,6 +54,20 @@ public class CharacterMovement : MonoBehaviour
         //return Physics.Raycast(transform.position, -Vector3.up, groundMargin, 1, QueryTriggerInteraction.Ignore);   // Watch out the layer!!!
     }
 
+    bool IsGroundedJump()
+    {
+        Vector3 pointBottom = transform.position - transform.up * groundMargin + transform.up * groundDetectRadius;
+        Vector3 pointTop = transform.position + transform.up * groundDetectRadius;
+        LayerMask ignoreMask = ~(1 << 9);
+        
+        if (Physics.OverlapCapsule(pointBottom, pointTop, groundDetectRadius + 0.1f, ignoreMask, QueryTriggerInteraction.Ignore).Length != 0)
+        {
+            return true;
+        }
+        else
+            return false;
+    }
+
     Vector3 moveVec = new Vector3(0.0f, 0.0f, 0.0f);
     public void updateMontion()
     {
@@ -112,7 +126,7 @@ public class CharacterMovement : MonoBehaviour
     private float jumpCountDown = 0.0f;
     public void Jump()
     {
-        if (!IsGrounded())
+        if (!IsGroundedJump())
             return;
         isjumping = true;
         jumpCountDown = jumpUpTime;
