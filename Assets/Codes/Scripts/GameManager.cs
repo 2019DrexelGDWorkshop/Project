@@ -32,13 +32,16 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        ChangeCameraState();
+        UpdateCameraState();
     }
 
-    void ChangeCameraState()
+    public void ChangeCameraState()
     {
-        if (Input.GetMouseButtonDown(1))
-            cameraState = (cameraState + 1) % 2;
+        cameraState = (cameraState + 1) % 2;
+    }
+
+    void UpdateCameraState()
+    {
         if (cameraState == 0)   // 3D
         {
             Camera2D.gameObject.SetActive(false);
