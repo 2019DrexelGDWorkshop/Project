@@ -8,6 +8,7 @@ public class PlayerInput : MonoBehaviour
     public string horizontalInput = "Horizontal";
     public string verticallInput = "Vertical";
     public string jumpInput = "Jump";
+    public string cameraChangeInput = "CameraChange";
     
 
     [Header("Camera Settings")]
@@ -43,6 +44,7 @@ public class PlayerInput : MonoBehaviour
 
         characterMovement.updateMontion();
 
+        UpdateCameraStateInput();
     }
 
     void UpdateMovementInput()
@@ -72,4 +74,13 @@ public class PlayerInput : MonoBehaviour
         jumpCount -= 1;*/
     }
     
+    void UpdateCameraStateInput()
+    {
+        if (Input.GetButtonDown(cameraChangeInput))
+        {
+            
+            GameManager.gameManager.ChangeCameraState();
+        }
+    }
+
 }
