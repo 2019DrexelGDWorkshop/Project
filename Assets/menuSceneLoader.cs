@@ -2,12 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class menuSceneLoader : MonoBehaviour
 {
     public string[] scenes;
     public GameObject MM_GO;
     public GameObject LS_GO;
+    public GameObject loadingScreen;
+    public Slider slider;
 
     public void Start()
     {
@@ -22,19 +25,36 @@ public class menuSceneLoader : MonoBehaviour
         }
     }
 
+    //
+    //
+    //
+    public void LoadLevel(int sceneIndex)
+    {
+        MM_GO.SetActive(false);
+        LS_GO.SetActive(false);
+        StartCoroutine(LoadAsynchronously(sceneIndex));
+        
+    }
+    IEnumerator LoadAsynchronously(int sceneIndex)
+    {
+        AsyncOperation operation = SceneManager.LoadSceneAsync(sceneIndex);
 
-    public void loadLevel1()
-    {
-        SceneManager.LoadScene(scenes[0]);
+        loadingScreen.SetActive(true);
+
+        while (!operation.isDone)
+        {
+            float progress = Mathf.Clamp01(operation.progress / .9f);
+
+            slider.value = progress;
+
+            yield return null;
+        }
+
     }
-    public void loadLevel2()
-    {
-        SceneManager.LoadScene(scenes[1]);
-    }
-    public void loadLevel3()
-    {
-        SceneManager.LoadScene(scenes[2]);
-    }
+    //
+    //
+    //
+
     public void loadLVLSLCT()
     {
         MM_GO.SetActive(false);
