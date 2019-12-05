@@ -25,7 +25,7 @@ public class sfxLiarScript : MonoBehaviour
             audioSource.clip = sfxClip;
             audioSource.Play();
         }
-        if (Input.GetMouseButtonDown(1))
+        if (Input.GetMouseButtonDown(0))
         {
             int index = Random.Range(0, listWhoosh.Length);
             sfxClip = listWhoosh[index];

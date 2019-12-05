@@ -2,11 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class ChangeSceneTrigger : MonoBehaviour
 {
 
-    public string nextSceneName = "";
+    public int nextSceneInteger;
+    public GameObject loadingScreen;
+    public Slider slider;
 
     // Start is called before the first frame update
     void Start()
@@ -22,6 +25,28 @@ public class ChangeSceneTrigger : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        SceneManager.LoadScene(nextSceneName);
+        LoadLevel(nextSceneInteger);
+    }
+
+    //
+    public void LoadLevel(int sceneIndex)
+    {
+        StartCoroutine(LoadAsynchronously(sceneIndex));
+    }
+    IEnumerator LoadAsynchronously(int sceneIndex)
+    {
+        AsyncOperation operation = SceneManager.LoadSceneAsync(sceneIndex);
+
+        loadingScreen.SetActive(true);
+
+        while (!operation.isDone)
+        {
+            float progress = Mathf.Clamp01(operation.progress / .9f);
+
+            slider.value = progress;
+
+            yield return null;
+        }
+
     }
 }
