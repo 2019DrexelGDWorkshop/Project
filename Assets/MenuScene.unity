@@ -1764,17 +1764,17 @@ PrefabInstance:
     - target: {fileID: 3789029941941827689, guid: 3837e326f9d742b4b9a3cb66653f7420,
         type: 3}
       propertyPath: m_Pitch
-      value: 0.4
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3789029941941827689, guid: 3837e326f9d742b4b9a3cb66653f7420,
         type: 3}
       propertyPath: reverbZoneMixCustomCurve.m_Curve.Array.data[0].value
-      value: 0.32
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3789029941941827689, guid: 3837e326f9d742b4b9a3cb66653f7420,
         type: 3}
       propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
-      value: 0.569
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3789029941941827689, guid: 3837e326f9d742b4b9a3cb66653f7420,
         type: 3}
@@ -1785,7 +1785,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: 51f1a6584198f954aa06ba75463f86ab, type: 3}
+      objectReference: {fileID: 8300000, guid: 161f57828419df74cb8e77007a5006d4, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3837e326f9d742b4b9a3cb66653f7420, type: 3}
 --- !u!1 &1491475380
