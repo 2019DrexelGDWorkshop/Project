@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
     public int cameraState = 0;
 
     public GameObject Camera2D;
+    public GameObject CameraTrans;
     public GameObject Camera3D;
     public static GameManager Instance;
     public Transform lastCheckPoint;
@@ -32,26 +33,44 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        UpdateCameraState();
+        
     }
 
     public void ChangeCameraState()
     {
         cameraState = (cameraState + 1) % 2;
+        UpdateCameraState();
     }
+
+    public float transTime = 2.0f;
 
     void UpdateCameraState()
     {
         if (cameraState == 0)   // 3D
         {
             Camera2D.gameObject.SetActive(false);
-            Camera3D.gameObject.SetActive(true);
+            Invoke("CameraTransSetFalse", transTime);
+            //Camera3D.gameObject.SetActive(true);
         }
         else    // 2D
         {
-            Camera2D.gameObject.SetActive(true);
-            Camera3D.gameObject.SetActive(false);
+            CameraTrans.gameObject.SetActive(true);
+            Invoke("Camera2DSetTrue", transTime);
+            //Camera3D.gameObject.SetActive(false);
         }
     }
-       
+
+    public void Camera2DSetTrue()
+    {
+        Camera2D.gameObject.SetActive(true);
+    }
+
+    public void CameraTransSetFalse()
+    {
+        CameraTrans.gameObject.SetActive(false);
+    }
+
+
+
+
 }
