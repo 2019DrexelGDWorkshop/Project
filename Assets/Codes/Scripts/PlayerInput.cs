@@ -16,6 +16,8 @@ public class PlayerInput : MonoBehaviour
     public GameObject targetCamera;
     public GameObject Camera2D;
 
+    public GameObject cameraBrain;
+
     private CharacterMovement characterMovement;
 
     // Start is called before the first frame update
@@ -37,10 +39,12 @@ public class PlayerInput : MonoBehaviour
         UpdateJumpInput();
         UpdateMovementInput();
 
-        if (GameManager.gameManager.cameraState == 0)
+        characterMovement.updateTargetDirection(cameraBrain.transform);
+
+        /*if (GameManager.gameManager.cameraState == 0)
             characterMovement.updateTargetDirection(targetCamera.transform);
         else
-            characterMovement.updateTargetDirection(Camera2D.transform);
+            characterMovement.updateTargetDirection(Camera2D.transform);*/
 
         characterMovement.updateMontion();
 

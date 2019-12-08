@@ -7435,7 +7435,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1477923413}
-  m_LocalRotation: {x: 0.028713994, y: -0.0026007043, z: 0.0901662, w: 0.9955094}
+  m_LocalRotation: {x: 0.028713971, y: -0.0026007146, z: 0.0901662, w: 0.9955093}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -12230,6 +12230,11 @@ PrefabInstance:
       propertyPath: Camera2D
       value: 
       objectReference: {fileID: 647452481}
+    - target: {fileID: 8158396982961863541, guid: 9d9e69c0fb1e84e479b7e2aa07f48dac,
+        type: 3}
+      propertyPath: cameraBrain
+      value: 
+      objectReference: {fileID: 2024062894}
     - target: {fileID: 3975935434182162163, guid: 9d9e69c0fb1e84e479b7e2aa07f48dac,
         type: 3}
       propertyPath: m_IsActive
