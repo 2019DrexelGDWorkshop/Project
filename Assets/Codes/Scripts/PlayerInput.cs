@@ -13,8 +13,8 @@ public class PlayerInput : MonoBehaviour
 
     [Header("Camera Settings")]
 
-    public Camera targetCamera;
-    public Camera Camera2D;
+    public GameObject targetCamera;
+    public GameObject Camera2D;
 
     private CharacterMovement characterMovement;
 

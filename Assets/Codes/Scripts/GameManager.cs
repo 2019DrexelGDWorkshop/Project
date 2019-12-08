@@ -9,8 +9,8 @@ public class GameManager : MonoBehaviour
 
     public int cameraState = 0;
 
-    public Camera Camera2D;
-    public Camera Camera3D;
+    public GameObject Camera2D;
+    public GameObject Camera3D;
     public static GameManager Instance;
     public Transform lastCheckPoint;
 
