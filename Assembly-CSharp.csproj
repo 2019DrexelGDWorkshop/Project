@@ -88,6 +88,7 @@
     <Compile Include="Assets\Codes\Scripts\wINtEXT.cs" />
     <Compile Include="Assets\menuSceneLoader.cs" />
     <Compile Include="Assets\MovingPlatformAttach.cs" />
+    <Compile Include="Assets\RightCloudsHider.cs" />
     <Compile Include="Assets\sfxLiarScript.cs" />
     <None Include="Assets\Art Folder\Shaders\toonShader.shader" />
     <Reference Include="Cinemachine">
