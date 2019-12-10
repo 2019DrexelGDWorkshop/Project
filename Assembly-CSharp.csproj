@@ -91,6 +91,7 @@
     <Compile Include="Assets\menuSceneLoader.cs" />
     <Compile Include="Assets\MovingPlatformAttach.cs" />
     <Compile Include="Assets\sfxLiarScript.cs" />
+    <Compile Include="Assets\WalkMultiplier.cs" />
     <None Include="Assets\Art Folder\Shaders\toonShader.shader" />
     <Reference Include="Cinemachine">
       <HintPath>E:/GameDev/Project/Library/ScriptAssemblies/Cinemachine.dll</HintPath>

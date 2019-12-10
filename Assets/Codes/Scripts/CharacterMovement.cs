@@ -68,7 +68,7 @@ public class CharacterMovement : MonoBehaviour
             return false;
     }
 
-    Vector3 moveVec = new Vector3(0.0f, 0.0f, 0.0f);
+    public Vector3 moveVec = new Vector3(0.0f, 0.0f, 0.0f);
     public void updateMontion()
     {
         //Debug.Log(IsGrounded());
