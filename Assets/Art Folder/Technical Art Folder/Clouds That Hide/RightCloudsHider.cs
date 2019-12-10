@@ -19,7 +19,13 @@ public class RightCloudsHider : MonoBehaviour
         }
         else
         {
-            rend.enabled = true;
+            StartCoroutine(ExampleCoroutine());
+            
         }
+    }
+    IEnumerator ExampleCoroutine()
+    {
+        yield return new WaitForSeconds(.5f);
+        rend.enabled = true;
     }
 }
