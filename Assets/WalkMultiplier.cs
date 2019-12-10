@@ -19,7 +19,7 @@ public class WalkMultiplier : MonoBehaviour
     {
         thisAnim = thisGO.GetComponent<Animator>();
         theScript = thingWithCMscriptOnIt.GetComponent<CharacterMovement>();
-        Debug.Log(theScript.moveVec);
+        //Debug.Log(theScript.moveVec);
         velGotten = theScript.moveVec;
         vPAbs = (Math.Abs(velGotten.x) + Math.Abs(velGotten.y) + Math.Abs(velGotten.z)) * FTval;
         thisAnim.speed = vPAbs;
