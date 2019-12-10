@@ -10,6 +10,7 @@ public class menuSceneLoader : MonoBehaviour
     public GameObject MM_GO;
     public GameObject LS_GO;
     public GameObject loadingScreen;
+    public GameObject creditsScreen;
     public Slider slider;
 
     public void Start()
@@ -19,10 +20,10 @@ public class menuSceneLoader : MonoBehaviour
 
     public void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Alpha3))
-        {
-            SceneManager.LoadScene(scenes[3]);
-        }
+        //if (Input.GetKeyDown(KeyCode.Alpha3))
+        //{
+        //    SceneManager.LoadScene(scenes[3]);
+        //}
     }
 
     //
@@ -65,8 +66,13 @@ public class menuSceneLoader : MonoBehaviour
     {
         MM_GO.SetActive(true);
         LS_GO.SetActive(false);
+        creditsScreen.SetActive(false);
     }
-
+    public void loadCredits()
+    {
+        MM_GO.SetActive(false);
+        creditsScreen.SetActive(true);
+    }
 
     public void quitGame()
     {
