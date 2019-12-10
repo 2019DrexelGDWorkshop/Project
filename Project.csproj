@@ -647,6 +647,7 @@
     <Compile Include="Assets\Art Folder\Technical Art Folder\Arm Folder\Arms Scripts\RopeTest.cs" />
     <Compile Include="Assets\Art Folder\Technical Art Folder\Clouds Folder\HardCodedCloudAnimationsScript.cs" />
     <Compile Include="Assets\Art Folder\Technical Art Folder\Clouds Folder\RLGScriptZ.cs" />
+    <Compile Include="Assets\Art Folder\Technical Art Folder\Clouds That Hide\RightCloudsHider.cs" />
     <Compile Include="Assets\Codes\Scripts\camera2DFollow.cs" />
     <Compile Include="Assets\Codes\Scripts\ChangeSceneTrigger.cs" />
     <Compile Include="Assets\Codes\Scripts\CharacterMovement.cs" />
@@ -663,9 +664,11 @@
     <Compile Include="Assets\Codes\Scripts\Timer.cs" />
     <Compile Include="Assets\Codes\Scripts\TriggerAnim.cs" />
     <Compile Include="Assets\Codes\Scripts\wINtEXT.cs" />
+    <Compile Include="Assets\Image\LvlStartTimer.cs" />
     <Compile Include="Assets\menuSceneLoader.cs" />
     <Compile Include="Assets\MovingPlatformAttach.cs" />
     <Compile Include="Assets\sfxLiarScript.cs" />
+    <Compile Include="Assets\WalkMultiplier.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Art Folder\Shaders\toonShader.shader" />
