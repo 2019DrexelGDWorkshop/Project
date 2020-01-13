@@ -133,6 +133,7 @@
     <Compile Include="Assets\Scripts\CloudsScripts\RightCloudsHider.cs" />
     <Compile Include="Assets\Scripts\CloudsScripts\RLGScriptZ.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
+    <Compile Include="Assets\Scripts\InitialLoadMain.cs" />
     <Compile Include="Assets\Scripts\Level\AnyDirMPlat.cs" />
     <Compile Include="Assets\Scripts\Level\CheckPoint.cs" />
     <Compile Include="Assets\Scripts\Level\DeadZone.cs" />

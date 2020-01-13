@@ -2,6 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+public enum Level
+{
+    INIT = 0,
+    MAINMENU = 1,
+    DREAM1 = 2,
+    DREAM2 = 3,
+    DREAM3 = 4,
+    DREAM4 = 5
+}
+
 public class GameManager : MonoBehaviour
 {
 
