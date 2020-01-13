@@ -30,25 +30,25 @@ public class PlayerInput : MonoBehaviour
     {
 
         characterMovement = GetComponent<CharacterMovement>();
-        characterMovement.Init();
+        //characterMovement.Init();
     }
 
     // Update is called once per frame
     void Update()
     {
-        UpdateJumpInput();
-        UpdateMovementInput();
+    //    UpdateJumpInput();
+     //   UpdateMovementInput();
 
-        characterMovement.updateTargetDirection(cameraBrain.transform);
+    //    characterMovement.updateTargetDirection(cameraBrain.transform);
 
-        /*if (GameManager.gameManager.cameraState == 0)
+        /*if (GameManager.Instance.cameraState == 0)
             characterMovement.updateTargetDirection(targetCamera.transform);
         else
             characterMovement.updateTargetDirection(Camera2D.transform);*/
 
-        characterMovement.updateMontion();
+    //    characterMovement.updateMontion();
 
-        UpdateCameraStateInput();
+    //    UpdateCameraStateInput();
     }
 
     void UpdateMovementInput()
@@ -56,7 +56,7 @@ public class PlayerInput : MonoBehaviour
         float tmpx = Input.GetAxis(horizontalInput);
         float tmpy = Input.GetAxis(verticallInput);
 
-        if (GameManager.gameManager.cameraState == GameManager.cameraState2D)
+        if (GameManager.Instance.cameraState == GameManager.cameraState2D)
             tmpy = 0;
 
         characterMovement.motion.x = tmpx;
@@ -68,7 +68,7 @@ public class PlayerInput : MonoBehaviour
     {
         if (Input.GetButton(jumpInput))
         {
-            characterMovement.Jump();
+            //characterMovement.Jump();
             jumpCount = 15;
         }/*
         if (jumpCount > 0)
@@ -83,7 +83,7 @@ public class PlayerInput : MonoBehaviour
         if (Input.GetButtonDown(cameraChangeInput))
         {
             
-            GameManager.gameManager.ChangeCameraState();
+            GameManager.Instance.ChangeCameraState();
         }
     }
 

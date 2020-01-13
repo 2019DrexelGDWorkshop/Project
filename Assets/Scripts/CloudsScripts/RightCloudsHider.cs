@@ -13,7 +13,7 @@ public class RightCloudsHider : MonoBehaviour
     }
     void Update()
     {
-        if (GameManager.gameManager.cameraState == 1)
+        if (GameManager.Instance.cameraState == 1)
         {
             rend.enabled = false;
         }

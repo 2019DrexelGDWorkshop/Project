@@ -22,7 +22,7 @@ public class EyesOpenScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (GameManager.gameManager.cameraState == 0)
+        if (GameManager.Instance.cameraState == 0)
         {
             eyeImage.sprite = eye2;
         }
