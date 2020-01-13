@@ -80,7 +80,7 @@ public class CharacterMovement : MonoBehaviour
 
         float tmpy = moveVec.y;
         
-        if (GameManager.gameManager.cameraState == GameManager.cameraState2D)
+        if (GameManager.Instance.cameraState == GameManager.cameraState2D)
             moveVec = targetDirection * tmpSpeed * moveSpeed;
         else
             moveVec = transform.forward * tmpSpeed * moveSpeed;

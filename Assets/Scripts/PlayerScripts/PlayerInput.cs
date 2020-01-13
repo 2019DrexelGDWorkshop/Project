@@ -1,14 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Rewired;
 
 public class PlayerInput : MonoBehaviour
 {
-    [Header("Input Settings")]
-    public string horizontalInput = "Horizontal";
-    public string verticallInput = "Vertical";
-    public string jumpInput = "Jump";
-    public string cameraChangeInput = "CameraChange";
+
+    [Header("Rewired")]
+    [SerializeField] private int rewiredPlayerId = 0;
+    private Player rewiredPlayer;
     
 
     [Header("Camera Settings")]
@@ -20,9 +20,12 @@ public class PlayerInput : MonoBehaviour
 
     private CharacterMovement characterMovement;
 
+
     // Start is called before the first frame update
+
     void Start()
     {
+        rewiredPlayer = ReInput.players.GetPlayer(rewiredPlayerId);
         Init();
     }
 
@@ -41,11 +44,6 @@ public class PlayerInput : MonoBehaviour
 
         characterMovement.updateTargetDirection(cameraBrain.transform);
 
-        /*if (GameManager.gameManager.cameraState == 0)
-            characterMovement.updateTargetDirection(targetCamera.transform);
-        else
-            characterMovement.updateTargetDirection(Camera2D.transform);*/
-
         characterMovement.updateMontion();
 
         UpdateCameraStateInput();
@@ -53,10 +51,10 @@ public class PlayerInput : MonoBehaviour
 
     void UpdateMovementInput()
     {
-        float tmpx = Input.GetAxis(horizontalInput);
-        float tmpy = Input.GetAxis(verticallInput);
+        float tmpx = rewiredPlayer.GetAxis(RewiredConsts.Action.MoveRight);
+        float tmpy = rewiredPlayer.GetAxis(RewiredConsts.Action.MoveForward);
 
-        if (GameManager.gameManager.cameraState == GameManager.cameraState2D)
+        if (GameManager.Instance.cameraState == GameManager.cameraState2D)
             tmpy = 0;
 
         characterMovement.motion.x = tmpx;
@@ -66,24 +64,18 @@ public class PlayerInput : MonoBehaviour
     private int jumpCount = -1;
     void UpdateJumpInput()
     {
-        if (Input.GetButton(jumpInput))
+        if(rewiredPlayer.GetButtonDown(RewiredConsts.Action.Jump))
         {
             characterMovement.Jump();
             jumpCount = 15;
-        }/*
-        if (jumpCount > 0)
-        {
-            characterMovement.Jump();
         }
-        jumpCount -= 1;*/
     }
     
     void UpdateCameraStateInput()
     {
-        if (Input.GetButtonDown(cameraChangeInput))
+        if (rewiredPlayer.GetButtonDown(RewiredConsts.Action.PerspectiveSwitch))
         {
-            
-            GameManager.gameManager.ChangeCameraState();
+            GameManager.Instance.ChangeCameraState();
         }
     }
 
