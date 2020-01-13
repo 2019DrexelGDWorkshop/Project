@@ -1,11 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Rewired;
 
 public class GameManager : MonoBehaviour
 {
-    #region Attributes
+
+    public static GameManager gameManager;
+
     public int cameraState = 0;
 
     public GameObject Camera2D;
@@ -17,27 +18,15 @@ public class GameManager : MonoBehaviour
     public static int cameraState3D = 0;
     public static int cameraState2D = 1;
 
-    public Player rewiredPlayer;
-    [Tooltip("Rewired Player ID of the character")]
-    public int playerId = 0;
-    #endregion
-
     private void Awake()
     {
-        if(Instance == null)
-        {
-            Instance = this;
-        }
-        else
-        {
-            Destroy(this);
-        }
-        rewiredPlayer = ReInput.players.GetPlayer(playerId);
+        Instance = this;
     }
 
     // Start is called before the first frame update
     void Start()
     {
+        gameManager = this;
         Cursor.visible = false;
     }
 
