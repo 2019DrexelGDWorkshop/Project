@@ -43,6 +43,11 @@ public abstract class Enemy_base : MonoBehaviour
         CustomAwake();
     }
 
+    private void Update()
+    {
+        CustomUpdate();
+    }
+
     #endregion
 
     #region Protected
@@ -88,10 +93,15 @@ public abstract class Enemy_base : MonoBehaviour
 
     }
 
+    protected virtual void CustomUpdate()
+    {
+
+    }
+
     protected virtual void Die()
     {
         Debug.Log(gameObject + "Died");
-        Destroy(this);
+        Destroy(this.gameObject);
     }
     #endregion
 
