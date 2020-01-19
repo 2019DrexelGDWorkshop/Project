@@ -3,9 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody))]
+[RequireComponent(typeof(Collider))]
 public class Projectile : MonoBehaviour
 {
     #region Attributes
+
     [SerializeField, Tooltip("Layers that should be hit by the bullets")]
     private LayerMask hitLayers;
 
@@ -49,6 +51,11 @@ public class Projectile : MonoBehaviour
 
     #region Private
 
+    private void OnCollisionEnter(Collision collision)
+    {
+        Destroy();
+    }
+
     private IEnumerator CheckKillDistance()
     {
         while(Vector3.Distance(originalPosition, transform.position) < killDistance)
@@ -73,6 +80,7 @@ public class Projectile : MonoBehaviour
     {
         Debug.Log("Bullet Destroyed.");
         StopAllCoroutines();
+        Instantiate(blastEffect, this.transform.position, Quaternion.identity, null);
         Destroy(this.gameObject);
     }
 
