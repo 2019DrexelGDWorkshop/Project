@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4606708649791252942}
   m_Layer: 0
   m_Name: anchor
-  m_TagString: mplat_anchor
+  m_TagString: obj_anchor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
