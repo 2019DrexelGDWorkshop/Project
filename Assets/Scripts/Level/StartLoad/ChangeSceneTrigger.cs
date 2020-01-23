@@ -7,25 +7,13 @@ using UnityEngine.UI;
 public class ChangeSceneTrigger : MonoBehaviour
 {
 
-    public int nextSceneInteger;
+    public Level levelToLoad;
     public GameObject loadingScreen;
     public Slider slider;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     private void OnTriggerEnter(Collider other)
     {
-        LoadLevel(nextSceneInteger);
+        LoadLevel((int)levelToLoad);
     }
 
     //
@@ -33,6 +21,7 @@ public class ChangeSceneTrigger : MonoBehaviour
     {
         StartCoroutine(LoadAsynchronously(sceneIndex));
     }
+
     IEnumerator LoadAsynchronously(int sceneIndex)
     {
         AsyncOperation operation = SceneManager.LoadSceneAsync(sceneIndex);
