@@ -15,16 +15,16 @@ public enum Level
 public class GameManager : MonoBehaviour
 {
 
-    public int cameraState = 0;
+    //public int cameraState = 0;
 
-    public GameObject Camera2D;
-    public GameObject CameraTrans;
-    public GameObject Camera3D;
+    //public GameObject Camera2D;
+    //public GameObject CameraTrans;
+    //public GameObject Camera3D;
     public static GameManager Instance;
     public Transform lastCheckPoint;
 
-    public static int cameraState3D = 0;
-    public static int cameraState2D = 1;
+    //public static int cameraState3D = 0;
+    //public static int cameraState2D = 1;
 
     private void Awake()
     {
