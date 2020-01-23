@@ -5,19 +5,22 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/Codes/Scenes/SampleScene.unity
-    guid: b244fc2b9c7b24c41a4539bdc42c9b7b
-  - enabled: 0
-    path: Assets/Codes/Scenes/MainMenu.unity
-    guid: 00a75514747831444ab0c4dcd1877454
-  - enabled: 0
-    path: Assets/Codes/Scenes/Text.unity
-    guid: 8990412d61b70644caa6ac672577e588
-  - enabled: 0
-    path: Assets/Art Folder/artScene6.unity
-    guid: 224699f01c45bb944ba86b5da8717c70
   - enabled: 1
-    path: Assets/Art Folder/HierarchyUpdate1.unity
-    guid: 15265877acfd20a438b30275a01b2b26
+    path: Assets/Scenes/init.unity
+    guid: f1d243fce358bdb45b0d1272cd898976
+  - enabled: 1
+    path: Assets/Scenes/MenuScene.unity
+    guid: 053741b2615d42f4fb8a98cb00d19c21
+  - enabled: 1
+    path: Assets/Scenes/GenericScenes/General_Dream_1.unity
+    guid: 7f661ee913f12fa479763140803dcc47
+  - enabled: 1
+    path: Assets/Scenes/GenericScenes/General_Dream_2.unity
+    guid: 300f7905984a16442b4dba14f5807526
+  - enabled: 1
+    path: Assets/Scenes/GenericScenes/General_Dream_3.unity
+    guid: c8f465fab1a85484a815e589772bf841
+  - enabled: 1
+    path: Assets/Scenes/GenericScenes/General_Dream_4.unity
+    guid: c190fd9b8db04c546b594518735139f7
   m_configObjects: {}
