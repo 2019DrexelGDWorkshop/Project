@@ -5279,22 +5279,22 @@ PrefabInstance:
     - target: {fileID: 5636621571871648761, guid: 05b576b4ad203b144865e330e87aec9a,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.02852825
+      value: -0.02852824
       objectReference: {fileID: 0}
     - target: {fileID: 5636621571871648761, guid: 05b576b4ad203b144865e330e87aec9a,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.002539157
+      value: 0.0025391877
       objectReference: {fileID: 0}
     - target: {fileID: 5636621571871648761, guid: 05b576b4ad203b144865e330e87aec9a,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.08861902
+      value: 0.088619016
       objectReference: {fileID: 0}
     - target: {fileID: 5636621571871648761, guid: 05b576b4ad203b144865e330e87aec9a,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.99565375
+      value: 0.9956538
       objectReference: {fileID: 0}
     - target: {fileID: 5636621573401072518, guid: 05b576b4ad203b144865e330e87aec9a,
         type: 3}
@@ -5499,6 +5499,11 @@ PrefabInstance:
       propertyPath: slider
       value: 
       objectReference: {fileID: 612343747}
+    - target: {fileID: 6495287343980355844, guid: 65cb2e0523497de44a9652c90150c3b8,
+        type: 3}
+      propertyPath: levelToLoad
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 65cb2e0523497de44a9652c90150c3b8, type: 3}
 --- !u!1001 &7794436344409333907
