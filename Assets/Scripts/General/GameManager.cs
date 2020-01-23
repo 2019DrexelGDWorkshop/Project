@@ -51,7 +51,7 @@ public class GameManager : MonoBehaviour
         
     }
 
-    public void ChangeCameraState()
+    /*public void ChangeCameraState()
     {
         cameraState = (cameraState + 1) % 2;
         UpdateCameraState();
@@ -83,7 +83,7 @@ public class GameManager : MonoBehaviour
     public void CameraTransSetFalse()
     {
         CameraTrans.gameObject.SetActive(false);
-    }
+    }*/
 
 
 

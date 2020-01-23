@@ -14,7 +14,7 @@ public class IncreaseIn2D : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    /*void Update()
     {
         if (GameManager.Instance.cameraState == 1)
         {
@@ -29,5 +29,5 @@ public class IncreaseIn2D : MonoBehaviour
     public void setFalse()
     {
         ColliderIn2D.SetActive(false);
-    }
+    }*/
 }

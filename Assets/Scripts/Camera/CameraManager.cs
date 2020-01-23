@@ -75,20 +75,37 @@ public class CameraManager : MonoBehaviour
 
     }
 
+    public void StoreCameraPriority(CinemachineVirtualCameraBase _cam)
+    {
+        originalCamPriorities[_cam] = _cam.Priority;
+    }
+
     #region UpdateCameraReferences
-    public void UpdateCameraReferences(GameObject _2dCam, GameObject _transitionCam, GameObject _3dCam)
+    public void UpdateCameraReferences(GameObject _2dCam, GameObject _transitionCam, GameObject _3dCam, GameObject _cmBrain)
     {
         camera2D = _2dCam.GetComponent< CinemachineVirtualCameraBase>();
         camera3D = _3dCam.GetComponent<CinemachineVirtualCameraBase>();
         cameraTransition = _transitionCam.GetComponent<CinemachineVirtualCameraBase>();
+        cmBrain = _cmBrain.GetComponent<CinemachineBrain>();
+
+        StoreCameraPriority(camera2D);
+        StoreCameraPriority(cameraTransition);
+        StoreCameraPriority(camera3D);
+
         return;
     }
 
-    public void UpdateCameraReferences(CinemachineVirtualCameraBase _2dCam, CinemachineVirtualCameraBase _transitionCam, CinemachineVirtualCameraBase _3dCam)
+    public void UpdateCameraReferences(CinemachineVirtualCameraBase _2dCam, CinemachineVirtualCameraBase _transitionCam, CinemachineVirtualCameraBase _3dCam, CinemachineBrain _cmBrain)
     {
         camera2D = _2dCam;
         camera3D = _3dCam;
         cameraTransition = _transitionCam;
+        cmBrain = _cmBrain;
+
+        StoreCameraPriority(camera2D);
+        StoreCameraPriority(cameraTransition);
+        StoreCameraPriority(camera3D);
+
         return;
     }
     

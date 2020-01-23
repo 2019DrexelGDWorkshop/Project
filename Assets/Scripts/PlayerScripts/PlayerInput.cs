@@ -54,7 +54,7 @@ public class PlayerInput : MonoBehaviour
         float tmpx = rewiredPlayer.GetAxis(RewiredConsts.Action.MoveRight);
         float tmpy = rewiredPlayer.GetAxis(RewiredConsts.Action.MoveForward);
 
-        if (GameManager.Instance.cameraState == GameManager.cameraState2D)
+        if (CameraManager.Instance.cameraState == CameraState.SIDE_SCROLLER)
             tmpy = 0;
 
         characterMovement.motion.x = tmpx;
@@ -75,7 +75,8 @@ public class PlayerInput : MonoBehaviour
     {
         if (rewiredPlayer.GetButtonDown(RewiredConsts.Action.PerspectiveSwitch))
         {
-            GameManager.Instance.ChangeCameraState();
+            CameraManager.Instance.Toggle3D2D();
+            //GameManager.Instance.ChangeCameraState();
         }
     }
 

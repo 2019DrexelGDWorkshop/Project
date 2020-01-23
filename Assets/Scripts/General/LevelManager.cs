@@ -34,5 +34,11 @@ public class LevelManager : MonoBehaviour
         }
     }
 
+    private void Start()
+    {
+        Cinemachine.CinemachineBrain _cmBrain = GameObject.FindObjectOfType<Cinemachine.CinemachineBrain>();
+        CameraManager.Instance.UpdateCameraReferences(camera2D, cameraTransition, camera3D, _cmBrain.gameObject);
+    }
+
     #endregion
 }

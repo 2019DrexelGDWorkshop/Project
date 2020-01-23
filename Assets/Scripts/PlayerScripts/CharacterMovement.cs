@@ -111,7 +111,7 @@ public class CharacterMovement : MonoBehaviour
 
         float tmpy = moveVec.y;
 
-        if (GameManager.Instance.cameraState == GameManager.cameraState2D)
+        if (CameraManager.Instance.cameraState == CameraState.SIDE_SCROLLER)//GameManager.Instance.cameraState == GameManager.cameraState2D)
             moveVec = targetDirection * tmpSpeed * moveSpeed;
         else
             moveVec = transform.forward * tmpSpeed * moveSpeed;
@@ -193,7 +193,7 @@ public class CharacterMovement : MonoBehaviour
             if (currentJetpackForce > 0)
             {
                 moveVec = Vector3.up;
-                if (GameManager.Instance.cameraState == 1)
+                if (CameraManager.Instance.cameraState == CameraState.SIDE_SCROLLER)
                 {
                     if (Input.GetAxis("Horizontal") > 0)
                     {
@@ -202,7 +202,7 @@ public class CharacterMovement : MonoBehaviour
                     else if (Input.GetAxis("Horizontal") < 0)
                         transform.Translate(new Vector3(0, 0, 1) * moveSpeed * Time.deltaTime);
                 }
-                if (GameManager.Instance.cameraState == 0)
+                if (CameraManager.Instance.cameraState == CameraState.THIRD_PERSON)
                 {
                     moveVec += transform.right * Input.GetAxis("Horizontal");
                     moveVec += transform.forward * Input.GetAxis("Vertical");

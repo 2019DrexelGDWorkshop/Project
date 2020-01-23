@@ -9,7 +9,7 @@ public class Switcher2DMesh : MonoBehaviour
 
     void Update()
     {
-        if (GameManager.Instance.cameraState == 1)
+        /*if (GameManager.Instance.cameraState == 1)
         {
             MeshColliderIn2D.SetActive(true);
             //MeshColliderIn2D.SetActive(false);
@@ -18,7 +18,7 @@ public class Switcher2DMesh : MonoBehaviour
         {
             MeshColliderIn2D.SetActive(false);
             //MeshColliderIn2D.SetActive(true);
-        }
+        }*/
     }
 
     public void setFalse()
