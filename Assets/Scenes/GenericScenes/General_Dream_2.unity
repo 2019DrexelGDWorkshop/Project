@@ -6628,7 +6628,7 @@ MonoBehaviour:
       name: init
       _path: Assets/Scenes/init.unity
     loadInEditor: 1
-    loadMethod: 1
+    loadMethod: 3
   _thisScenePath: Assets/Scenes/GenericScenes/General_Dream_2.unity
 --- !u!4 &2035923386
 Transform:
