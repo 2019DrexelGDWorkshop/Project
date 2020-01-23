@@ -175,6 +175,9 @@
     <Reference Include="com.unity.cinemachine.editor">
       <HintPath>C:/Users/10251/OneDrive/Documents/GitHub/Project/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
     </Reference>
+    <Reference Include="com.unity.cinemachine.editor">
+      <HintPath>E:/GameDev/Project/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.TextMeshPro">
       <HintPath>C:/Users/10251/OneDrive/Documents/GitHub/Project/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
