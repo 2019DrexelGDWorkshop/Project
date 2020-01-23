@@ -97,6 +97,7 @@ GameObject:
   - component: {fileID: 335738155139269343}
   - component: {fileID: 335738155139269313}
   - component: {fileID: 335738155139269314}
+  - component: {fileID: 8364368927911644905}
   m_Layer: 0
   m_Name: CameraTransition
   m_TagString: Untagged
@@ -175,3 +176,17 @@ MonoBehaviour:
         m_Calls: []
   m_LegacyBlendHint: 0
   m_ComponentOwner: {fileID: 335738154767238415}
+--- !u!114 &8364368927911644905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 335738155139269315}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f797150122147b24d9e5bcf2937a889a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shouldFollow: 1
+  shouldLookAt: 1
