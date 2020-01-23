@@ -1,0 +1,4 @@
+sceneSetups:
+- path: Assets/Art Folder/VisualBuild2_1.unity
+  isLoaded: 1
+  isActive: 1
