@@ -39,14 +39,17 @@ public class PlayerInput : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        UpdateJumpInput();
-        UpdateMovementInput();
+        if (!PauseManager.Instance.Paused)
+        {
+            UpdateJumpInput();
+            UpdateMovementInput();
 
-        characterMovement.updateTargetDirection(cameraBrain.transform);
+            characterMovement.updateTargetDirection(cameraBrain.transform);
 
-        characterMovement.updateMontion();
+            characterMovement.updateMontion();
 
-        UpdateCameraStateInput();
+            UpdateCameraStateInput();
+        }
     }
 
     void UpdateMovementInput()
