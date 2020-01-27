@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2893599600734059850}
   - component: {fileID: 2893599600734059849}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: MC3D
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -55,7 +55,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2893599601680001411}
   - component: {fileID: 2893599601680001410}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: MC2D
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -101,7 +101,7 @@ GameObject:
   - component: {fileID: 8126009276507686829}
   - component: {fileID: 8126009276510586765}
   - component: {fileID: 8126009276509455693}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: pencil4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -179,7 +179,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8126009276507686831}
   - component: {fileID: 2893599601321973109}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: pencil4 Variant 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
