@@ -151,7 +151,7 @@ MonoBehaviour:
   gravity: 20
   jetpackForce: 0
   groundMargin: 1.2
-  groundDetectRadius: 0.5
+  groundDetectRadius: 0.4
   motion: {x: 0, y: 0}
   isjumping: 0
   moveVec: {x: 0, y: 0, z: 0}
