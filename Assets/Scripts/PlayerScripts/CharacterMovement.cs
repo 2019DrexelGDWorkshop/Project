@@ -111,7 +111,7 @@ public class CharacterMovement : MonoBehaviour
 
         float tmpy = moveVec.y;
 
-        if (CameraManager.Instance.cameraState == CameraState.SIDE_SCROLLER)//GameManager.Instance.cameraState == GameManager.cameraState2D)
+        if (CameraManager.Instance.cameraState == CameraState.SIDE_SCROLLER)
             moveVec = targetDirection * tmpSpeed * moveSpeed;
         else
             moveVec = transform.forward * tmpSpeed * moveSpeed;

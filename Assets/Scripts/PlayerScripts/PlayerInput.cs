@@ -13,11 +13,6 @@ public class PlayerInput : MonoBehaviour
 
     [Header("Camera Settings")]
 
-    public GameObject targetCamera;
-    public GameObject Camera2D;
-
-    public GameObject cameraBrain;
-
     private CharacterMovement characterMovement;
 
 
@@ -42,11 +37,17 @@ public class PlayerInput : MonoBehaviour
         UpdateJumpInput();
         UpdateMovementInput();
 
-        characterMovement.updateTargetDirection(cameraBrain.transform);
+        try
+        {
+            characterMovement.updateTargetDirection(CameraManager.Instance.cmBrain.transform);
 
-        characterMovement.updateMontion();
+            characterMovement.updateMontion();
 
-        UpdateCameraStateInput();
+            UpdateCameraStateInput();
+        }catch(System.Exception e)
+        {
+            Debug.LogError(e);
+        }
     }
 
     void UpdateMovementInput()
@@ -73,10 +74,9 @@ public class PlayerInput : MonoBehaviour
     
     void UpdateCameraStateInput()
     {
-        if (rewiredPlayer.GetButtonDown(RewiredConsts.Action.PerspectiveSwitch))
+        if (rewiredPlayer.GetButtonDown(RewiredConsts.Action.PerspectiveSwitch) && !CameraManager.Instance.isTransitioning)
         {
             CameraManager.Instance.Toggle3D2D();
-            //GameManager.Instance.ChangeCameraState();
         }
     }
 

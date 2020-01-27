@@ -5,20 +5,17 @@ using UnityEngine;
 public class Switcher2DMesh : MonoBehaviour
 {
     public GameObject MeshColliderIn2D;
-    //public GameObject MeshColliderIn3D;
 
     void Update()
     {
-        /*if (GameManager.Instance.cameraState == 1)
+        if (CameraManager.Instance.cameraState == CameraState.SIDE_SCROLLER)
         {
             MeshColliderIn2D.SetActive(true);
-            //MeshColliderIn2D.SetActive(false);
         }
         else
         {
             MeshColliderIn2D.SetActive(false);
-            //MeshColliderIn2D.SetActive(true);
-        }*/
+        }
     }
 
     public void setFalse()

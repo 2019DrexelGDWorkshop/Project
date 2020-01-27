@@ -21,10 +21,21 @@ public class CameraManager : MonoBehaviour
     public CinemachineVirtualCameraBase cameraTransition;
     public CinemachineVirtualCameraBase camera3D;
     public CinemachineBrain cmBrain;
+    public GameObject cmBrainGO;
+
+    public LayerMask originalCullingMask;
 
     public static CameraManager Instance;
 
     private Dictionary<CinemachineVirtualCameraBase, int> originalCamPriorities;
+
+    public delegate void SwitchPerspectiveHandler(bool _is2D);
+    public event SwitchPerspectiveHandler onPerspectiveSwitch;
+
+    private float transitionTime = 2f;
+    private float transitionCount = 0f;
+    public bool isTransitioning
+    { get; private set; }
 
     #region Monobehaviour
 
@@ -51,16 +62,31 @@ public class CameraManager : MonoBehaviour
             case CameraState.THIRD_PERSON:
                 SetCamHighestPriority(camera2D);
                 cameraState = CameraState.SIDE_SCROLLER;
+                onPerspectiveSwitch.Invoke(true);
                 break;
             case CameraState.SIDE_SCROLLER:
                 SetCamHighestPriority(camera3D);
                 cameraState = CameraState.THIRD_PERSON;
+                onPerspectiveSwitch.Invoke(false);
                 break;
             default:
                 Debug.Log(cameraState + " is unsupported camera transition.");
                 break;
         }
+        StartCoroutine(transitionCountDown());
         return;
+    }
+
+    private IEnumerator transitionCountDown()
+    {
+        transitionCount = 0;
+        isTransitioning = true;
+        while(transitionCount < transitionTime)
+        {
+            transitionCount += Time.deltaTime;
+            yield return null;
+        }
+        isTransitioning = false;
     }
 
     public void SetCamHighestPriority(CinemachineVirtualCameraBase camera)
@@ -81,12 +107,15 @@ public class CameraManager : MonoBehaviour
     }
 
     #region UpdateCameraReferences
+
     public void UpdateCameraReferences(GameObject _2dCam, GameObject _transitionCam, GameObject _3dCam, GameObject _cmBrain)
     {
         camera2D = _2dCam.GetComponent< CinemachineVirtualCameraBase>();
         camera3D = _3dCam.GetComponent<CinemachineVirtualCameraBase>();
         cameraTransition = _transitionCam.GetComponent<CinemachineVirtualCameraBase>();
         cmBrain = _cmBrain.GetComponent<CinemachineBrain>();
+        cmBrainGO = _cmBrain;
+        originalCullingMask = cmBrainGO.GetComponent<Camera>().cullingMask;
 
         StoreCameraPriority(camera2D);
         StoreCameraPriority(cameraTransition);
@@ -101,6 +130,8 @@ public class CameraManager : MonoBehaviour
         camera3D = _3dCam;
         cameraTransition = _transitionCam;
         cmBrain = _cmBrain;
+        cmBrainGO = _cmBrain.gameObject;
+        originalCullingMask = cmBrainGO.GetComponent<Camera>().cullingMask;
 
         StoreCameraPriority(camera2D);
         StoreCameraPriority(cameraTransition);
