@@ -149,7 +149,7 @@ MonoBehaviour:
   jumpUpTime: 0.4
   gravity: 20
   groundMargin: 1.2
-  groundDetectRadius: 0.5
+  groundDetectRadius: 0.4
   motion: {x: 0, y: 0}
   isjumping: 0
 --- !u!114 &8158396982961863541
