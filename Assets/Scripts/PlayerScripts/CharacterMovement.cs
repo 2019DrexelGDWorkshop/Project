@@ -9,7 +9,7 @@ public class CharacterMovement : MonoBehaviour
     public float jumpSpeed = 8.0f;
     public float jumpUpTime = 0.5f;
     public float gravity = 10.0f;
-    public float jetpackForce = 1.0f;
+    public float jetpackForce = 0;
 
     //public bool isGrounded = false;
     public float groundMargin = 1.2f;
@@ -147,6 +147,14 @@ public class CharacterMovement : MonoBehaviour
         Vector3 euler = new Vector3(transform.eulerAngles.x, eulerY, transform.eulerAngles.z);
 
         transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(euler), rotationSpeed * Time.deltaTime);
+    }
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "PowerUp")
+        {
+            jetpackForce = 1;
+            Destroy(other.gameObject);
+        }
     }
 
     private void JetPack()

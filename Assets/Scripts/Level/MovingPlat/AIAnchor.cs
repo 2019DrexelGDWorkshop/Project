@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MPlatChangeDir : MonoBehaviour
+public class AIAnchor : MonoBehaviour
 {
     private void OnTriggerEnter(Collider other)
     {
-        if(other.tag =="obj_anchor")
+        if (other.tag == "obj_anchor")
         {
-            this.transform.parent.GetComponent<PlatformMoving>().Next();
+            this.transform.parent.GetComponent<PatrolSystem>().Next();
         }
     }
 }
