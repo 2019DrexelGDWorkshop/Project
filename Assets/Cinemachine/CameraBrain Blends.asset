@@ -17,7 +17,7 @@ MonoBehaviour:
     m_To: CameraTransition
     m_Blend:
       m_Style: 2
-      m_Time: 1
+      m_Time: 0.5
       m_CustomCurve:
         serializedVersion: 2
         m_Curve: []
@@ -50,7 +50,7 @@ MonoBehaviour:
     m_To: 3rdPersonCamera
     m_Blend:
       m_Style: 3
-      m_Time: 1
+      m_Time: 0.5
       m_CustomCurve:
         serializedVersion: 2
         m_Curve: []

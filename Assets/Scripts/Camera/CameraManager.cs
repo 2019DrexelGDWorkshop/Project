@@ -134,6 +134,7 @@ public class CameraManager : MonoBehaviour
         {
             yield return null;
         }
+        yield return new WaitForSeconds(.5f);
         cameraState = CameraState.THIRD_PERSON;
         isTransitioning = false;
         onPerspectiveSwitch.Invoke(false);

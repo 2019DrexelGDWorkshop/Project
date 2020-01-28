@@ -46,11 +46,14 @@ public class PlayerInput : MonoBehaviour
                 UpdateJumpInput();
                 UpdateMovementInput();
 
-                characterMovement.updateTargetDirection(cameraBrain.transform);
+                if (!CameraManager.Instance.isTransitioning)
+                {
+                    characterMovement.updateTargetDirection(cameraBrain.transform);
 
-                characterMovement.updateMontion();
+                    characterMovement.updateMontion();
 
-                UpdateCameraStateInput();
+                    UpdateCameraStateInput();
+                }
             }catch(System.Exception e)
             {
                 Debug.LogError("EXCEPTION THROWN:\n\n " + e);
@@ -65,6 +68,7 @@ public class PlayerInput : MonoBehaviour
 
         if (CameraManager.Instance.cameraState == CameraState.SIDE_SCROLLER)
             tmpy = 0;
+        
 
         characterMovement.motion.x = tmpx;
         characterMovement.motion.y = tmpy;
