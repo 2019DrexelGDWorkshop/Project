@@ -16,7 +16,7 @@ public class DeadZone : MonoBehaviour
         if (other.gameObject.name == "Player")
         {
             audioSource.Play();
-            other.gameObject.transform.position = GameManager.Instance.lastCheckPoint.position;
+            other.gameObject.transform.position = LevelManager.Instance.lastCheckPoint.position;
         }
     } 
 }

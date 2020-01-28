@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9203337485912003084}
   - component: {fileID: 8179119068414097668}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: MC2D
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -54,7 +54,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4445619118186514356}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: bookM
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -89,7 +89,7 @@ GameObject:
   - component: {fileID: 4445619118186514358}
   - component: {fileID: 4445619118183614358}
   - component: {fileID: 4445619118184613206}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Book
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -165,7 +165,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2525460465342693888}
   - component: {fileID: 5484303910095073732}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: MC3D
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1262250693}
   - component: {fileID: 1262250694}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: MC3D
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -55,7 +55,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1998970046}
   - component: {fileID: 1998970045}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: MC2D
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -112,7 +112,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100000, guid: 363078d20f189ed45ab0cd74946d6164, type: 3}
       propertyPath: m_Name
-      value: crayon1 (1)
+      value: crayon1 (1) Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 363078d20f189ed45ab0cd74946d6164, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 363078d20f189ed45ab0cd74946d6164, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 363078d20f189ed45ab0cd74946d6164, type: 3}
       propertyPath: m_LocalPosition.x
