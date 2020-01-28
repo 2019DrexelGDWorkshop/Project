@@ -79,14 +79,10 @@ public class CameraManager : MonoBehaviour
         switch(cameraState)
         {
             case CameraState.THIRD_PERSON:
-                SetCamHighestPriority(camera2D);
-                cameraState = CameraState.SIDE_SCROLLER;
-                onPerspectiveSwitch.Invoke(true);
+                StartCoroutine(SwitchTo2D());
                 break;
             case CameraState.SIDE_SCROLLER:
-                SetCamHighestPriority(camera3D);
-                cameraState = CameraState.THIRD_PERSON;
-                onPerspectiveSwitch.Invoke(false);
+                StartCoroutine(SwitchTo3D());
                 break;
             default:
                 Debug.Log(cameraState + " is unsupported camera transition.");
@@ -95,6 +91,51 @@ public class CameraManager : MonoBehaviour
         StartCoroutine(transitionCountDown());
         return;
     }
+
+    private IEnumerator SwitchTo2D()
+    {
+        SetCamHighestPriority(cameraTransition);
+        cameraState = CameraState.TRANSITION;
+        yield return new WaitForEndOfFrame();
+
+        while(cmBrain.ActiveBlend != null && !cmBrain.ActiveBlend.IsComplete)
+        {
+            yield return null;
+        }
+
+        SetCamHighestPriority(camera2D);
+        yield return new WaitForEndOfFrame();
+
+        while(cmBrain.ActiveBlend != null && !cmBrain.ActiveBlend.IsComplete)
+        {
+            yield return null;
+        }
+        cameraState = CameraState.SIDE_SCROLLER;
+        onPerspectiveSwitch.Invoke(true);
+    }
+
+    private IEnumerator SwitchTo3D()
+    {
+        SetCamHighestPriority(cameraTransition);
+        cameraState = CameraState.TRANSITION;
+        yield return new WaitForEndOfFrame();
+
+        while (cmBrain.ActiveBlend != null && !cmBrain.ActiveBlend.IsComplete)
+        {
+            yield return null;
+        }
+
+        SetCamHighestPriority(camera3D);
+        yield return new WaitForEndOfFrame();
+
+        while (cmBrain.ActiveBlend != null && !cmBrain.ActiveBlend.IsComplete)
+        {
+            yield return null;
+        }
+        cameraState = CameraState.THIRD_PERSON;
+        onPerspectiveSwitch.Invoke(false);
+    }
+
 
     private IEnumerator transitionCountDown()
     {
