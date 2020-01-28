@@ -531,7 +531,8 @@ namespace CodingJar.MultiScene
 				GameObject.Destroy( sourceSetup.gameObject );
 
 			AmsDebug.Log( this, "Merging {0} into {1}", scene.path, gameObject.scene.path );
-			SceneManager.MergeScenes( scene, gameObject.scene );
+		    SceneManager.MergeScenes( scene, gameObject.scene );
+
 		}
 #endif
 	}

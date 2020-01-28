@@ -29,7 +29,7 @@ public class PlatformMoving : MoveAndAnchorSystem
     public override void TargetReached()
     {
         movingObj.GetComponent<Rigidbody>().velocity = movingObj.GetComponent<Rigidbody>().velocity * Mathf.Pow((1 - rateDecay), Time.time - timeReached);
-        print(movingObj.GetComponent<Rigidbody>().velocity);
+        //print(movingObj.GetComponent<Rigidbody>().velocity);
         if (movingObj.GetComponent<Rigidbody>().velocity.magnitude < 0.1f)
         {
             reachedTarget = false;
