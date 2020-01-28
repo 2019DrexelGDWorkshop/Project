@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 36747957715159924}
   - component: {fileID: 4121900049195149220}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: platform1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -58,7 +58,7 @@ GameObject:
   - component: {fileID: 36747957715159926}
   - component: {fileID: 36747957715929942}
   - component: {fileID: 36747957716928918}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: platform1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -134,7 +134,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7908757144202332835}
   - component: {fileID: 2432893381077894154}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: MC3D
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -179,7 +179,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8674924363762655981}
   - component: {fileID: 3923779331293650214}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: MC2D
   m_TagString: Untagged
   m_Icon: {fileID: 0}

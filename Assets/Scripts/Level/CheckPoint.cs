@@ -8,7 +8,7 @@ public class CheckPoint : MonoBehaviour
     {
         if (other.gameObject.name == "Player")
         {
-            GameManager.Instance.lastCheckPoint = transform;
+            LevelManager.Instance.lastCheckPoint = transform;
         }
     }
 }
