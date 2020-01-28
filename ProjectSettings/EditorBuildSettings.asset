@@ -23,4 +23,43 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GenericScenes/General_Dream_4.unity
     guid: c190fd9b8db04c546b594518735139f7
+  - enabled: 1
+    path: Assets/Scenes/ScienceLevels/Science1/Science1_MAIN.unity
+    guid: a86291a0dc1925f4e97462797132343c
+  - enabled: 1
+    path: Assets/Scenes/Player.unity
+    guid: c181a30ec4221d54c9b5283dd42e48da
+  - enabled: 1
+    path: Assets/Scenes/ScienceLevels/Science1/Science1_Platforms.unity
+    guid: 4dae327215f6c59418656766e6bc95d2
+  - enabled: 1
+    path: Assets/Scenes/ScienceLevels/Science1/Science1_Environment.unity
+    guid: 61db2442fc29e8a40a730141be30db3a
+  - enabled: 1
+    path: Assets/Scenes/ScienceLevels/Science1/Science1_Lighting.unity
+    guid: cdea563546af7ab44a0fb0a30dc313e5
+  - enabled: 1
+    path: Assets/Scenes/GymLevels/Gym1/Gym1_Main.unity
+    guid: 35739b8137264c64da69d3e03bbdde30
+  - enabled: 1
+    path: Assets/Scenes/GymLevels/Gym1/Gym1_Environment.unity
+    guid: 7640c056bb0a31447bf32326c533398e
+  - enabled: 1
+    path: Assets/Scenes/GymLevels/Gym1/Gym1_Lighting.unity
+    guid: 03cc737eebd6cc24089ed9f27097442f
+  - enabled: 1
+    path: Assets/Scenes/GymLevels/Gym1/Gym1_Platforms.unity
+    guid: 5ddfde4e647bcf14baeb7e6c5c731c2b
+  - enabled: 1
+    path: Assets/Scenes/MathLevels/Math1/Math1_Main.unity
+    guid: 9e2ea6c99568c4d49a28369c0f87ee5a
+  - enabled: 1
+    path: Assets/Scenes/MathLevels/Math1/Math1_Lighting.unity
+    guid: e11a3fcc0e58d554995096130820b1e3
+  - enabled: 1
+    path: Assets/Scenes/MathLevels/Math1/Math1_Environment.unity
+    guid: 0d854499693549544a35eb9bbce75ba2
+  - enabled: 1
+    path: Assets/Scenes/MathLevels/Math1/Math1_Platforms.unity
+    guid: c7503061e0d8e204aafd35ac4de934e5
   m_configObjects: {}

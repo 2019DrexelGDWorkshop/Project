@@ -27,17 +27,18 @@ public class LevelManager : MonoBehaviour
         {
             Destroy(this);
         }
-
-        if(lastCheckPoint == null)
-        {
-            lastCheckPoint = GameObject.FindObjectOfType<CheckPoint>().transform;
-        }
     }
 
     private void Start()
     {
         Cinemachine.CinemachineBrain _cmBrain = GameObject.FindObjectOfType<Cinemachine.CinemachineBrain>();
         CameraManager.Instance.UpdateCameraReferences(camera2D, cameraTransition, camera3D, _cmBrain.gameObject);
+
+
+        if (lastCheckPoint == null)
+        {
+            lastCheckPoint = GameObject.FindObjectOfType<CheckPoint>().transform;
+        }
     }
 
     #endregion
