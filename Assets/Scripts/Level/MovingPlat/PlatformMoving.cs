@@ -6,12 +6,24 @@ public class PlatformMoving : MoveAndAnchorSystem
 {
 
     public float rateDecay = 0.2f;
+    private Rigidbody rb_mPlat;
+
+    protected override void Start()
+    {
+        base.Start();
+        rb_mPlat = movingObj.GetComponent<Rigidbody>();
+    }
 
     protected override void Update()
     {
+        if(CameraManager.Instance.isTransitioning)
+        {
+            rb_mPlat.velocity = Vector3.zero;
+            return;
+        }
+
         CalcDistAndDir();
 
-        Rigidbody rb_mPlat = movingObj.GetComponent<Rigidbody>();
         if (rb_mPlat.velocity.magnitude > speed)
         {
             rb_mPlat.velocity = rb_mPlat.velocity.normalized * speed;
@@ -22,15 +34,14 @@ public class PlatformMoving : MoveAndAnchorSystem
         }
         else
         {
-            rb_mPlat.AddForce(speed * direction);
+            rb_mPlat.AddForce(speed * direction );
         }
     }
 
     public override void TargetReached()
     {
-        movingObj.GetComponent<Rigidbody>().velocity = movingObj.GetComponent<Rigidbody>().velocity * Mathf.Pow((1 - rateDecay), Time.time - timeReached);
-        //print(movingObj.GetComponent<Rigidbody>().velocity);
-        if (movingObj.GetComponent<Rigidbody>().velocity.magnitude < 0.1f)
+        rb_mPlat.velocity = movingObj.GetComponent<Rigidbody>().velocity * Mathf.Pow((1 - rateDecay), Time.time - timeReached);
+        if (rb_mPlat.GetComponent<Rigidbody>().velocity.magnitude < 0.1f)
         {
             reachedTarget = false;
         }

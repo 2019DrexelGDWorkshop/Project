@@ -94,6 +94,7 @@ public class CameraManager : MonoBehaviour
     private IEnumerator SwitchTo2D()
     {
         isTransitioning = true;
+        Time.timeScale = 0;
         SetCamHighestPriority(cameraTransition);
         cameraState = CameraState.TRANSITION;
         yield return new WaitForEndOfFrame();
@@ -112,12 +113,14 @@ public class CameraManager : MonoBehaviour
         }
         cameraState = CameraState.SIDE_SCROLLER;
         isTransitioning = false;
+        Time.timeScale = 1;
         onPerspectiveSwitch.Invoke(true);
     }
 
     private IEnumerator SwitchTo3D()
     {
         isTransitioning = true;
+        Time.timeScale = 0;
         SetCamHighestPriority(cameraTransition);
         cameraState = CameraState.TRANSITION;
         yield return new WaitForEndOfFrame();
@@ -137,6 +140,7 @@ public class CameraManager : MonoBehaviour
         yield return new WaitForSeconds(.5f);
         cameraState = CameraState.THIRD_PERSON;
         isTransitioning = false;
+        Time.timeScale = 1;
         onPerspectiveSwitch.Invoke(false);
     }
 
