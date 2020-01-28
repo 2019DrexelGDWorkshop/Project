@@ -37,6 +37,8 @@ public class PauseManager : Singleton<PauseManager>
     [SerializeField, Tooltip("Settings Menu")]
     GameObject settings;
 
+    private GameObject player;
+
     #endregion Variables
 
     #region Properties
@@ -132,10 +134,9 @@ public class PauseManager : Singleton<PauseManager>
     /// Broadcasts that the game has been resumed
     /// </summary>
     public event ResumeEventHandler OnResume;
-    #endregion Events
 
+    #endregion
 
-    private GameObject player = GameObject.FindGameObjectWithTag("Player");
     #region MonoBehaviour
     private void Start()
     {
@@ -151,12 +152,12 @@ public class PauseManager : Singleton<PauseManager>
         if (paused)
         {
             //Time.timeScale = 0;
-            (player.GetComponent("Player Input") as MonoBehaviour).enabled = false;
+            //(player.GetComponent("Player Input") as MonoBehaviour).enabled = false;
         }
         else
         {
             Time.timeScale = 1;
-            player.GetComponent<PlayerInput>().enabled = true;
+            //player.GetComponent<PlayerInput>().enabled = true;
         }
     }
 
@@ -170,6 +171,13 @@ public class PauseManager : Singleton<PauseManager>
     public void TogglePause()
     {
         Paused = !paused;
+
+        if(Paused){
+            OnPause?.Invoke();
+        }
+        else{
+            OnResume?.Invoke();
+        }
     }
 
     #endregion Public Methods

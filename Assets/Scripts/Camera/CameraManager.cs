@@ -53,7 +53,26 @@ public class CameraManager : MonoBehaviour
         originalCamPriorities = new Dictionary<CinemachineVirtualCameraBase, int>();
     }
 
+    private void Update()
+    {
+        if(PauseManager.Instance.Paused)
+        {
+            ((CinemachineFreeLook)camera3D).m_XAxis.m_InputAxisValue = 0;
+            ((CinemachineFreeLook)camera3D).m_YAxis.m_InputAxisValue = 0;
+        }
+    }
+
     #endregion
+
+    private void OnPauseHandler()
+    {
+
+    }
+
+    private void OnResumeHandler()
+    {
+
+    }
 
     public void Toggle3D2D()
     {
