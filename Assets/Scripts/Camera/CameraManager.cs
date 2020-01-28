@@ -88,12 +88,12 @@ public class CameraManager : MonoBehaviour
                 Debug.Log(cameraState + " is unsupported camera transition.");
                 break;
         }
-        StartCoroutine(transitionCountDown());
         return;
     }
 
     private IEnumerator SwitchTo2D()
     {
+        isTransitioning = true;
         SetCamHighestPriority(cameraTransition);
         cameraState = CameraState.TRANSITION;
         yield return new WaitForEndOfFrame();
@@ -111,11 +111,13 @@ public class CameraManager : MonoBehaviour
             yield return null;
         }
         cameraState = CameraState.SIDE_SCROLLER;
+        isTransitioning = false;
         onPerspectiveSwitch.Invoke(true);
     }
 
     private IEnumerator SwitchTo3D()
     {
+        isTransitioning = true;
         SetCamHighestPriority(cameraTransition);
         cameraState = CameraState.TRANSITION;
         yield return new WaitForEndOfFrame();
@@ -133,20 +135,8 @@ public class CameraManager : MonoBehaviour
             yield return null;
         }
         cameraState = CameraState.THIRD_PERSON;
-        onPerspectiveSwitch.Invoke(false);
-    }
-
-
-    private IEnumerator transitionCountDown()
-    {
-        transitionCount = 0;
-        isTransitioning = true;
-        while(transitionCount < transitionTime)
-        {
-            transitionCount += Time.deltaTime;
-            yield return null;
-        }
         isTransitioning = false;
+        onPerspectiveSwitch.Invoke(false);
     }
 
     public void SetCamHighestPriority(CinemachineVirtualCameraBase camera)
