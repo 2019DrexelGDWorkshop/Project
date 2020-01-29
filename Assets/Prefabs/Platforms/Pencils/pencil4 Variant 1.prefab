@@ -54,7 +54,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2893599601680001411}
-  - component: {fileID: 2893599601680001410}
+  - component: {fileID: 1433437814246843125}
   m_Layer: 10
   m_Name: MC2D
   m_TagString: Untagged
@@ -76,8 +76,8 @@ Transform:
   m_Father: {fileID: 8126009276507686829}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!64 &2893599601680001410
-MeshCollider:
+--- !u!65 &1433437814246843125
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -86,10 +86,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_Mesh: {fileID: 4300000, guid: 369f79a15e985844da98f4ddeac8aedf, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 6.15, z: 1.63}
+  m_Center: {x: 0, y: 4.05, z: 0}
 --- !u!1 &8126009276507528077
 GameObject:
   m_ObjectHideFlags: 0

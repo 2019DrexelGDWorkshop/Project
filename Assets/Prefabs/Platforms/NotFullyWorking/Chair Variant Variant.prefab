@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8098563703546765945}
   - component: {fileID: 8896035726044412107}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: MC3D
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -68,7 +68,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6885977784262056597}
   - component: {fileID: 7298039947826305827}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: MC2D
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -113,7 +113,12 @@ PrefabInstance:
     - target: {fileID: 8056635600442957421, guid: a536fb8ba61bcc64a992bd65aeee02aa,
         type: 3}
       propertyPath: m_Name
-      value: Chair Variant
+      value: Chair Variant Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 8056635600442957421, guid: a536fb8ba61bcc64a992bd65aeee02aa,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8056635600443048525, guid: a536fb8ba61bcc64a992bd65aeee02aa,
         type: 3}

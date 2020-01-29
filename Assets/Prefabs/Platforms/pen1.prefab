@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4279650711095632031}
   - component: {fileID: 2817341855805545598}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: MC2D
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -54,7 +54,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2074812516539089777}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: pen1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -88,7 +88,7 @@ GameObject:
   - component: {fileID: 2074812516540384083}
   - component: {fileID: 2074812516541514131}
   - component: {fileID: 6290594470141137596}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: pen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -179,7 +179,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4618011553220352710}
   - component: {fileID: 6138009524997222550}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: MC3D
   m_TagString: Untagged
   m_Icon: {fileID: 0}
