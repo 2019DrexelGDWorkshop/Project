@@ -38,13 +38,13 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4366757, g: 0.48427194, b: 0.5645252, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 11
-  m_GIWorkflowMode: 0
+  m_GIWorkflowMode: 1
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
@@ -149,19 +149,19 @@ MonoBehaviour:
       name: Gym1_Environment
       _path: Assets/Scenes/GymLevels/Gym1/Gym1_Environment.unity
     loadInEditor: 1
-    loadMethod: 1
+    loadMethod: 0
   - scene:
       editorAssetGUID: 03cc737eebd6cc24089ed9f27097442f
       name: Gym1_Lighting
       _path: Assets/Scenes/GymLevels/Gym1/Gym1_Lighting.unity
     loadInEditor: 1
-    loadMethod: 1
+    loadMethod: 0
   - scene:
       editorAssetGUID: 5ddfde4e647bcf14baeb7e6c5c731c2b
       name: Gym1_Platforms
       _path: Assets/Scenes/GymLevels/Gym1/Gym1_Platforms.unity
     loadInEditor: 1
-    loadMethod: 1
+    loadMethod: 0
   - scene:
       editorAssetGUID: c181a30ec4221d54c9b5283dd42e48da
       name: Player

@@ -38,13 +38,13 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 11
-  m_GIWorkflowMode: 0
+  m_GIWorkflowMode: 1
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
@@ -310,26 +310,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7362210716577899983, guid: e6990ef335b47014f88bbd46137bcbcb,
-        type: 3}
-      propertyPath: anchor.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 7362210716577899983, guid: e6990ef335b47014f88bbd46137bcbcb,
-        type: 3}
-      propertyPath: anchor.Array.data[0]
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 7362210716577899983, guid: e6990ef335b47014f88bbd46137bcbcb,
-        type: 3}
-      propertyPath: anchor.Array.data[1]
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 956252567735136319, guid: e6990ef335b47014f88bbd46137bcbcb,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e6990ef335b47014f88bbd46137bcbcb, type: 3}
