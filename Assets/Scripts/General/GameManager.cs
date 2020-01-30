@@ -1,15 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public enum Level
 {
     INIT = 0,
     MAINMENU = 1,
-    DREAM1 = 2,
-    DREAM2 = 3,
-    DREAM3 = 4,
-    DREAM4 = 5
+    SCIENCE1 = 6,
+    GYM1 = 11,
+    MATH1 = 15
 }
 
 public class GameManager : MonoBehaviour
@@ -18,7 +18,7 @@ public class GameManager : MonoBehaviour
 
     private void Awake()
     {
-        if(Instance == null)
+        if (Instance == null)
         {
             Instance = this;
         }
@@ -32,7 +32,31 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Cursor.visible = false;
+        SceneManager.sceneLoaded += OnLevelWasLoadedHandler;
+        LockCursor(true);
+    }
+
+    private void LockCursor(bool _shouldLock)
+    {
+        Cursor.visible = !_shouldLock;
+#if !UNITY_EDITOR && _shouldLock
+        Cursor.lockState = CursorLockMode.Locked;
+#else
+        Cursor.lockState = CursorLockMode.None;
+#endif
+
+    }
+
+    private void OnLevelWasLoadedHandler(Scene _scene, LoadSceneMode _loadSceneMode)
+    {
+        if(_scene.buildIndex == (int)Level.MAINMENU)
+        {
+            LockCursor(false);
+        }
+        else
+        {
+            LockCursor(true);
+        }
     }
 
 
