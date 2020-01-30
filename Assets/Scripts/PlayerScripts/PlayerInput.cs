@@ -45,16 +45,25 @@ public class PlayerInput : MonoBehaviour
             {
                 UpdateJumpInput();
                 UpdateMovementInput();
-
-                characterMovement.updateTargetDirection(cameraBrain.transform);
-
-                characterMovement.updateMontion();
-
-                UpdateCameraStateInput();
-            }catch(System.Exception e)
+            }
+            catch(System.Exception e)
             {
                 Debug.LogError("EXCEPTION THROWN:\n\n " + e);
             }
+        }
+    }
+
+    private void FixedUpdate()
+    {
+        try { 
+            characterMovement.updateTargetDirection(cameraBrain.transform);
+
+            characterMovement.updateMontion();
+
+            UpdateCameraStateInput();
+        }catch (System.Exception e)
+        {
+            Debug.LogError("EXCEPTION THROWN:\n\n " + e);
         }
     }
 
