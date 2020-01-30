@@ -8,8 +8,8 @@ public enum Level
     INIT = 0,
     MAINMENU = 1,
     SCIENCE1 = 6,
-    GYM1 = 11,
-    MATH1 = 15
+    GYM1 = 7,
+    MATH1 = 8
 }
 
 public class GameManager : MonoBehaviour
