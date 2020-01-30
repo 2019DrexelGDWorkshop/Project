@@ -38,13 +38,13 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 11
-  m_GIWorkflowMode: 0
+  m_GIWorkflowMode: 1
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
@@ -1129,139 +1129,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _version: 2
-  _crossSceneReferences:
-  - _sourceObject: {fileID: 0}
-    _sourceField: lastCheckPoint
-    DEPRECATED_fromObject:
-      scene:
-        editorAssetGUID: 
-        name: 
-        _path: 
-      fullPath: 
-      componentName: 
-      componentIndex: 0
-      editorLocalId: 0
-      editorPrefabRelativePath: 
-      version: 0
-    _toObject:
-      scene:
-        editorAssetGUID: c190fd9b8db04c546b594518735139f7
-        name: General_Dream_4
-        _path: Assets/Scenes/GenericScenes/General_Dream_4.unity
-      fullPath: /Level_4/StartPos
-      componentName: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-      componentIndex: 0
-      editorLocalId: -789864928
-      editorPrefabRelativePath: 
-      version: 1
-    _data:
-      data: []
-  - _sourceObject: {fileID: 0}
-    _sourceField: Camera3D
-    DEPRECATED_fromObject:
-      scene:
-        editorAssetGUID: 
-        name: 
-        _path: 
-      fullPath: 
-      componentName: 
-      componentIndex: 0
-      editorLocalId: 0
-      editorPrefabRelativePath: 
-      version: 0
-    _toObject:
-      scene:
-        editorAssetGUID: c190fd9b8db04c546b594518735139f7
-        name: General_Dream_4
-        _path: Assets/Scenes/GenericScenes/General_Dream_4.unity
-      fullPath: /Main Camera
-      componentName: 
-      componentIndex: 0
-      editorLocalId: 534669902
-      editorPrefabRelativePath: 
-      version: 1
-    _data:
-      data: []
-  - _sourceObject: {fileID: 0}
-    _sourceField: CameraTrans
-    DEPRECATED_fromObject:
-      scene:
-        editorAssetGUID: 
-        name: 
-        _path: 
-      fullPath: 
-      componentName: 
-      componentIndex: 0
-      editorLocalId: 0
-      editorPrefabRelativePath: 
-      version: 0
-    _toObject:
-      scene:
-        editorAssetGUID: c190fd9b8db04c546b594518735139f7
-        name: General_Dream_4
-        _path: Assets/Scenes/GenericScenes/General_Dream_4.unity
-      fullPath: /2DCamera (1)
-      componentName: 
-      componentIndex: 0
-      editorLocalId: 934632620
-      editorPrefabRelativePath: 
-      version: 1
-    _data:
-      data: []
-  - _sourceObject: {fileID: 0}
-    _sourceField: Camera2D
-    DEPRECATED_fromObject:
-      scene:
-        editorAssetGUID: 
-        name: 
-        _path: 
-      fullPath: 
-      componentName: 
-      componentIndex: 0
-      editorLocalId: 0
-      editorPrefabRelativePath: 
-      version: 0
-    _toObject:
-      scene:
-        editorAssetGUID: c190fd9b8db04c546b594518735139f7
-        name: General_Dream_4
-        _path: Assets/Scenes/GenericScenes/General_Dream_4.unity
-      fullPath: /2DCamera
-      componentName: 
-      componentIndex: 0
-      editorLocalId: 647452481
-      editorPrefabRelativePath: 
-      version: 1
-    _data:
-      data: []
-  - _sourceObject: {fileID: 935271044}
-    _sourceField: lastCheckPoint
-    DEPRECATED_fromObject:
-      scene:
-        editorAssetGUID: 
-        name: 
-        _path: 
-      fullPath: 
-      componentName: 
-      componentIndex: 0
-      editorLocalId: 0
-      editorPrefabRelativePath: 
-      version: 0
-    _toObject:
-      scene:
-        editorAssetGUID: 7f661ee913f12fa479763140803dcc47
-        name: General_Dream_1
-        _path: Assets/Scenes/GenericScenes/General_Dream_1.unity
-      fullPath: /Level_1/StartPos
-      componentName: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-      componentIndex: 0
-      editorLocalId: -789864928
-      editorPrefabRelativePath: 
-      version: 1
-    _data:
-      data: []
+  _crossSceneReferences: []
   _realSceneRootsForPostBuild: []
   _mergedScenes: []
 --- !u!114 &2056795183
@@ -1276,30 +1144,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 085c2289556c08443b40563cfe8016e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _isMainScene: 1
+  _isMainScene: 0
   _sceneSetup:
+  - scene:
+      editorAssetGUID: e11a3fcc0e58d554995096130820b1e3
+      name: Math1_Lighting
+      _path: Assets/Scenes/MathLevels/Math1/Math1_Lighting.unity
+    loadInEditor: 1
+    loadMethod: 1
+  - scene:
+      editorAssetGUID: 0d854499693549544a35eb9bbce75ba2
+      name: Math1_Environment
+      _path: Assets/Scenes/MathLevels/Math1/Math1_Environment.unity
+    loadInEditor: 1
+    loadMethod: 1
+  - scene:
+      editorAssetGUID: c7503061e0d8e204aafd35ac4de934e5
+      name: Math1_Platforms
+      _path: Assets/Scenes/MathLevels/Math1/Math1_Platforms.unity
+    loadInEditor: 1
+    loadMethod: 1
   - scene:
       editorAssetGUID: c181a30ec4221d54c9b5283dd42e48da
       name: Player
       _path: Assets/Scenes/Player.unity
-    loadInEditor: 1
-    loadMethod: 1
-  - scene:
-      editorAssetGUID: 4dae327215f6c59418656766e6bc95d2
-      name: Science1_Platforms
-      _path: Assets/Scenes/ScienceLevels/Science1/Science1_Platforms.unity
-    loadInEditor: 1
-    loadMethod: 1
-  - scene:
-      editorAssetGUID: 61db2442fc29e8a40a730141be30db3a
-      name: Science1_Environment
-      _path: Assets/Scenes/ScienceLevels/Science1/Science1_Environment.unity
-    loadInEditor: 1
-    loadMethod: 1
-  - scene:
-      editorAssetGUID: cdea563546af7ab44a0fb0a30dc313e5
-      name: Science1_Lighting
-      _path: Assets/Scenes/ScienceLevels/Science1/Science1_Lighting.unity
     loadInEditor: 1
     loadMethod: 1
   - scene:
@@ -1321,4 +1189,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ea771568bdafb841aab104b11c05089, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelToLoad: 0
+  levelToLoad: 1
