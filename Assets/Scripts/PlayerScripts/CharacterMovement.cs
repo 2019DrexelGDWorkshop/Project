@@ -15,6 +15,8 @@ public class CharacterMovement : MonoBehaviour
     public float groundMargin = 1.2f;
     public float groundDetectRadius = 0.5f;
 
+    public Vector3 externalForces = Vector3.zero;
+
     [HideInInspector]
     public Vector2 motion;
     public bool isjumping = false;
@@ -130,8 +132,8 @@ public class CharacterMovement : MonoBehaviour
             moveVec.y = tmpy - gravity * Time.deltaTime;
         else
             moveVec.y = 0;
-        cc.Move(moveVec * Time.deltaTime);
-
+        cc.Move((moveVec + externalForces) * Time.deltaTime);
+        externalForces = Vector3.zero;
     }
 
     void updateRotation()

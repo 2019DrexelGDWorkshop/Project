@@ -7,7 +7,7 @@ public class PlatformMoving : MoveAndAnchorSystem
 
     public float rateDecay = 0.2f;
 
-    protected override void Update()
+    protected void FixedUpdate()
     {
         CalcDistAndDir();
 
