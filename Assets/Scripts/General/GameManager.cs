@@ -33,7 +33,17 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         SceneManager.sceneLoaded += OnLevelWasLoadedHandler;
-        LockCursor(true);
+        bool lockCursor = true;
+
+        if(SceneManager.sceneCount > 1)
+        {
+            if(SceneManager.GetActiveScene().buildIndex == (int)Level.MAINMENU)
+            {
+                lockCursor = false;
+            }
+        }
+
+        LockCursor(lockCursor);
     }
 
     private void LockCursor(bool _shouldLock)
@@ -49,6 +59,11 @@ public class GameManager : MonoBehaviour
 
     private void OnLevelWasLoadedHandler(Scene _scene, LoadSceneMode _loadSceneMode)
     {
+        if(_scene.buildIndex == (int)Level.INIT)
+        {
+            return;
+        }
+
         if(_scene.buildIndex == (int)Level.MAINMENU)
         {
             LockCursor(false);
