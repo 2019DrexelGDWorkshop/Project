@@ -7,6 +7,10 @@ TagManager:
   - mplat_anchor
   - checkpoint
   - PowerUp
+  - obj_anchor
+  - PauseMenu
+  - Settings
+  - Pause
   layers:
   - Default
   - TransparentFX
@@ -19,8 +23,8 @@ TagManager:
   - PostProcessing
   - Player
   - Platform
-  - 
-  - 
+  - Vision
+  - Anchor
   - 
   - 
   - 

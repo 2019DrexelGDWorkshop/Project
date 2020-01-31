@@ -4,8 +4,13 @@ using UnityEngine;
 
 public class PatrolSystem : MoveAndAnchorSystem
 {
+    public Transform edgeCheckSource;
 
     public GameObject player = null;
+
+    public int jumpForce;
+
+    public int gravity;
 
     protected override void Start()
     {
@@ -36,7 +41,22 @@ public class PatrolSystem : MoveAndAnchorSystem
             Vector3 target = new Vector3(anchor[targetNumb].transform.position.x, movingObj.transform.position.y, anchor[targetNumb].transform.position.z);
             movingObj.transform.LookAt(target, movingObj.transform.up);
         }
-        
+
+        if( !(Physics.Raycast(edgeCheckSource.position, transform.TransformDirection(Vector3.down), 10)) && Physics.Raycast(movingObj.transform.position, transform.TransformDirection(Vector3.down)))
+        {
+            print("AI Jumping");
+            movingObj.GetComponent<Rigidbody>().AddForce(new Vector3(0, 10 * jumpForce, 0));
+        }
+
+        if ( !(Physics.Raycast(movingObj.transform.position, transform.TransformDirection(Vector3.down), 2)))
+        {
+            print("AI Falling");
+            movingObj.GetComponent<Rigidbody>().AddForce(new Vector3(0, movingObj.GetComponent<Rigidbody>().velocity.y - (gravity * Time.time), 0));
+        }
+
+
+        /* else if (!isjumping && !IsGrounded())
+        moveVec.y = tmpy - gravity * Time.deltaTime; */
 
         rb_Obj.velocity = speed * movingObj.transform.forward;
 
@@ -64,19 +84,5 @@ public class PatrolSystem : MoveAndAnchorSystem
         player = target;
     }
 
-    public override void Next()
-    {
-        timeReached = Time.time;
-        reachedTarget = true;
-        anchor[targetNumb].SetActive(false);
-        if (targetNumb == anchor.Length - 1)
-        {
-            targetNumb = 0;
-        }
-        else
-        {
-            targetNumb++;
-        }
-        anchor[targetNumb].SetActive(true);
-    }
+   
 }
