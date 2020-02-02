@@ -31,10 +31,16 @@ public class LevelManager : MonoBehaviour
 
     private void Start()
     {
-        Cinemachine.CinemachineBrain _cmBrain = GameObject.FindObjectOfType<Cinemachine.CinemachineBrain>();
-        CameraManager.Instance.UpdateCameraReferences(camera2D, cameraTransition, camera3D, _cmBrain.gameObject);
+        StartCoroutine(waitForReferences());
+    }
 
-
+    private IEnumerator waitForReferences()
+    {
+        while(camera2D == null && cameraTransition == null && camera3D == null)
+        {
+            yield return null;
+        }
+        CameraManager.Instance.UpdateCameraReferences(camera2D, cameraTransition, camera3D, GameObject.FindObjectOfType<Cinemachine.CinemachineBrain>().gameObject);
         if (lastCheckPoint == null)
         {
             lastCheckPoint = GameObject.FindObjectOfType<CheckPoint>().transform;
