@@ -53,6 +53,10 @@ public class Projectile : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
+        if (collision.gameObject == LevelManager.Instance.player.gameObject)
+        {
+            LevelManager.Instance.player.GetComponent<CharacterMovement>().Kill();
+        }
         Destroy();
     }
 

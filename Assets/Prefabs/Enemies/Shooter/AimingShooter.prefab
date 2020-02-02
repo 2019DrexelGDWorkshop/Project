@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7050631454562325964}
   - component: {fileID: 2150763650688773648}
   - component: {fileID: 751207608235083717}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: ShooterBody_SM
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -102,7 +102,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1489162799101281084}
   - component: {fileID: 4279037380123010557}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: 2D_Col
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -145,7 +145,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5193916959678424250}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BulletSpawnLocation
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -160,7 +160,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1766901454251076544}
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0.00000029802322, y: 1.0250002, z: 0}
+  m_LocalPosition: {x: 0.00000029802322, y: 1.346, z: -0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3007758662532500399}
@@ -177,7 +177,7 @@ GameObject:
   - component: {fileID: 3007758662532500399}
   - component: {fileID: 8137411503856884359}
   - component: {fileID: 3790337988002028137}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: ShooterBarrel_SM
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -256,7 +256,7 @@ GameObject:
   - component: {fileID: 1216940758055165911}
   - component: {fileID: 8597633804066669273}
   - component: {fileID: 3675184833719358441}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: AimingShooter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
