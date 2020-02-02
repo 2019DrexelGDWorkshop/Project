@@ -57,6 +57,11 @@ public abstract class Shooter_base : Enemy_base
         currState = ShooterState.WAITING;
     }
 
+    protected virtual void Start()
+    {
+        player = LevelManager.Instance.player;
+    }
+
     private void GenericSpawnBullet(Vector3 _travelDir, float _speed)
     {
         GameObject bullet = Instantiate(bulletPrefab, bulletSpawnLocation.position, Quaternion.identity, this.transform);
@@ -65,6 +70,8 @@ public abstract class Shooter_base : Enemy_base
         Projectile bulletProjectile = bullet.GetComponent<Projectile>();
         bulletProjectile.SetKillDistance(bulletDistance);
     }
+
+    
 
     private IEnumerator EngagePlayer()
     {

@@ -11,7 +11,11 @@ public class MoveAndAnchorSystem : MonoBehaviour
 
     public int speed;
 
+    public bool pingPong = false;
+
     protected bool reachedTarget = false;
+
+    protected bool endOfPathReached = false;
 
     protected float timeReached;
 
@@ -20,6 +24,8 @@ public class MoveAndAnchorSystem : MonoBehaviour
     protected float distance;
 
     protected Vector3 direction;
+
+
 
 
 
@@ -70,11 +76,34 @@ public class MoveAndAnchorSystem : MonoBehaviour
         anchor[targetNumb].SetActive(false);
         if (targetNumb == anchor.Length - 1)
         {
-            targetNumb = 0;
+            if (pingPong)
+            {
+                endOfPathReached = true;
+                targetNumb--;
+            }
+            else
+            {
+                targetNumb = 0;
+            }
+        }
+        else if(targetNumb == 0)
+        {
+            if (pingPong)
+            {
+                endOfPathReached = false;
+            }
+            targetNumb++;
         }
         else
         {
-            targetNumb++;
+            if (endOfPathReached)
+            {
+                targetNumb--;
+            }
+            else
+            {
+                targetNumb++;
+            }
         }
         anchor[targetNumb].SetActive(true);
     }
