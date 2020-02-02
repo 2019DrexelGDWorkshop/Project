@@ -154,7 +154,8 @@ MonoBehaviour:
   pingPong: 0
   edgeCheckSource: {fileID: 874641212287499572}
   player: {fileID: 0}
-  jumpForce: 0
+  jumpForce: 100
+  gravity: 10
 --- !u!1 &1773610075724549468
 GameObject:
   m_ObjectHideFlags: 0

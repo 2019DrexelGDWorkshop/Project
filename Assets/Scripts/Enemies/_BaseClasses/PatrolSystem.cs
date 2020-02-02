@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PatrolSystem : MoveAndAnchorSystem
 {
+    public bool canJump;
+
     public Transform edgeCheckSource;
 
     public GameObject player = null;
@@ -11,6 +13,10 @@ public class PatrolSystem : MoveAndAnchorSystem
     public int jumpForce;
 
     public int gravity;
+
+    protected float distToGround;
+
+    float jumpStart;
 
     protected override void Start()
     {
@@ -33,7 +39,6 @@ public class PatrolSystem : MoveAndAnchorSystem
         if (player)
         {
             Vector3 target = new Vector3(player.transform.position.x, movingObj.transform.position.y, player.transform.position.z);
-            
             movingObj.transform.LookAt(target, movingObj.transform.up);
         }
         else
@@ -42,25 +47,26 @@ public class PatrolSystem : MoveAndAnchorSystem
             movingObj.transform.LookAt(target, movingObj.transform.up);
         }
 
-        if( !(Physics.Raycast(edgeCheckSource.position, transform.TransformDirection(Vector3.down), 10)) && Physics.Raycast(movingObj.transform.position, transform.TransformDirection(Vector3.down)))
-        {
-            print("AI Jumping");
-            movingObj.GetComponent<Rigidbody>().AddForce(new Vector3(0, 10 * jumpForce, 0));
-        }
-
-        if ( !(Physics.Raycast(movingObj.transform.position, transform.TransformDirection(Vector3.down), 2)))
-        {
-            print("AI Falling");
-            movingObj.GetComponent<Rigidbody>().AddForce(new Vector3(0, movingObj.GetComponent<Rigidbody>().velocity.y - (gravity * Time.time), 0));
-        }
-
-
-        /* else if (!isjumping && !IsGrounded())
-        moveVec.y = tmpy - gravity * Time.deltaTime; */
-
         rb_Obj.velocity = speed * movingObj.transform.forward;
 
 
+        if( canJump && !(Physics.Raycast(edgeCheckSource.position, Vector3.down, 10)) && Physics.Raycast(movingObj.transform.position, Vector3.down, 1.5f))
+        {
+            jumpStart = Time.realtimeSinceStartup;
+            movingObj.GetComponent<Rigidbody>().AddForce(new Vector3(0, 10 * jumpForce, 0));
+            
+        }
+
+        if ( canJump && !(Physics.Raycast(movingObj.transform.position, Vector3.down, 1.5f)))
+        {
+            float timeDif = Time.realtimeSinceStartup - jumpStart;
+            //print(timeDif);
+            movingObj.GetComponent<Rigidbody>().AddForce(new Vector3(0,  -(gravity * timeDif ), 0));
+        }
+        else
+        {
+            movingObj.GetComponent<Rigidbody>().velocity = new Vector3(movingObj.GetComponent<Rigidbody>().velocity.x, -(gravity * 0.1f ), movingObj.GetComponent<Rigidbody>().velocity.z);
+        }
     }
 
     public override void CalcDistAndDir()
