@@ -40,6 +40,12 @@ public abstract class Shooter_base : Enemy_base
     [SerializeField, Tooltip("The state that the AI is in currently.")]
     protected ShooterState currState = ShooterState.WAITING;
 
+    [SerializeField, Tooltip("The body of the shooter.")]
+    protected GameObject shooterBody;
+
+    [SerializeField, Tooltip("The barrel of the shooter.")]
+    protected GameObject shooterBarrel;
+
     [SerializeField]
     private GameObject player;
 
