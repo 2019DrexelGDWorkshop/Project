@@ -6,6 +6,11 @@ public class Switcher2DMesh : MonoBehaviour
 {
     public GameObject MeshColliderIn2D;
 
+    private void Awake()
+    {
+        MeshColliderIn2D.SetActive(false);
+    }
+
     void Update()
     {
         if (CameraManager.Instance.cameraState == CameraState.SIDE_SCROLLER)

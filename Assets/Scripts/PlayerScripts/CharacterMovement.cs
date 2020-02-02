@@ -251,4 +251,9 @@ public class CharacterMovement : MonoBehaviour
         targetDirection = motion.x * right + motion.y * forward;
     }
 
+    public void Kill()
+    {
+        transform.position = LevelManager.Instance.lastCheckPoint.position;
+    }
+
 }
