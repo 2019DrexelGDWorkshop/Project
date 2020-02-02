@@ -61,6 +61,20 @@ public class PlayerInput : MonoBehaviour
         }
     }
 
+    private void FixedUpdate()
+    {
+        try { 
+            characterMovement.updateTargetDirection(cameraBrain.transform);
+
+            characterMovement.updateMontion();
+
+            UpdateCameraStateInput();
+        }catch (System.Exception e)
+        {
+            Debug.LogError("EXCEPTION THROWN:\n\n " + e);
+        }
+    }
+
     void UpdateMovementInput()
     {
         float tmpx = rewiredPlayer.GetAxis(RewiredConsts.Action.MoveRight);

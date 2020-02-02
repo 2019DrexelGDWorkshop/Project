@@ -14,7 +14,7 @@ public class PlatformMoving : MoveAndAnchorSystem
         rb_mPlat = movingObj.GetComponent<Rigidbody>();
     }
 
-    protected override void Update()
+    protected void FixedUpdate()
     {
         if(CameraManager.Instance.isTransitioning)
         {

@@ -4,31 +4,50 @@ using UnityEngine;
 
 public class MovingPlatformAttach : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    Rigidbody rb;
+    CharacterMovement charMove;
+    bool shouldAdd = false;
 
-    // Update is called once per frame
-    void Update()
+    private void Start()
     {
-        
+        rb = GetComponent<Rigidbody>();
     }
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Player")
         {
-            other.transform.SetParent(this.transform);
+            if (charMove == null)
+            {
+                charMove = other.gameObject.GetComponent<CharacterMovement>();
+            }
+            shouldAdd = true;
+            
+            //other.transform.SetParent(this.transform);
         }
     }
+
+
 
     private void OnTriggerExit(Collider other)
     {
         if (other.tag == "Player")
         {
-            other.transform.SetParent(null);
+            if (charMove == null)
+            {
+                charMove = other.gameObject.GetComponent<CharacterMovement>();
+            }
+            shouldAdd = false;
+            //other.gameObject.GetComponent<CharacterMovement>().externalForces -= this.GetComponent<Rigidbody>().velocity;
+            //other.transform.SetParent(null);
+        }
+    }
+
+    private void FixedUpdate()
+    {
+        if(shouldAdd)
+        {
+            charMove.externalForces += rb.velocity;
         }
     }
 }
