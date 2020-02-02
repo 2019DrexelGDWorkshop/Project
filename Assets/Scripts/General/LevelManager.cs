@@ -11,6 +11,8 @@ public class LevelManager : MonoBehaviour
     public GameObject camera3D;
     public Transform lastCheckPoint;
 
+    public GameObject player;
+
     public static LevelManager Instance;
 
     #endregion

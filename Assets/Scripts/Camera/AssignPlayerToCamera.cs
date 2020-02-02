@@ -4,7 +4,7 @@ using UnityEngine;
 using Cinemachine;
 
 [RequireComponent(typeof(CinemachineVirtualCameraBase))]
-public class AssignPlayer : MonoBehaviour
+public class AssignPlayerToCamera : MonoBehaviour
 {
     [SerializeField]
     private bool shouldFollow = true;

@@ -6,11 +6,12 @@ public class AimingShooter : Shooter_base
 {
     private Transform player;
 
-    protected override void CustomAwake()
+    protected override void Start()
     {
-        base.CustomAwake();
+        base.Start();
         player = GameObject.FindObjectOfType<PlayerInput>().transform;
     }
+        
     protected override void Aim(Vector3 _pos)
     {
         this.transform.LookAt(player);

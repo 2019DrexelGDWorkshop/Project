@@ -28,6 +28,8 @@ public class PatrolSystem : MoveAndAnchorSystem
         }
 
         anchor[targetNumb].SetActive(true);
+
+        player = LevelManager.Instance.player;
     }
 
     // Update is called once per frame
