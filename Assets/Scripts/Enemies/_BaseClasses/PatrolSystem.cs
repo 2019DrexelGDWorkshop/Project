@@ -18,6 +18,8 @@ public class PatrolSystem : MoveAndAnchorSystem
 
     float jumpStart;
 
+    private Vector3 startPos;
+
     protected override void Start()
     {
         movingObj.transform.position = anchor[0].transform.position;
@@ -29,7 +31,7 @@ public class PatrolSystem : MoveAndAnchorSystem
 
         anchor[targetNumb].SetActive(true);
 
-        //player = LevelManager.Instance.player;
+        startPos = movingObj.transform.position;
     }
 
     // Update is called once per frame
@@ -92,5 +94,11 @@ public class PatrolSystem : MoveAndAnchorSystem
         player = target;
     }
 
-   
+
+    public void Reset()
+    {
+        movingObj.transform.position = startPos;
+        player = null;
+    }
+
 }
