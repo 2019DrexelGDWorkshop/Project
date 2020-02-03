@@ -285,6 +285,11 @@ PrefabInstance:
       propertyPath: lastCheckPoint
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 4929246349709113310, guid: 8a9f565aaa9f1bc4a962855df6d5e545,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8a9f565aaa9f1bc4a962855df6d5e545, type: 3}
 --- !u!114 &385803206 stripped
@@ -310,21 +315,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EndOfLevel
-      objectReference: {fileID: 0}
-    - target: {fileID: 6495287343980355844, guid: 65cb2e0523497de44a9652c90150c3b8,
-        type: 3}
-      propertyPath: levelToLoad
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6495287343980355844, guid: 65cb2e0523497de44a9652c90150c3b8,
-        type: 3}
-      propertyPath: loadingScreen
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 6495287343980355844, guid: 65cb2e0523497de44a9652c90150c3b8,
-        type: 3}
-      propertyPath: slider
-      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 6495287344296965284, guid: 65cb2e0523497de44a9652c90150c3b8,
         type: 3}
@@ -396,6 +386,21 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 2.5682633
       objectReference: {fileID: 0}
+    - target: {fileID: 6495287343980355844, guid: 65cb2e0523497de44a9652c90150c3b8,
+        type: 3}
+      propertyPath: levelToLoad
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6495287343980355844, guid: 65cb2e0523497de44a9652c90150c3b8,
+        type: 3}
+      propertyPath: loadingScreen
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6495287343980355844, guid: 65cb2e0523497de44a9652c90150c3b8,
+        type: 3}
+      propertyPath: slider
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 65cb2e0523497de44a9652c90150c3b8, type: 3}
 --- !u!1 &1544438488
@@ -466,12 +471,6 @@ MonoBehaviour:
       _path: Assets/Scenes/GenericScenes/init.unity
     loadInEditor: 1
     loadMethod: 3
-  - scene:
-      editorAssetGUID: a4d2b1a760971154abb85181f73de293
-      name: UI
-      _path: Assets/Scenes/UI.unity
-    loadInEditor: 1
-    loadMethod: 1
   _thisScenePath: Assets/Scenes/ScienceLevels/Science1/Science1_MAIN.unity
 --- !u!4 &1544438490
 Transform:
@@ -501,6 +500,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _version: 2
   _crossSceneReferences:
+  - _sourceObject: {fileID: 385803206}
+    _sourceField: player
+    DEPRECATED_fromObject:
+      scene:
+        editorAssetGUID: 
+        name: 
+        _path: 
+      fullPath: 
+      componentName: 
+      componentIndex: 0
+      editorLocalId: 0
+      editorPrefabRelativePath: 
+      version: 0
+    _toObject:
+      scene:
+        editorAssetGUID: c181a30ec4221d54c9b5283dd42e48da
+        name: Player
+        _path: Assets/Scenes/GenericScenes/Player.unity
+      fullPath: /Player
+      componentName: 
+      componentIndex: 0
+      editorLocalId: 399324600
+      editorPrefabRelativePath: 
+      version: 1
+    _data:
+      data: []
   - _sourceObject: {fileID: 385803206}
     _sourceField: lastCheckPoint
     DEPRECATED_fromObject:

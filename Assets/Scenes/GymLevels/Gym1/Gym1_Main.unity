@@ -279,6 +279,32 @@ MonoBehaviour:
   _version: 2
   _crossSceneReferences:
   - _sourceObject: {fileID: 3666193239537746864}
+    _sourceField: player
+    DEPRECATED_fromObject:
+      scene:
+        editorAssetGUID: 
+        name: 
+        _path: 
+      fullPath: 
+      componentName: 
+      componentIndex: 0
+      editorLocalId: 0
+      editorPrefabRelativePath: 
+      version: 0
+    _toObject:
+      scene:
+        editorAssetGUID: c181a30ec4221d54c9b5283dd42e48da
+        name: Player
+        _path: Assets/Scenes/GenericScenes/Player.unity
+      fullPath: /Player
+      componentName: 
+      componentIndex: 0
+      editorLocalId: 399324600
+      editorPrefabRelativePath: 
+      version: 1
+    _data:
+      data: []
+  - _sourceObject: {fileID: 3666193239537746864}
     _sourceField: lastCheckPoint
     DEPRECATED_fromObject:
       scene:
@@ -539,6 +565,11 @@ PrefabInstance:
     - target: {fileID: 4929246349709113310, guid: 8a9f565aaa9f1bc4a962855df6d5e545,
         type: 3}
       propertyPath: lastCheckPoint
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4929246349709113310, guid: 8a9f565aaa9f1bc4a962855df6d5e545,
+        type: 3}
+      propertyPath: player
       value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
