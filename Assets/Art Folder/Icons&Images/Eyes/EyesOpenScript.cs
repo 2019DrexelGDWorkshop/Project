@@ -6,11 +6,8 @@ using UnityEngine.UI;
 public class EyesOpenScript : MonoBehaviour
 {
     Image eyeImage;
-    public Camera cam3D;
-    public GameObject spriteToHide;
     public Sprite eye1;
     public Sprite eye2;
-    public bool threedyORtwody;
 
 
     // Start is called before the first frame update
