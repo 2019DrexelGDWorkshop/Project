@@ -4,29 +4,19 @@ using UnityEngine;
 
 public class Patrol_basic : Enemy_base
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     protected override void OnTriggerEnter(Collider _col)
     {
-
     }
 
-    private void OnCollision(Collision collision)
+    private void OnCollisionEnter(Collision collision)
     {
-        print("collisionWith " + collision.collider.transform.name);
-        if (collision.collider.tag == "player")
+        Debug.Log("collisionWith " + collision.collider.transform.name);
+        if (collision.gameObject == LevelManager.Instance.player.gameObject)
         {
-            Destroy(this.gameObject, 5);
+            LevelManager.Instance.player.GetComponent<CharacterMovement>().Kill();
+            this.transform.parent.GetComponent<PatrolSystem>().Reset();
+            //Destroy(this.gameObject, 5);
         }
     }
 }

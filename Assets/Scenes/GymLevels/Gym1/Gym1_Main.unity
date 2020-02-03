@@ -112,90 +112,75 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1001 &486872105
+--- !u!1001 &1387211810
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2074812516539522897, guid: 321cccd10f652124c9bfe5eb7fef451a,
+    - target: {fileID: 1829682049795976932, guid: 78bf87db11d482f49acecf2b3be4e738,
         type: 3}
       propertyPath: m_Name
-      value: pen1
+      value: Audio
       objectReference: {fileID: 0}
-    - target: {fileID: 2074812516539089777, guid: 321cccd10f652124c9bfe5eb7fef451a,
+    - target: {fileID: 8829157925510464945, guid: 78bf87db11d482f49acecf2b3be4e738,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 7.511999
+      value: -1.974741
       objectReference: {fileID: 0}
-    - target: {fileID: 2074812516539089777, guid: 321cccd10f652124c9bfe5eb7fef451a,
+    - target: {fileID: 8829157925510464945, guid: 78bf87db11d482f49acecf2b3be4e738,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 7.7580004
+      value: 3.2125082
       objectReference: {fileID: 0}
-    - target: {fileID: 2074812516539089777, guid: 321cccd10f652124c9bfe5eb7fef451a,
+    - target: {fileID: 8829157925510464945, guid: 78bf87db11d482f49acecf2b3be4e738,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 159.7
+      value: 2.0116146
       objectReference: {fileID: 0}
-    - target: {fileID: 2074812516539089777, guid: 321cccd10f652124c9bfe5eb7fef451a,
+    - target: {fileID: 8829157925510464945, guid: 78bf87db11d482f49acecf2b3be4e738,
         type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2074812516539089777, guid: 321cccd10f652124c9bfe5eb7fef451a,
+    - target: {fileID: 8829157925510464945, guid: 78bf87db11d482f49acecf2b3be4e738,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2074812516539089777, guid: 321cccd10f652124c9bfe5eb7fef451a,
+    - target: {fileID: 8829157925510464945, guid: 78bf87db11d482f49acecf2b3be4e738,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2074812516539089777, guid: 321cccd10f652124c9bfe5eb7fef451a,
+    - target: {fileID: 8829157925510464945, guid: 78bf87db11d482f49acecf2b3be4e738,
         type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 2074812516539089777, guid: 321cccd10f652124c9bfe5eb7fef451a,
+    - target: {fileID: 8829157925510464945, guid: 78bf87db11d482f49acecf2b3be4e738,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 2074812516539089777, guid: 321cccd10f652124c9bfe5eb7fef451a,
+    - target: {fileID: 8829157925510464945, guid: 78bf87db11d482f49acecf2b3be4e738,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2074812516539089777, guid: 321cccd10f652124c9bfe5eb7fef451a,
+    - target: {fileID: 8829157925510464945, guid: 78bf87db11d482f49acecf2b3be4e738,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2074812516539089777, guid: 321cccd10f652124c9bfe5eb7fef451a,
+    - target: {fileID: 8829157925510464945, guid: 78bf87db11d482f49acecf2b3be4e738,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2074812516539089777, guid: 321cccd10f652124c9bfe5eb7fef451a,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 23.347145
-      objectReference: {fileID: 0}
-    - target: {fileID: 2074812516539089777, guid: 321cccd10f652124c9bfe5eb7fef451a,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 23.347145
-      objectReference: {fileID: 0}
-    - target: {fileID: 2074812516539089777, guid: 321cccd10f652124c9bfe5eb7fef451a,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 23.347145
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 321cccd10f652124c9bfe5eb7fef451a, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: 78bf87db11d482f49acecf2b3be4e738, type: 3}
 --- !u!1 &1515355060
 GameObject:
   m_ObjectHideFlags: 0
@@ -249,13 +234,19 @@ MonoBehaviour:
   - scene:
       editorAssetGUID: c181a30ec4221d54c9b5283dd42e48da
       name: Player
-      _path: Assets/Scenes/Player.unity
+      _path: Assets/Scenes/GenericScenes/Player.unity
+    loadInEditor: 1
+    loadMethod: 1
+  - scene:
+      editorAssetGUID: a4d2b1a760971154abb85181f73de293
+      name: UI
+      _path: Assets/Scenes/GenericScenes/UI.unity
     loadInEditor: 1
     loadMethod: 1
   - scene:
       editorAssetGUID: f1d243fce358bdb45b0d1272cd898976
       name: init
-      _path: Assets/Scenes/init.unity
+      _path: Assets/Scenes/GenericScenes/init.unity
     loadInEditor: 1
     loadMethod: 3
   _thisScenePath: Assets/Scenes/GymLevels/Gym1/Gym1_Main.unity
@@ -305,7 +296,7 @@ MonoBehaviour:
         editorAssetGUID: 7640c056bb0a31447bf32326c533398e
         name: Gym1_Environment
         _path: Assets/Scenes/GymLevels/Gym1/Gym1_Environment.unity
-      fullPath: /Checkpoint
+      fullPath: /Environment/Checkpoint
       componentName: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
       componentIndex: 0
@@ -331,7 +322,7 @@ MonoBehaviour:
       scene:
         editorAssetGUID: c181a30ec4221d54c9b5283dd42e48da
         name: Player
-        _path: Assets/Scenes/Player.unity
+        _path: Assets/Scenes/GenericScenes/Player.unity
       fullPath: /Cameras/3rdPersonCamera
       componentName: 
       componentIndex: 0
@@ -357,7 +348,7 @@ MonoBehaviour:
       scene:
         editorAssetGUID: c181a30ec4221d54c9b5283dd42e48da
         name: Player
-        _path: Assets/Scenes/Player.unity
+        _path: Assets/Scenes/GenericScenes/Player.unity
       fullPath: /Cameras/CameraTransition
       componentName: 
       componentIndex: 0
@@ -383,7 +374,7 @@ MonoBehaviour:
       scene:
         editorAssetGUID: c181a30ec4221d54c9b5283dd42e48da
         name: Player
-        _path: Assets/Scenes/Player.unity
+        _path: Assets/Scenes/GenericScenes/Player.unity
       fullPath: /Cameras/2DCameraSideScrollCam
       componentName: 
       componentIndex: 0
