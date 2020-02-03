@@ -237,6 +237,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: EndOfLevel
       objectReference: {fileID: 0}
+    - target: {fileID: 6495287343980355844, guid: 65cb2e0523497de44a9652c90150c3b8,
+        type: 3}
+      propertyPath: levelToLoad
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6495287343980355844, guid: 65cb2e0523497de44a9652c90150c3b8,
+        type: 3}
+      propertyPath: loadingScreen
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6495287343980355844, guid: 65cb2e0523497de44a9652c90150c3b8,
+        type: 3}
+      propertyPath: slider
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 6495287344296965284, guid: 65cb2e0523497de44a9652c90150c3b8,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -307,21 +322,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 2.5682633
       objectReference: {fileID: 0}
-    - target: {fileID: 6495287343980355844, guid: 65cb2e0523497de44a9652c90150c3b8,
-        type: 3}
-      propertyPath: levelToLoad
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6495287343980355844, guid: 65cb2e0523497de44a9652c90150c3b8,
-        type: 3}
-      propertyPath: loadingScreen
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 6495287343980355844, guid: 65cb2e0523497de44a9652c90150c3b8,
-        type: 3}
-      propertyPath: slider
-      value: 
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 65cb2e0523497de44a9652c90150c3b8, type: 3}
 --- !u!1 &1544438488
@@ -381,17 +381,17 @@ MonoBehaviour:
     loadInEditor: 1
     loadMethod: 0
   - scene:
-      editorAssetGUID: a4d2b1a760971154abb85181f73de293
-      name: UI
-      _path: Assets/Scenes/UI.unity
-    loadInEditor: 1
-    loadMethod: 1
-  - scene:
       editorAssetGUID: f1d243fce358bdb45b0d1272cd898976
       name: init
       _path: Assets/Scenes/init.unity
     loadInEditor: 1
     loadMethod: 3
+  - scene:
+      editorAssetGUID: a4d2b1a760971154abb85181f73de293
+      name: UI
+      _path: Assets/Scenes/UI.unity
+    loadInEditor: 1
+    loadMethod: 1
   _thisScenePath: Assets/Scenes/ScienceLevels/Science1/Science1_MAIN.unity
 --- !u!4 &1544438490
 Transform:

@@ -223,6 +223,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: ForwardShooter (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5880779108660395897, guid: 584aab4025551704e81ad46179c62da7,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 8953797126118468001, guid: 584aab4025551704e81ad46179c62da7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -283,11 +288,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.62498987
       objectReference: {fileID: 0}
-    - target: {fileID: 5880779108660395897, guid: 584aab4025551704e81ad46179c62da7,
-        type: 3}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 6929319734113924944, guid: 584aab4025551704e81ad46179c62da7,
         type: 3}
       propertyPath: m_Radius
@@ -330,6 +330,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: ForwardShooter (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5880779108660395897, guid: 584aab4025551704e81ad46179c62da7,
+        type: 3}
+      propertyPath: player
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 8953797126118468001, guid: 584aab4025551704e81ad46179c62da7,
         type: 3}
@@ -390,11 +395,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 0.62499
-      objectReference: {fileID: 0}
-    - target: {fileID: 5880779108660395897, guid: 584aab4025551704e81ad46179c62da7,
-        type: 3}
-      propertyPath: player
-      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 6929319734113924944, guid: 584aab4025551704e81ad46179c62da7,
         type: 3}
@@ -653,6 +653,11 @@ PrefabInstance:
       propertyPath: anchor.Array.data[3]
       value: 
       objectReference: {fileID: 746523549}
+    - target: {fileID: 1199314614944467785, guid: 823ccbe8ae311d549a7df7d8b3ca050a,
+        type: 3}
+      propertyPath: jumpForce
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1886623912710763952, guid: 823ccbe8ae311d549a7df7d8b3ca050a,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -865,6 +870,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: ForwardShooter (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 5880779108660395897, guid: 584aab4025551704e81ad46179c62da7,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 8953797126118468001, guid: 584aab4025551704e81ad46179c62da7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -935,11 +945,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.66
       objectReference: {fileID: 0}
-    - target: {fileID: 5880779108660395897, guid: 584aab4025551704e81ad46179c62da7,
-        type: 3}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 6929319734113924944, guid: 584aab4025551704e81ad46179c62da7,
         type: 3}
       propertyPath: m_Radius
@@ -959,18 +964,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 599077950}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1458471239 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1199314614944467785, guid: 823ccbe8ae311d549a7df7d8b3ca050a,
-    type: 3}
-  m_PrefabInstance: {fileID: 599077950}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 355e61bb0146d5247bde1e49156a7782, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1481772068 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5880779108660395897, guid: 584aab4025551704e81ad46179c62da7,
@@ -1113,7 +1106,59 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _version: 2
   _crossSceneReferences:
+  - _sourceObject: {fileID: 1481772068}
+    _sourceField: player
+    DEPRECATED_fromObject:
+      scene:
+        editorAssetGUID: 
+        name: 
+        _path: 
+      fullPath: 
+      componentName: 
+      componentIndex: 0
+      editorLocalId: 0
+      editorPrefabRelativePath: 
+      version: 0
+    _toObject:
+      scene:
+        editorAssetGUID: c181a30ec4221d54c9b5283dd42e48da
+        name: Player
+        _path: Assets/Scenes/Player.unity
+      fullPath: /Player
+      componentName: 
+      componentIndex: 0
+      editorLocalId: 399324600
+      editorPrefabRelativePath: 
+      version: 1
+    _data:
+      data: []
   - _sourceObject: {fileID: 653042541}
+    _sourceField: player
+    DEPRECATED_fromObject:
+      scene:
+        editorAssetGUID: 
+        name: 
+        _path: 
+      fullPath: 
+      componentName: 
+      componentIndex: 0
+      editorLocalId: 0
+      editorPrefabRelativePath: 
+      version: 0
+    _toObject:
+      scene:
+        editorAssetGUID: c181a30ec4221d54c9b5283dd42e48da
+        name: Player
+        _path: Assets/Scenes/Player.unity
+      fullPath: /Player
+      componentName: 
+      componentIndex: 0
+      editorLocalId: 399324600
+      editorPrefabRelativePath: 
+      version: 1
+    _data:
+      data: []
+  - _sourceObject: {fileID: 381941921}
     _sourceField: player
     DEPRECATED_fromObject:
       scene:
@@ -1166,84 +1211,6 @@ MonoBehaviour:
     _data:
       data: []
   - _sourceObject: {fileID: 289605643}
-    _sourceField: player
-    DEPRECATED_fromObject:
-      scene:
-        editorAssetGUID: 
-        name: 
-        _path: 
-      fullPath: 
-      componentName: 
-      componentIndex: 0
-      editorLocalId: 0
-      editorPrefabRelativePath: 
-      version: 0
-    _toObject:
-      scene:
-        editorAssetGUID: c181a30ec4221d54c9b5283dd42e48da
-        name: Player
-        _path: Assets/Scenes/Player.unity
-      fullPath: /Player
-      componentName: 
-      componentIndex: 0
-      editorLocalId: 399324600
-      editorPrefabRelativePath: 
-      version: 1
-    _data:
-      data: []
-  - _sourceObject: {fileID: 1481772068}
-    _sourceField: player
-    DEPRECATED_fromObject:
-      scene:
-        editorAssetGUID: 
-        name: 
-        _path: 
-      fullPath: 
-      componentName: 
-      componentIndex: 0
-      editorLocalId: 0
-      editorPrefabRelativePath: 
-      version: 0
-    _toObject:
-      scene:
-        editorAssetGUID: c181a30ec4221d54c9b5283dd42e48da
-        name: Player
-        _path: Assets/Scenes/Player.unity
-      fullPath: /Player
-      componentName: 
-      componentIndex: 0
-      editorLocalId: 399324600
-      editorPrefabRelativePath: 
-      version: 1
-    _data:
-      data: []
-  - _sourceObject: {fileID: 381941921}
-    _sourceField: player
-    DEPRECATED_fromObject:
-      scene:
-        editorAssetGUID: 
-        name: 
-        _path: 
-      fullPath: 
-      componentName: 
-      componentIndex: 0
-      editorLocalId: 0
-      editorPrefabRelativePath: 
-      version: 0
-    _toObject:
-      scene:
-        editorAssetGUID: c181a30ec4221d54c9b5283dd42e48da
-        name: Player
-        _path: Assets/Scenes/Player.unity
-      fullPath: /Player
-      componentName: 
-      componentIndex: 0
-      editorLocalId: 399324600
-      editorPrefabRelativePath: 
-      version: 1
-    _data:
-      data: []
-  - _sourceObject: {fileID: 1458471239}
     _sourceField: player
     DEPRECATED_fromObject:
       scene:
@@ -1526,6 +1493,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: ForwardShooter (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 5880779108660395897, guid: 584aab4025551704e81ad46179c62da7,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 8953797126118468001, guid: 584aab4025551704e81ad46179c62da7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1596,11 +1568,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.66
       objectReference: {fileID: 0}
-    - target: {fileID: 5880779108660395897, guid: 584aab4025551704e81ad46179c62da7,
-        type: 3}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 6929319734113924944, guid: 584aab4025551704e81ad46179c62da7,
         type: 3}
       propertyPath: m_Radius
@@ -1625,6 +1592,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: ForwardShooter
+      objectReference: {fileID: 0}
+    - target: {fileID: 5880779108660395897, guid: 584aab4025551704e81ad46179c62da7,
+        type: 3}
+      propertyPath: player
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 8953797126118468001, guid: 584aab4025551704e81ad46179c62da7,
         type: 3}
@@ -1685,11 +1657,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 0.62499
-      objectReference: {fileID: 0}
-    - target: {fileID: 5880779108660395897, guid: 584aab4025551704e81ad46179c62da7,
-        type: 3}
-      propertyPath: player
-      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 6929319734113924944, guid: 584aab4025551704e81ad46179c62da7,
         type: 3}
