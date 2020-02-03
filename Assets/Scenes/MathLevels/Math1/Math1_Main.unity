@@ -349,7 +349,7 @@ MonoBehaviour:
       name: init
       _path: Assets/Scenes/GenericScenes/init.unity
     loadInEditor: 1
-    loadMethod: 1
+    loadMethod: 3
   _thisScenePath: Assets/Scenes/MathLevels/Math1/Math1_Main.unity
 --- !u!4 &2094253139
 Transform:
