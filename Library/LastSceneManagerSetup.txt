@@ -1,22 +1,7 @@
 sceneSetups:
-- path: Assets/Scenes/MathLevels/Math1/Math1_Main.unity
+- path: Assets/Scenes/GenericScenes/MenuScene.unity
   isLoaded: 1
   isActive: 1
-- path: Assets/Scenes/MathLevels/Math1/Math1_Lighting.unity
-  isLoaded: 1
-  isActive: 0
-- path: Assets/Scenes/MathLevels/Math1/Math1_Environment.unity
-  isLoaded: 1
-  isActive: 0
-- path: Assets/Scenes/MathLevels/Math1/Math1_Platforms.unity
-  isLoaded: 1
-  isActive: 0
-- path: Assets/Scenes/GenericScenes/Player.unity
-  isLoaded: 1
-  isActive: 0
-- path: Assets/Scenes/GenericScenes/UI.unity
-  isLoaded: 1
-  isActive: 0
 - path: Assets/Scenes/GenericScenes/init.unity
   isLoaded: 1
   isActive: 0
