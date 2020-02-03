@@ -11,7 +11,7 @@ public class Patrol_basic : Enemy_base
 
     private void OnCollisionEnter(Collision collision)
     {
-        Debug.Log("collisionWith " + collision.collider.transform.name);
+        //Debug.Log("collisionWith " + collision.collider.transform.name);
         if (collision.gameObject == LevelManager.Instance.player.gameObject)
         {
             LevelManager.Instance.player.GetComponent<CharacterMovement>().Kill();
