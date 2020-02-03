@@ -460,12 +460,6 @@ MonoBehaviour:
     loadInEditor: 1
     loadMethod: 0
   - scene:
-      editorAssetGUID: f1d243fce358bdb45b0d1272cd898976
-      name: init
-      _path: Assets/Scenes/GenericScenes/init.unity
-    loadInEditor: 1
-    loadMethod: 3
-  - scene:
       editorAssetGUID: a4d2b1a760971154abb85181f73de293
       name: UI
       _path: Assets/Scenes/GenericScenes/UI.unity
