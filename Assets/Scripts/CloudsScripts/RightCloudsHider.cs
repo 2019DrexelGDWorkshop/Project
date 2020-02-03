@@ -17,6 +17,10 @@ public class RightCloudsHider : MonoBehaviour
         {
             rend.enabled = false;
         }
+        else if(CameraManager.Instance.cameraState == CameraState.TRANSITION)
+        {
+            StartCoroutine(WaitThenOff());
+        }
         else
         {
             StartCoroutine(ExampleCoroutine());
@@ -27,5 +31,11 @@ public class RightCloudsHider : MonoBehaviour
     {
         yield return new WaitForSeconds(.5f);
         rend.enabled = true;
+    }
+
+    IEnumerator WaitThenOff()
+    {
+        yield return new WaitForSeconds(.5f);
+        rend.enabled = false;
     }
 }

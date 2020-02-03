@@ -6,23 +6,14 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/init.unity
+    path: Assets/Scenes/GenericScenes/init.unity
     guid: f1d243fce358bdb45b0d1272cd898976
   - enabled: 1
-    path: Assets/Scenes/MenuScene.unity
+    path: Assets/Scenes/GenericScenes/MenuScene.unity
     guid: 053741b2615d42f4fb8a98cb00d19c21
   - enabled: 1
-    path: Assets/Scenes/GenericScenes/General_Dream_1.unity
+    path: Assets/Scenes/Dream/Dream1/General_Dream_1.unity
     guid: 7f661ee913f12fa479763140803dcc47
-  - enabled: 1
-    path: Assets/Scenes/GenericScenes/General_Dream_2.unity
-    guid: 300f7905984a16442b4dba14f5807526
-  - enabled: 1
-    path: Assets/Scenes/GenericScenes/General_Dream_3.unity
-    guid: c8f465fab1a85484a815e589772bf841
-  - enabled: 1
-    path: Assets/Scenes/GenericScenes/General_Dream_4.unity
-    guid: c190fd9b8db04c546b594518735139f7
   - enabled: 1
     path: Assets/Scenes/ScienceLevels/Science1/Science1_MAIN.unity
     guid: a86291a0dc1925f4e97462797132343c
@@ -33,9 +24,9 @@ EditorBuildSettings:
     path: Assets/Scenes/MathLevels/Math1/Math1_Main.unity
     guid: 9e2ea6c99568c4d49a28369c0f87ee5a
   - enabled: 1
-    path: Assets/Scenes/Player.unity
+    path: Assets/Scenes/GenericScenes/Player.unity
     guid: c181a30ec4221d54c9b5283dd42e48da
   - enabled: 1
-    path: Assets/Scenes/UI.unity
+    path: Assets/Scenes/GenericScenes/UI.unity
     guid: a4d2b1a760971154abb85181f73de293
   m_configObjects: {}
