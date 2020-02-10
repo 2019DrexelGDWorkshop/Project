@@ -11,6 +11,8 @@ TagManager:
   - PauseMenu
   - Settings
   - Pause
+  - Ab_Bead
+  - Ab_Edge
   layers:
   - Default
   - TransparentFX
@@ -25,8 +27,8 @@ TagManager:
   - Platform
   - Vision
   - Anchor
-  - 
-  - 
+  - Ab_Pole
+  - BeadPoints
   - 
   - 
   - 
