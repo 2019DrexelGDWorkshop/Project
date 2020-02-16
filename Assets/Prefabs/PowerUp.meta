@@ -1,10 +1,8 @@
 fileFormatVersion: 2
-<<<<<<< Updated upstream:Assets/Standard Assets/Effects/Projectors.meta
-guid: ab90c5d984b4d4e9e935ae8760fd47ef
-=======
 guid: 50d0351d9e76a984a81212a99d8ee009
->>>>>>> Stashed changes:Assets/Prefabs/PowerUp.meta
 folderAsset: yes
 DefaultImporter:
+  externalObjects: {}
   userData: 
   assetBundleName: 
+  assetBundleVariant: 
