@@ -1,20 +1,7 @@
 sceneSetups:
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
 - path: Assets/Scenes/JetPack.unity
   isLoaded: 1
   isActive: 1
 - path: Assets/Scenes/init.unity
-=======
-- path: Assets/Scenes/Testing/JetPack.unity
-  isLoaded: 1
-  isActive: 1
-=======
-- path: Assets/Scenes/Testing/JetPack.unity
-  isLoaded: 1
-  isActive: 1
->>>>>>> Stashed changes
-- path: Assets/Scenes/GenericScenes/init.unity
->>>>>>> Stashed changes
   isLoaded: 1
   isActive: 0
