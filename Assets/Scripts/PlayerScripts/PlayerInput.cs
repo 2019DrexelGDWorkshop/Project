@@ -45,6 +45,7 @@ public class PlayerInput : MonoBehaviour
             {
                 UpdateJumpInput();
                 UpdateMovementInput();
+                UpdateCameraStateInput();
             }
             catch(System.Exception e)
             {
@@ -60,7 +61,6 @@ public class PlayerInput : MonoBehaviour
 
             characterMovement.updateMontion();
 
-            UpdateCameraStateInput();
         }catch (System.Exception e)
         {
             Debug.LogError("EXCEPTION THROWN:\n\n " + e);
@@ -91,7 +91,7 @@ public class PlayerInput : MonoBehaviour
     
     void UpdateCameraStateInput()
     {
-        if (rewiredPlayer.GetButtonDown(RewiredConsts.Action.PerspectiveSwitch))
+        if (rewiredPlayer.GetButtonDown(RewiredConsts.Action.PerspectiveSwitch) && (CameraManager.Instance.cameraState == CameraState.SIDE_SCROLLER || CameraManager.Instance.cameraState == CameraState.THIRD_PERSON))
         {
             CameraManager.Instance.Toggle3D2D();
         }
