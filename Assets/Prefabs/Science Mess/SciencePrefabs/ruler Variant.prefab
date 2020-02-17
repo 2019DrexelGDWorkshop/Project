@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 817215031973230282}
-  - component: {fileID: 8406114884555236084}
+  - component: {fileID: 1924214451234298878}
   m_Layer: 0
   m_Name: 2DCol
   m_TagString: Untagged
@@ -31,8 +31,8 @@ Transform:
   m_Father: {fileID: 7769143850870808670}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!64 &8406114884555236084
-MeshCollider:
+--- !u!65 &1924214451234298878
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -41,10 +41,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_Mesh: {fileID: 4300000, guid: 058a3fb4b618701438c3ecea63472af0, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 603, y: 6.08, z: 12.98}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &6727984422261814982
 GameObject:
   m_ObjectHideFlags: 0
@@ -54,7 +53,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6965307026157869921}
-  - component: {fileID: 867631333080974744}
+  - component: {fileID: 1080157844749523813}
   m_Layer: 0
   m_Name: 3DCol
   m_TagString: Untagged
@@ -70,14 +69,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6727984422261814982}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0, y: 0.462, z: 0.071}
+  m_LocalPosition: {x: -0, y: 0.4572, z: 0.071}
   m_LocalScale: {x: 0.01, y: 0.01, z: 0.01}
   m_Children: []
   m_Father: {fileID: 7769143850870808670}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!64 &867631333080974744
-MeshCollider:
+--- !u!65 &1080157844749523813
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -86,10 +85,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_Mesh: {fileID: 4300000, guid: 058a3fb4b618701438c3ecea63472af0, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 603, y: 6.08, z: 99.7}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &7769143850871208664
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -99,7 +97,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100006, guid: 058a3fb4b618701438c3ecea63472af0, type: 3}
       propertyPath: m_Name
-      value: ruler
+      value: ruler Variant
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: 058a3fb4b618701438c3ecea63472af0, type: 3}
       propertyPath: m_LocalPosition.x
