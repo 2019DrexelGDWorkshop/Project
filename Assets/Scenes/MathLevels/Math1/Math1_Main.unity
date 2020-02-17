@@ -315,12 +315,6 @@ MonoBehaviour:
   _isMainScene: 1
   _sceneSetup:
   - scene:
-      editorAssetGUID: e11a3fcc0e58d554995096130820b1e3
-      name: Math1_Lighting
-      _path: Assets/Scenes/MathLevels/Math1/Math1_Lighting.unity
-    loadInEditor: 1
-    loadMethod: 0
-  - scene:
       editorAssetGUID: 0d854499693549544a35eb9bbce75ba2
       name: Math1_Environment
       _path: Assets/Scenes/MathLevels/Math1/Math1_Environment.unity
@@ -338,6 +332,12 @@ MonoBehaviour:
       _path: Assets/Scenes/GenericScenes/Player.unity
     loadInEditor: 1
     loadMethod: 1
+  - scene:
+      editorAssetGUID: e11a3fcc0e58d554995096130820b1e3
+      name: Math1_Lighting
+      _path: Assets/Scenes/MathLevels/Math1/Math1_Lighting.unity
+    loadInEditor: 1
+    loadMethod: 0
   - scene:
       editorAssetGUID: a4d2b1a760971154abb85181f73de293
       name: UI
