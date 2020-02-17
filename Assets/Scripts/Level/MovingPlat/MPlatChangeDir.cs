@@ -8,7 +8,6 @@ public class MPlatChangeDir : MonoBehaviour
     {
         if(other.tag =="obj_anchor")
         {
-            print("Triggered");
             this.transform.parent.GetComponent<PlatformMoving>().Next();
         }
     }

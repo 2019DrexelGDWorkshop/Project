@@ -47,11 +47,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: 2DCameraSideScrollCam
       objectReference: {fileID: 0}
-    - target: {fileID: 5342912791539508212, guid: f4637f9f8408e264287c06973b9b0c25,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 5342912791539508209, guid: f4637f9f8408e264287c06973b9b0c25,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -106,11 +101,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5342912791539508210, guid: f4637f9f8408e264287c06973b9b0c25,
-        type: 3}
-      propertyPath: m_Priority
-      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f4637f9f8408e264287c06973b9b0c25, type: 3}
@@ -266,6 +256,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: DepthCamera
+      objectReference: {fileID: 0}
+    - target: {fileID: 1072787158289031657, guid: b9c5c400234f06b4eb294798e516e0c8,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1072787158289031658, guid: b9c5c400234f06b4eb294798e516e0c8,
         type: 3}
@@ -427,45 +422,40 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5636621571728747137}
     m_Modifications:
-    - target: {fileID: 3927407779643011225, guid: f29853d3971b7a342bcc826bdf008f0d,
-        type: 3}
-      propertyPath: m_Name
-      value: CameraBrain
-      objectReference: {fileID: 0}
     - target: {fileID: 3927407779643011207, guid: f29853d3971b7a342bcc826bdf008f0d,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 499.18616
       objectReference: {fileID: 0}
     - target: {fileID: 3927407779643011207, guid: f29853d3971b7a342bcc826bdf008f0d,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.5
+      value: 5.86
       objectReference: {fileID: 0}
     - target: {fileID: 3927407779643011207, guid: f29853d3971b7a342bcc826bdf008f0d,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -6
+      value: 0.36995658
       objectReference: {fileID: 0}
     - target: {fileID: 3927407779643011207, guid: f29853d3971b7a342bcc826bdf008f0d,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.16776298
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3927407779643011207, guid: f29853d3971b7a342bcc826bdf008f0d,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.00000008573522
+      value: -0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 3927407779643011207, guid: f29853d3971b7a342bcc826bdf008f0d,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.000000014589973
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3927407779643011207, guid: f29853d3971b7a342bcc826bdf008f0d,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.9858274
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 3927407779643011207, guid: f29853d3971b7a342bcc826bdf008f0d,
         type: 3}
@@ -486,6 +476,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3927407779643011225, guid: f29853d3971b7a342bcc826bdf008f0d,
+        type: 3}
+      propertyPath: m_Name
+      value: CameraBrain
+      objectReference: {fileID: 0}
+    - target: {fileID: 3927407779643011206, guid: f29853d3971b7a342bcc826bdf008f0d,
+        type: 3}
+      propertyPath: field of view
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f29853d3971b7a342bcc826bdf008f0d, type: 3}

@@ -119,11 +119,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 547887583547140697, guid: 584aab4025551704e81ad46179c62da7,
-        type: 3}
-      propertyPath: m_Name
-      value: ForwardShooter
-      objectReference: {fileID: 0}
     - target: {fileID: 8953797126118468001, guid: 584aab4025551704e81ad46179c62da7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -178,6 +173,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 547887583547140697, guid: 584aab4025551704e81ad46179c62da7,
+        type: 3}
+      propertyPath: m_Name
+      value: ForwardShooter
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 584aab4025551704e81ad46179c62da7, type: 3}
@@ -354,16 +354,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 276898982527627740, guid: 823ccbe8ae311d549a7df7d8b3ca050a,
-        type: 3}
-      propertyPath: m_Name
-      value: PatrolEnemySystem
-      objectReference: {fileID: 0}
-    - target: {fileID: 276898982527627740, guid: 823ccbe8ae311d549a7df7d8b3ca050a,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 276898982527627743, guid: 823ccbe8ae311d549a7df7d8b3ca050a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -418,6 +408,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 276898982527627740, guid: 823ccbe8ae311d549a7df7d8b3ca050a,
+        type: 3}
+      propertyPath: m_Name
+      value: PatrolEnemySystem
+      objectReference: {fileID: 0}
+    - target: {fileID: 276898982527627740, guid: 823ccbe8ae311d549a7df7d8b3ca050a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 823ccbe8ae311d549a7df7d8b3ca050a, type: 3}
@@ -1161,7 +1161,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1123555542}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.18, y: -1.0499997, z: -46.5}
+  m_LocalPosition: {x: 0.18, y: -0.42, z: -46.5}
   m_LocalScale: {x: 3.9225059, y: 1.5387598, z: 3.9225059}
   m_Children: []
   m_Father: {fileID: 136580869}
@@ -1829,16 +1829,16 @@ MonoBehaviour:
   - scene:
       editorAssetGUID: f1d243fce358bdb45b0d1272cd898976
       name: init
-      _path: Assets/Scenes/init.unity
+      _path: Assets/Scenes/GenericScenes/init.unity
     loadInEditor: 1
     loadMethod: 3
   - scene:
       editorAssetGUID: c181a30ec4221d54c9b5283dd42e48da
       name: Player
-      _path: Assets/Scenes/Player.unity
+      _path: Assets/Scenes/GenericScenes/Player.unity
     loadInEditor: 1
     loadMethod: 1
-  _thisScenePath: Assets/Scenes/EmptyForPrototyping.unity
+  _thisScenePath: Assets/Scenes/Testing/EmptyForPrototyping.unity
 --- !u!4 &1886358083
 Transform:
   m_ObjectHideFlags: 0
@@ -1884,7 +1884,7 @@ MonoBehaviour:
       scene:
         editorAssetGUID: c181a30ec4221d54c9b5283dd42e48da
         name: Player
-        _path: Assets/Scenes/Player.unity
+        _path: Assets/Scenes/GenericScenes/Player.unity
       fullPath: /Player
       componentName: 
       componentIndex: 0
@@ -1910,7 +1910,7 @@ MonoBehaviour:
       scene:
         editorAssetGUID: c181a30ec4221d54c9b5283dd42e48da
         name: Player
-        _path: Assets/Scenes/Player.unity
+        _path: Assets/Scenes/GenericScenes/Player.unity
       fullPath: /Cameras/3rdPersonCamera
       componentName: 
       componentIndex: 0
@@ -1936,7 +1936,7 @@ MonoBehaviour:
       scene:
         editorAssetGUID: c181a30ec4221d54c9b5283dd42e48da
         name: Player
-        _path: Assets/Scenes/Player.unity
+        _path: Assets/Scenes/GenericScenes/Player.unity
       fullPath: /Cameras/CameraTransition
       componentName: 
       componentIndex: 0
@@ -1962,7 +1962,7 @@ MonoBehaviour:
       scene:
         editorAssetGUID: c181a30ec4221d54c9b5283dd42e48da
         name: Player
-        _path: Assets/Scenes/Player.unity
+        _path: Assets/Scenes/GenericScenes/Player.unity
       fullPath: /Cameras/2DCameraSideScrollCam
       componentName: 
       componentIndex: 0
@@ -2171,11 +2171,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2079271910259687744, guid: 5a741ba63fc804147b531b936ad57b83,
-        type: 3}
-      propertyPath: m_Name
-      value: Falling Platform
-      objectReference: {fileID: 0}
     - target: {fileID: 2079271910259687745, guid: 5a741ba63fc804147b531b936ad57b83,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2231,6 +2226,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2079271910259687744, guid: 5a741ba63fc804147b531b936ad57b83,
+        type: 3}
+      propertyPath: m_Name
+      value: Falling Platform
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5a741ba63fc804147b531b936ad57b83, type: 3}
 --- !u!1001 &6399930406202482208
@@ -2253,7 +2253,7 @@ PrefabInstance:
     - target: {fileID: 6399930405148133114, guid: 61f821db888c1994f82049eb0cff086c,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.0499997
+      value: -0.42
       objectReference: {fileID: 0}
     - target: {fileID: 6399930405148133114, guid: 61f821db888c1994f82049eb0cff086c,
         type: 3}

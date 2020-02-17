@@ -10,6 +10,8 @@ public class CharacterMovement : MonoBehaviour
     public float jumpUpTime = 0.5f;
     public float gravity = 10.0f;
     public float jetpackForce = 0;
+    [SerializeField] private bool isGrounded;
+    [SerializeField] private bool wasGrounded = false;
 
     //public bool isGrounded = false;
     public float groundMargin = 1.2f;
@@ -23,11 +25,15 @@ public class CharacterMovement : MonoBehaviour
     private bool isFlying = false;
     private float delayJetpack = 0.0f;
     private float timer = 0.0f;
+    
 
     CharacterController cc;
 
     Vector3 targetDirection = new Vector3(0, 0, 0);
     private float currentJetpackForce = 0.0f;
+
+    public delegate void OnGroundedHandler(bool isGrounded);
+    public event OnGroundedHandler OnGrounded;
 
     public void Init()
     {
@@ -42,6 +48,8 @@ public class CharacterMovement : MonoBehaviour
 
     private void Update()
     {
+        IsGrounded();
+
         if (Input.GetButton("Jump"))
         {
             timer += Time.deltaTime;
@@ -76,10 +84,27 @@ public class CharacterMovement : MonoBehaviour
         if (Physics.OverlapCapsule(pointBottom, pointTop, groundDetectRadius, ignoreMask, QueryTriggerInteraction.Ignore).Length != 0)
         {
             //Debug.Log(Physics.OverlapCapsule(pointBottom, pointTop, groundDetectRadius, ignoreMask, QueryTriggerInteraction.Ignore)[0]);
-            return true;
+            isGrounded = true;
         }
         else
-            return false;
+        {
+            isGrounded = false;
+        }
+
+        if(!wasGrounded && isGrounded)
+        {
+
+            wasGrounded = true;
+            OnGrounded?.Invoke(true);
+
+        }
+        else if(wasGrounded && !isGrounded)
+        {
+            wasGrounded = false;
+            OnGrounded?.Invoke(false);
+        }
+
+        return isGrounded;
 
         //return isGrounded;
         //isGrounded |= Physics.Raycast(transform.position, -Vector3.up, groundMargin, 1, QueryTriggerInteraction.Ignore);

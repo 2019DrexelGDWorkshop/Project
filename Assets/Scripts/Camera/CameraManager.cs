@@ -17,25 +17,33 @@ public class CameraManager : MonoBehaviour
     public CameraState cameraState
     { get;  private set; }
 
+    [Header("Camera Game Objects")]
     public CinemachineVirtualCameraBase camera2D;
     public CinemachineVirtualCameraBase cameraTransition;
     public CinemachineVirtualCameraBase camera3D;
     public CinemachineBrain cmBrain;
     public GameObject cmBrainGO;
 
+    [Header("Camera Properties")]
+    [SerializeField] private float deadZoneMaxHeight = .4f;
+    [SerializeField] private float deadZoneMinHeight = .05f;
+    [SerializeField] private float defaultScreenY = .5f;
     public LayerMask originalCullingMask;
 
-    public static CameraManager Instance;
 
+
+    [HideInInspector]
     private Dictionary<CinemachineVirtualCameraBase, int> originalCamPriorities;
-
-    public delegate void SwitchPerspectiveHandler(bool _is2D);
-    public event SwitchPerspectiveHandler onPerspectiveSwitch;
-
-    private float transitionTime = 2f;
-    private float transitionCount = 0f;
+    private CharacterMovement characterMovement;
+    public static CameraManager Instance;
     public bool isTransitioning
     { get; private set; }
+
+    #region Events
+    public delegate void SwitchPerspectiveHandler(bool _is2D);
+    public event SwitchPerspectiveHandler onPerspectiveSwitch;
+    #endregion
+
 
     #region Monobehaviour
 
@@ -112,7 +120,7 @@ public class CameraManager : MonoBehaviour
         }
         cameraState = CameraState.SIDE_SCROLLER;
         isTransitioning = false;
-        onPerspectiveSwitch.Invoke(true);
+        onPerspectiveSwitch?.Invoke(true);
     }
 
     private IEnumerator SwitchTo3D()
@@ -136,7 +144,7 @@ public class CameraManager : MonoBehaviour
         }
         cameraState = CameraState.THIRD_PERSON;
         isTransitioning = false;
-        onPerspectiveSwitch.Invoke(false);
+        onPerspectiveSwitch?.Invoke(false);
     }
 
     public void SetCamHighestPriority(CinemachineVirtualCameraBase camera)
@@ -154,6 +162,54 @@ public class CameraManager : MonoBehaviour
     public void StoreCameraPriority(CinemachineVirtualCameraBase _cam)
     {
         originalCamPriorities[_cam] = _cam.Priority;
+    }
+
+    public void SetCharacterMovement(CharacterMovement _char)
+    {
+
+        if(_char != null)
+        {
+            _char.OnGrounded += OnGroundedChangedHandler;
+            Debug.Log("HERE");
+        }
+        else
+        {
+            if(characterMovement != null)
+            {
+                Debug.Log("HERE2");
+                characterMovement.OnGrounded -= OnGroundedChangedHandler;
+            }
+        }
+
+        characterMovement = _char;
+    }
+
+    /// <summary>
+    /// Shift will always work off of the default. A value of 0 will reset to normal shift ammounts.
+    /// </summary>
+    /// <param name="_shiftAmount">Shift ammount</param>
+    public void ScreenShift(float _shiftAmount = 0f)
+    {
+        CinemachineFramingTransposer transposer = ((CinemachineVirtualCamera)camera2D).GetCinemachineComponent<CinemachineFramingTransposer>();
+
+        float shiftAmount = Mathf.Clamp01(defaultScreenY + _shiftAmount);
+
+        transposer.m_ScreenY = shiftAmount;
+
+    }
+
+    private void OnGroundedChangedHandler(bool _isGrounded)
+    {
+        CinemachineFramingTransposer transposer = ((CinemachineVirtualCamera)camera2D).GetCinemachineComponent<CinemachineFramingTransposer>();
+
+        if (!_isGrounded)
+        {
+            transposer.m_DeadZoneHeight = deadZoneMaxHeight;
+        }
+        else
+        {
+            transposer.m_DeadZoneHeight = deadZoneMinHeight;
+        }
     }
 
     #region UpdateCameraReferences

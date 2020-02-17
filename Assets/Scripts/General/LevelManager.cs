@@ -42,7 +42,11 @@ public class LevelManager : MonoBehaviour
         {
             yield return null;
         }
+
+        player = FindObjectOfType<PlayerInput>().gameObject;
+
         CameraManager.Instance.UpdateCameraReferences(camera2D, cameraTransition, camera3D, GameObject.FindObjectOfType<Cinemachine.CinemachineBrain>().gameObject);
+        CameraManager.Instance.SetCharacterMovement(player.GetComponent<CharacterMovement>());
         if (lastCheckPoint == null)
         {
             lastCheckPoint = GameObject.FindObjectOfType<CheckPoint>().transform;
