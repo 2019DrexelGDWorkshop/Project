@@ -151,7 +151,7 @@ public class PauseManager : Singleton<PauseManager>
 
         if (paused)
         {
-            //Time.timeScale = 0;
+            Time.timeScale = 0;
             //(player.GetComponent("Player Input") as MonoBehaviour).enabled = false;
         }
         else
