@@ -873,9 +873,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 909f74e200d96fe4784a46ddc5c43a31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  expFl: 0
-  incroFl: 0.01
-  counter: 0
+  skybox: {fileID: 2100000, guid: 1dc8beb175a783545b4f122fe0dd6f35, type: 2}
+  isWaiting: 0
+  frames:
+  - {fileID: 2800000, guid: c7dd3ec4c763d7c47987059acdd9498e, type: 3}
+  - {fileID: 2800000, guid: 2b9510cf95ff63b42bdad709819a89b4, type: 3}
+  - {fileID: 2800000, guid: f6ed5ecf8f728814bad023a1742f6918, type: 3}
+  - {fileID: 2800000, guid: b88181a346c96fa439da5c5ba3de3824, type: 3}
+  - {fileID: 2800000, guid: 6bd78097181446b45a57fbae2d2d860f, type: 3}
+  - {fileID: 2800000, guid: 7ab7d4d9284d12343911e4b738f9394a, type: 3}
+  - {fileID: 2800000, guid: d6c2c06128aaecd42bb85f46661c0444, type: 3}
+  frameCounter: 0
 --- !u!4 &1800565676
 Transform:
   m_ObjectHideFlags: 0

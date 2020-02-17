@@ -4,36 +4,44 @@ using UnityEngine;
 
 public class SkyboxSwitch : MonoBehaviour
 {
-    public float expFl;
-    public float incroFl = .01f;
-    public int counter;
+    public Material skybox;
+    Renderer s_renderer;
+    public bool isWaiting = false;
+    public Texture[] frames;
+    public int frameCounter = 0;
 
-    // Start is called before the first frame update
     void Start()
     {
-        
+        RenderSettings.skybox = skybox;
+        s_renderer = GetComponent<Renderer> ();
     }
 
-    // Update is called once per frame
-    void Update()
+    void LateUpdate()
     {
-        RenderSettings.skybox.SetFloat("_Rotation", Time.time*2);
-        RenderSettings.skybox.SetFloat("_Exposure", expFl);
-
-        if ((Time.time) % 10f <= 6)
+        if (!isWaiting)
         {
-            expFl = expFl + (incroFl/2);
-        }
-        else
-        {
-            expFl = expFl - incroFl;
-        }
-        counter++;
-
-        if (counter >= 600)
-        {
-            counter = 0;
-            expFl = 0;
-        }
+            StartCoroutine(ChangeFrame());
+        }   
     }
+
+    IEnumerator ChangeFrame()
+    {
+        isWaiting = true;
+        
+        if (frameCounter == frames.Length)
+        {
+            frameCounter = 0;
+        }
+        skybox.SetTexture("_FrontTex", frames[frameCounter]);
+        skybox.SetTexture("_BackTex", frames[frameCounter]);
+        skybox.SetTexture("_LeftTex", frames[frameCounter]);
+        skybox.SetTexture("_RightTex", frames[frameCounter]);
+        //skybox.SetTexture("_UpTex", frames[frameCounter]);
+        //skybox.SetTexture("_DownTex", frames[frameCounter]);
+        yield return new WaitForSeconds(.33f);
+        frameCounter++;
+        isWaiting = false;
+
+    }
+
 }
