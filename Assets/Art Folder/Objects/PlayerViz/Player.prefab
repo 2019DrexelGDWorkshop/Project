@@ -201,9 +201,14 @@ MonoBehaviour:
   jumpUpTime: 0.4
   gravity: 20
   jetpackForce: 0
+  isGrounded: 0
+  wasGrounded: 0
   groundMargin: 1.2
   groundDetectRadius: 0.4
   externalForces: {x: 0, y: 0, z: 0}
+  platformLayer:
+    serializedVersion: 2
+    m_Bits: 1025
   motion: {x: 0, y: 0}
   isjumping: 0
   moveVec: {x: 0, y: 0, z: 0}
