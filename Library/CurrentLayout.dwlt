@@ -15,9 +15,9 @@ MonoBehaviour:
   m_PixelRect:
     serializedVersion: 2
     x: 0
-    y: 43.2
-    width: 1536
-    height: 821
+    y: 45
+    width: 1440
+    height: 810
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 6}
@@ -42,9 +42,9 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 30
-    width: 1536
-    height: 771
-  m_MinSize: {x: 681, y: 498}
+    width: 1440
+    height: 760
+  m_MinSize: {x: 683, y: 498}
   m_MaxSize: {x: 14004, y: 14048}
   vertical: 0
   controlID: 97
@@ -166,7 +166,7 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 0
+    x: 948
     y: 0
     width: 1536
     height: 30
@@ -342,7 +342,7 @@ MonoBehaviour:
   m_LastFolders:
   - Assets/Shaders
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: E:\GameDev\Project
+  m_LastProjectPath: /Users/Walt/Documents/schoolthings/05wi/gmap378/Dreamension/Project
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
