@@ -37,7 +37,7 @@ public class AimingShooter : Shooter_base
 
         Vector3 currRotation = shooterBody.transform.rotation.eulerAngles;
 
-        Vector3 targetRotation = new Vector3(0, currRotation.y + angle, 0);
+        Vector3 targetRotation = new Vector3(0, currRotation.y + angle, 0); 
 
         shooterBody.transform.rotation = Quaternion.Slerp(shooterBody.transform.rotation, Quaternion.Euler(targetRotation), Time.deltaTime * smoothTime);
     }
