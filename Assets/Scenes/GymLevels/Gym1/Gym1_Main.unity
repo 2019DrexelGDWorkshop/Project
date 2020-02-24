@@ -214,9 +214,9 @@ MonoBehaviour:
   _isMainScene: 1
   _sceneSetup:
   - scene:
-      editorAssetGUID: 7640c056bb0a31447bf32326c533398e
-      name: Gym1_Environment
-      _path: Assets/Scenes/GymLevels/Gym1/Gym1_Environment.unity
+      editorAssetGUID: 5ddfde4e647bcf14baeb7e6c5c731c2b
+      name: Gym1_Platforms
+      _path: Assets/Scenes/GymLevels/Gym1/Gym1_Platforms.unity
     loadInEditor: 1
     loadMethod: 0
   - scene:
@@ -226,9 +226,9 @@ MonoBehaviour:
     loadInEditor: 1
     loadMethod: 0
   - scene:
-      editorAssetGUID: 5ddfde4e647bcf14baeb7e6c5c731c2b
-      name: Gym1_Platforms
-      _path: Assets/Scenes/GymLevels/Gym1/Gym1_Platforms.unity
+      editorAssetGUID: 7640c056bb0a31447bf32326c533398e
+      name: Gym1_Environment
+      _path: Assets/Scenes/GymLevels/Gym1/Gym1_Environment.unity
     loadInEditor: 1
     loadMethod: 0
   - scene:
@@ -489,7 +489,7 @@ PrefabInstance:
     - target: {fileID: 6495287343980355844, guid: 65cb2e0523497de44a9652c90150c3b8,
         type: 3}
       propertyPath: levelToLoad
-      value: 3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6495287344296965284, guid: 65cb2e0523497de44a9652c90150c3b8,
         type: 3}

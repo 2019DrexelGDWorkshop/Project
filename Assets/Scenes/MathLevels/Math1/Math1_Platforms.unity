@@ -380,6 +380,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1131303987649181646, guid: 349b4f0242a754d5aa7f159658c5d65c,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -28.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1131303987649181646, guid: 349b4f0242a754d5aa7f159658c5d65c,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -4.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1190103439017770627, guid: 349b4f0242a754d5aa7f159658c5d65c,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 24.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1190103439017770627, guid: 349b4f0242a754d5aa7f159658c5d65c,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 349b4f0242a754d5aa7f159658c5d65c, type: 3}
 --- !u!1001 &4198223748165641300
@@ -463,6 +483,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Math1_Pen'nPaperPuzzle
       objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: b58a42bb80ca68b4985d239ca1eb876e, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c60b5de8b90d31f4489fcad514de100b, type: 2}
     - target: {fileID: 7474977576285737123, guid: 0435a96af21a34d85b7b16f0981e9b7a,
         type: 3}
       propertyPath: m_LocalPosition.x

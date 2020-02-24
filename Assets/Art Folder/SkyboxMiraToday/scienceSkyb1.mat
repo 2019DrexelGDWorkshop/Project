@@ -20,7 +20,11 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _BackTex:
+<<<<<<< Updated upstream:Assets/Art Folder/SkyboxMiraToday/scienceSkyb1.mat
         m_Texture: {fileID: 2800000, guid: 0eb88ad1772829a4ca0ee817b38a4e7e, type: 3}
+=======
+        m_Texture: {fileID: 2800000, guid: c7dd3ec4c763d7c47987059acdd9498e, type: 3}
+>>>>>>> Stashed changes:Assets/Art Folder/SkyboxMiraToday/combinedFrames/scienceSkyb1.mat
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BumpMap:
@@ -48,11 +52,19 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _FrontTex:
+<<<<<<< Updated upstream:Assets/Art Folder/SkyboxMiraToday/scienceSkyb1.mat
         m_Texture: {fileID: 2800000, guid: 0eb88ad1772829a4ca0ee817b38a4e7e, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _LeftTex:
         m_Texture: {fileID: 2800000, guid: 0eb88ad1772829a4ca0ee817b38a4e7e, type: 3}
+=======
+        m_Texture: {fileID: 2800000, guid: c7dd3ec4c763d7c47987059acdd9498e, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _LeftTex:
+        m_Texture: {fileID: 2800000, guid: c7dd3ec4c763d7c47987059acdd9498e, type: 3}
+>>>>>>> Stashed changes:Assets/Art Folder/SkyboxMiraToday/combinedFrames/scienceSkyb1.mat
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
@@ -72,7 +84,11 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _RightTex:
+<<<<<<< Updated upstream:Assets/Art Folder/SkyboxMiraToday/scienceSkyb1.mat
         m_Texture: {fileID: 2800000, guid: 0eb88ad1772829a4ca0ee817b38a4e7e, type: 3}
+=======
+        m_Texture: {fileID: 2800000, guid: c7dd3ec4c763d7c47987059acdd9498e, type: 3}
+>>>>>>> Stashed changes:Assets/Art Folder/SkyboxMiraToday/combinedFrames/scienceSkyb1.mat
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _UpTex:
