@@ -19,13 +19,16 @@ public class CharacterMovement : MonoBehaviour
 
     public Vector3 externalForces = Vector3.zero;
 
+    [SerializeField]
+    private LayerMask platformLayer;
+
     [HideInInspector]
     public Vector2 motion;
     public bool isjumping = false;
     private bool isFlying = false;
     private float delayJetpack = 0.0f;
     private float timer = 0.0f;
-    
+
 
     CharacterController cc;
 
@@ -91,14 +94,14 @@ public class CharacterMovement : MonoBehaviour
             isGrounded = false;
         }
 
-        if(!wasGrounded && isGrounded)
+        if (!wasGrounded && isGrounded)
         {
 
             wasGrounded = true;
             OnGrounded?.Invoke(true);
 
         }
-        else if(wasGrounded && !isGrounded)
+        else if (wasGrounded && !isGrounded)
         {
             wasGrounded = false;
             OnGrounded?.Invoke(false);
@@ -281,4 +284,58 @@ public class CharacterMovement : MonoBehaviour
         transform.position = LevelManager.Instance.lastCheckPoint.position;
     }
 
+
+    public void PlacePlayerOn3DPlatform()
+    {
+        StartCoroutine(PlacePlayerOn3DPlatformHelper());
+    }
+
+    private IEnumerator PlacePlayerOn3DPlatformHelper()
+    {
+        RaycastHit hit;
+        if (Physics.SphereCast(this.transform.position, .5f, Vector3.down, out hit, 5f, platformLayer))
+        {
+            Debug.Log("Hit " + hit.transform.gameObject.name);
+            Vector3 objPos = hit.point;
+            bool isRight = true;
+
+            if(objPos.x > hit.transform.position.x)
+            {
+                isRight = false;
+            }
+
+            Vector3 destination = objPos;
+            destination.z = transform.position.z;
+
+            Vector3 downCheck = destination + Vector3.up;
+            Vector3 sideCheck = destination - (Vector3.up*.05f);
+
+            yield return new WaitForEndOfFrame();
+
+
+            if (Physics.Raycast(downCheck, Vector3.down, out hit, 2f, platformLayer))
+            {
+                Debug.DrawRay(downCheck, Vector3.down * 2f, Color.red, 100000f);
+                Debug.Log("Down " + hit.transform.gameObject.name);
+                //destination.x = hit.point.x;
+            }
+            else if (isRight && Physics.Raycast(sideCheck, Vector3.right, out hit, 200f, platformLayer))
+            {
+                Debug.DrawRay(sideCheck, Vector3.right * 200f, Color.red, 100000f);
+                Debug.Log("Right " + hit.transform.gameObject.name);
+                //xHit = hit.point.x;
+            }
+            else if (!isRight && Physics.Raycast(sideCheck, Vector3.left, out hit, 200f, platformLayer))
+            {
+                Debug.DrawRay(sideCheck, Vector3.left * 200f, Color.red, 100000f);
+                Debug.Log("Left " + hit.transform.gameObject.name);
+                //xHit = hit.point.x;
+            }
+
+            destination.y = transform.position.y;
+            destination.x = hit.point.x;
+
+            this.transform.position = destination;
+        }
+    }
 }
