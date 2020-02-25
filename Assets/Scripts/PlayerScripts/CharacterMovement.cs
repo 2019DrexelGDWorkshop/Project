@@ -296,7 +296,13 @@ public class CharacterMovement : MonoBehaviour
         if (Physics.SphereCast(this.transform.position, .5f, Vector3.down, out hit, 5f, platformLayer))
         {
             Debug.Log("Hit " + hit.transform.gameObject.name);
-            Vector3 objPos = hit.transform.position;
+            Vector3 objPos = hit.point;
+            bool isRight = true;
+
+            if(objPos.x > hit.transform.position.x)
+            {
+                isRight = false;
+            }
 
             Vector3 destination = objPos;
             destination.z = transform.position.z;
@@ -306,21 +312,22 @@ public class CharacterMovement : MonoBehaviour
 
             yield return new WaitForEndOfFrame();
 
+
             if (Physics.Raycast(downCheck, Vector3.down, out hit, 2f, platformLayer))
             {
                 Debug.DrawRay(downCheck, Vector3.down * 2f, Color.red, 100000f);
                 Debug.Log("Down " + hit.transform.gameObject.name);
                 //destination.x = hit.point.x;
             }
-            else if (Physics.Raycast(sideCheck, Vector3.right, out hit, 20f, platformLayer))
+            else if (isRight && Physics.Raycast(sideCheck, Vector3.right, out hit, 200f, platformLayer))
             {
-                Debug.DrawRay(sideCheck, Vector3.right * 10f, Color.red, 100000f);
+                Debug.DrawRay(sideCheck, Vector3.right * 200f, Color.red, 100000f);
                 Debug.Log("Right " + hit.transform.gameObject.name);
                 //xHit = hit.point.x;
             }
-            else if (Physics.Raycast(sideCheck, Vector3.left, out hit, 20f, platformLayer))
+            else if (!isRight && Physics.Raycast(sideCheck, Vector3.left, out hit, 200f, platformLayer))
             {
-                Debug.DrawRay(sideCheck, Vector3.left * 10f, Color.red, 100000f);
+                Debug.DrawRay(sideCheck, Vector3.left * 200f, Color.red, 100000f);
                 Debug.Log("Left " + hit.transform.gameObject.name);
                 //xHit = hit.point.x;
             }
