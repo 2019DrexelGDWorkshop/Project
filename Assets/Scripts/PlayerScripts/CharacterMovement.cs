@@ -310,7 +310,7 @@ public class CharacterMovement : MonoBehaviour
             Vector3 downCheck = destination + Vector3.up;
             Vector3 sideCheck = destination - (Vector3.up*.05f);
 
-            yield return new WaitForEndOfFrame();
+            yield return new WaitForEndOfFrame(); // So 2d collider turns off
 
 
             if (Physics.Raycast(downCheck, Vector3.down, out hit, 2f, platformLayer))

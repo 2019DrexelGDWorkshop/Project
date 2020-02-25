@@ -20,7 +20,7 @@ public class EnemySpawner : MonoBehaviour
                 good = true;
                 float angle = Random.Range(0, 360 - Mathf.Epsilon);
                 float dist = Random.Range(0, radius);
-                dist = (radius * radius)
+                dist = (radius * radius);
                 float x = transform.position.z + dist * Mathf.Cos(angle);
                 float z = transform.position.z + dist * Mathf.Sin(angle);
                 spawned.transform.position = new Vector3(x, transform.position.y, z);
