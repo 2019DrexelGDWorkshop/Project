@@ -93,6 +93,12 @@ public class PlayerInput : MonoBehaviour
     {
         if (rewiredPlayer.GetButtonDown(RewiredConsts.Action.PerspectiveSwitch) && (CameraManager.Instance.cameraState == CameraState.SIDE_SCROLLER || CameraManager.Instance.cameraState == CameraState.THIRD_PERSON))
         {
+            if (CameraManager.Instance.cameraState == CameraState.SIDE_SCROLLER)
+            {
+                //Handle placing player on platform they are most likely standing on.
+                characterMovement.PlacePlayerOn3DPlatform();
+            }
+
             CameraManager.Instance.Toggle3D2D();
         }
     }
