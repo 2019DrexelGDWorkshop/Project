@@ -64,12 +64,9 @@
 			}
 			
 			float4 _Color;
-
 			float4 _AmbientColor;
-
 			float4 _SpecularColor;
 			float _Glossiness;		
-
 			float4 _RimColor;
 			float _RimAmount;
 			float _RimThreshold;	
@@ -98,6 +95,6 @@
 			}
 			ENDCG
 		}
-        UsePass "Legacy Shaders/VertexLit/SHADOWCASTER"
+        UsePass "VertexLit/SHADOWCASTER"
 	}
 }

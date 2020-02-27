@@ -391,6 +391,7 @@ MonoBehaviour:
   dialogueText: {fileID: 1974243360}
   inChat: 0
   DiaUIobj: {fileID: 1905357431}
+  Oyu: {fileID: 0}
 --- !u!1 &1363756615
 GameObject:
   m_ObjectHideFlags: 0
@@ -736,7 +737,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _version: 2
-  _crossSceneReferences: []
+  _crossSceneReferences:
+  - _sourceObject: {fileID: 752915798}
+    _sourceField: Oyu
+    DEPRECATED_fromObject:
+      scene:
+        editorAssetGUID: 
+        name: 
+        _path: 
+      fullPath: 
+      componentName: 
+      componentIndex: 0
+      editorLocalId: 0
+      editorPrefabRelativePath: 
+      version: 0
+    _toObject:
+      scene:
+        editorAssetGUID: 01cc2ede882b6944c9620bba092f3709
+        name: NPC_Prot1
+        _path: Assets/Scenes/Testing/NPC_Prot1.unity
+      fullPath: /Oyu
+      componentName: 
+      componentIndex: 0
+      editorLocalId: 1024775408
+      editorPrefabRelativePath: 
+      version: 1
+    _data:
+      data: []
   _realSceneRootsForPostBuild: []
   _mergedScenes: []
 --- !u!114 &1730976969

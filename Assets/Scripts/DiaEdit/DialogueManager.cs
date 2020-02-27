@@ -5,10 +5,12 @@ using UnityEngine.UI;
 
 public class DialogueManager : MonoBehaviour
 {
+    
     public Text nameText;
     public Text dialogueText;
     public bool inChat = false;
     public GameObject DiaUIobj;
+    public GameObject Oyu;
 
     //public Animator animator;
 
@@ -78,7 +80,8 @@ public class DialogueManager : MonoBehaviour
         //animator.SetBool("IsOpen", false);
         inChat = false;
         DiaUIobj.SetActive(inChat);
-        FindObjectOfType<NPCBehavior>().chatStarted = false;
+        Oyu.GetComponent<OyuTop>().KillOyuTop();
         //Debug.Log("End of conversation.");
+        //Destroy(Oyu);
     }
 }
