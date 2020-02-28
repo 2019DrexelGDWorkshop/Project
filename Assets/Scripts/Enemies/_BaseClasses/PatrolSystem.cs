@@ -4,19 +4,19 @@ using UnityEngine;
 
 public class PatrolSystem : MoveAndAnchorSystem
 {
-    public bool canJump;
+    //public bool canJump;
 
     public Transform edgeCheckSource;
 
     public GameObject player = null;
 
-    public int jumpForce;
+   // public int jumpForce;
 
     public int gravity;
 
-    protected float distToGround;
+    //protected float distToGround;
 
-    float jumpStart;
+   // float jumpStart;
 
     private Vector3 startPos;
 
@@ -53,19 +53,9 @@ public class PatrolSystem : MoveAndAnchorSystem
 
         rb_Obj.velocity = speed * movingObj.transform.forward;
 
-
-        if( canJump && !(Physics.Raycast(edgeCheckSource.position, Vector3.down, 10)) && Physics.Raycast(movingObj.transform.position, Vector3.down, 1.5f))
+        if (!(Physics.Raycast(edgeCheckSource.position, Vector3.down, 10)))
         {
-            jumpStart = Time.realtimeSinceStartup;
-            movingObj.GetComponent<Rigidbody>().AddForce(new Vector3(0, 10 * jumpForce, 0));
-            
-        }
-
-        if ( canJump && !(Physics.Raycast(movingObj.transform.position, Vector3.down, 1.5f)))
-        {
-            float timeDif = Time.realtimeSinceStartup - jumpStart;
-            //print(timeDif);
-            movingObj.GetComponent<Rigidbody>().AddForce(new Vector3(0,  -(gravity * timeDif ), 0));
+            StartCoroutine("WaitAndReset");
         }
         else
         {
@@ -99,6 +89,14 @@ public class PatrolSystem : MoveAndAnchorSystem
     {
         movingObj.transform.position = startPos;
         player = null;
+    }
+
+    IEnumerator WaitAndReset()
+    {
+        movingObj.GetComponent<Rigidbody>().velocity = new Vector3(0f, 0f, 0f);
+        yield return new WaitForSecondsRealtime(2);
+        player = null;
+        StopCoroutine("WaitAndReset");
     }
 
 }
