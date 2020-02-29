@@ -29,4 +29,13 @@ public class AcidDroplet : MonoBehaviour
             Destroy(this);
 
     }
+
+    private void OnTriggerEnter(Collider collision)
+    {
+        if (collision.gameObject == LevelManager.Instance.player.gameObject)
+        {
+            LevelManager.Instance.player.GetComponent<CharacterMovement>().Kill();
+        }
+
+    }
 }
