@@ -17,4 +17,13 @@ public class RisingLava : MonoBehaviour
     {
         transform.position = new Vector3(transform.position.x, Mathf.PingPong(Time.time, height), transform.position.z);
     }
+
+    private void OnTriggerEnter(Collider collision)
+    {
+        if (collision.gameObject == LevelManager.Instance.player.gameObject)
+        {
+            LevelManager.Instance.player.GetComponent<CharacterMovement>().Kill();
+        }
+        
+    }
 }
