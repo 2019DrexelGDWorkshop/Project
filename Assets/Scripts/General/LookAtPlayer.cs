@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class LookAtPlayer : MonoBehaviour
 {
@@ -12,11 +10,6 @@ public class LookAtPlayer : MonoBehaviour
     private Quaternion oldBodyRotation = Quaternion.identity;
     private float percentage = 0;
 
-    private void Start()
-    {
-        
-    }
-
 
     void FixedUpdate()
     {
@@ -25,10 +18,7 @@ public class LookAtPlayer : MonoBehaviour
         Vector3 bodyToPos = playerPos - transform.position;
         bodyToPos.y = 0;
 
-
-        Debug.DrawRay(transform.position, bodyToPos, Color.red);
-
-        float angle = Vector3.Angle(bodyForward, bodyToPos);
+        float angle = Vector3.SignedAngle(bodyForward, bodyToPos, Vector3.up);
 
         if (oldBodyRotation == Quaternion.identity)
         {
@@ -36,8 +26,7 @@ public class LookAtPlayer : MonoBehaviour
             oldAngle = angle;
         }
 
-        Debug.Log(angle);
-        if (angle < minHorizontalAngle)
+        if (Mathf.Abs(angle) < minHorizontalAngle)
         {
             oldBodyRotation = Quaternion.identity;
             oldAngle = 0;
@@ -46,12 +35,9 @@ public class LookAtPlayer : MonoBehaviour
         }
 
         Vector3 currRotation = transform.rotation.eulerAngles;
-        if (angle > 0)
-        {
-            angle *= -1;
-        }
+
         Vector3 targetRotation = new Vector3(0, currRotation.y + angle, 0);
 
-        transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.Euler(targetRotation), Time.deltaTime * smoothTime);
+        transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.Euler(targetRotation), Time.deltaTime / smoothTime);
     }
 }

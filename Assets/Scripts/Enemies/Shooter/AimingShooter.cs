@@ -9,7 +9,6 @@ public class AimingShooter : Shooter_base
 
     private Quaternion oldBodyRotation = Quaternion.identity;
 
-
     private float oldAngle = 0;
     private float smoothTime = 2f;
     private float percentage = 0;
@@ -19,10 +18,7 @@ public class AimingShooter : Shooter_base
         Vector3 bodyForward = shooterBody.transform.forward;
         Vector3 bodyToPos = _pos - shooterBody.transform.position;
 
-        
-        Debug.DrawRay(shooterBody.transform.position, bodyToPos, Color.red);
-
-        float angle = Vector3.Angle(bodyForward, bodyToPos);
+        float angle = Vector3.SignedAngle(bodyForward, bodyToPos, Vector3.up);
 
         if (oldBodyRotation == Quaternion.identity)
         {
@@ -30,7 +26,7 @@ public class AimingShooter : Shooter_base
             oldAngle = angle;
         }
 
-        if(angle < minHorizontalAngle)
+        if(Mathf.Abs(angle) < minHorizontalAngle)
         {
             Shoot();
             oldBodyRotation = Quaternion.identity;
@@ -40,14 +36,9 @@ public class AimingShooter : Shooter_base
         }
 
         Vector3 currRotation = shooterBody.transform.rotation.eulerAngles;
-        if (angle > 0)
-        {
-            angle *= -1;
-        }
-        Vector3 targetRotation = new Vector3(0, currRotation.y + angle, 0);
+
+        Vector3 targetRotation = new Vector3(0, currRotation.y + angle, 0); 
 
         shooterBody.transform.rotation = Quaternion.Slerp(shooterBody.transform.rotation, Quaternion.Euler(targetRotation), Time.deltaTime * smoothTime);
-
-
     }
 }

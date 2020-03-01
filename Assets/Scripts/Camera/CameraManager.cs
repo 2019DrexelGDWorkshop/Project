@@ -170,13 +170,11 @@ public class CameraManager : MonoBehaviour
         if(_char != null)
         {
             _char.OnGrounded += OnGroundedChangedHandler;
-            Debug.Log("HERE");
         }
         else
         {
             if(characterMovement != null)
             {
-                Debug.Log("HERE2");
                 characterMovement.OnGrounded -= OnGroundedChangedHandler;
             }
         }
