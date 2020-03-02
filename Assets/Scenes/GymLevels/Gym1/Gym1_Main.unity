@@ -220,35 +220,17 @@ MonoBehaviour:
     loadInEditor: 1
     loadMethod: 0
   - scene:
-      editorAssetGUID: 03cc737eebd6cc24089ed9f27097442f
-      name: Gym1_Lighting
-      _path: Assets/Scenes/GymLevels/Gym1/Gym1_Lighting.unity
+      editorAssetGUID: 35739b8137264c64da69d3e03bbdde30
+      name: Gym1_Main
+      _path: Assets/Scenes/GymLevels/Gym1/Gym1_Main.unity
     loadInEditor: 1
-    loadMethod: 0
+    loadMethod: 1
   - scene:
       editorAssetGUID: 7640c056bb0a31447bf32326c533398e
       name: Gym1_Environment
       _path: Assets/Scenes/GymLevels/Gym1/Gym1_Environment.unity
     loadInEditor: 1
-    loadMethod: 0
-  - scene:
-      editorAssetGUID: c181a30ec4221d54c9b5283dd42e48da
-      name: Player
-      _path: Assets/Scenes/GenericScenes/Player.unity
-    loadInEditor: 1
     loadMethod: 1
-  - scene:
-      editorAssetGUID: a4d2b1a760971154abb85181f73de293
-      name: UI
-      _path: Assets/Scenes/GenericScenes/UI.unity
-    loadInEditor: 1
-    loadMethod: 1
-  - scene:
-      editorAssetGUID: f1d243fce358bdb45b0d1272cd898976
-      name: init
-      _path: Assets/Scenes/GenericScenes/init.unity
-    loadInEditor: 1
-    loadMethod: 3
   _thisScenePath: Assets/Scenes/GymLevels/Gym1/Gym1_Main.unity
 --- !u!4 &1515355062
 Transform:
@@ -300,33 +282,6 @@ MonoBehaviour:
       componentName: 
       componentIndex: 0
       editorLocalId: 399324600
-      editorPrefabRelativePath: 
-      version: 1
-    _data:
-      data: []
-  - _sourceObject: {fileID: 3666193239537746864}
-    _sourceField: lastCheckPoint
-    DEPRECATED_fromObject:
-      scene:
-        editorAssetGUID: 
-        name: 
-        _path: 
-      fullPath: 
-      componentName: 
-      componentIndex: 0
-      editorLocalId: 0
-      editorPrefabRelativePath: 
-      version: 0
-    _toObject:
-      scene:
-        editorAssetGUID: 7640c056bb0a31447bf32326c533398e
-        name: Gym1_Environment
-        _path: Assets/Scenes/GymLevels/Gym1/Gym1_Environment.unity
-      fullPath: /Environment/Checkpoint
-      componentName: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-      componentIndex: 0
-      editorLocalId: 1096114409
       editorPrefabRelativePath: 
       version: 1
     _data:
@@ -462,6 +417,33 @@ MonoBehaviour:
       version: 1
     _data:
       data: []
+  - _sourceObject: {fileID: 3666193239537746864}
+    _sourceField: lastCheckPoint
+    DEPRECATED_fromObject:
+      scene:
+        editorAssetGUID: 
+        name: 
+        _path: 
+      fullPath: 
+      componentName: 
+      componentIndex: 0
+      editorLocalId: 0
+      editorPrefabRelativePath: 
+      version: 0
+    _toObject:
+      scene:
+        editorAssetGUID: 7640c056bb0a31447bf32326c533398e
+        name: Gym1_Environment
+        _path: Assets/Scenes/GymLevels/Gym1/Gym1_Environment.unity
+      fullPath: /Environment/Checkpoint
+      componentName: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      componentIndex: 0
+      editorLocalId: 1096114409
+      editorPrefabRelativePath: 
+      version: 1
+    _data:
+      data: []
   _realSceneRootsForPostBuild: []
   _mergedScenes: []
 --- !u!1001 &1613698668
@@ -504,7 +486,7 @@ PrefabInstance:
     - target: {fileID: 6495287344296965284, guid: 65cb2e0523497de44a9652c90150c3b8,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 241.4
+      value: 271.1
       objectReference: {fileID: 0}
     - target: {fileID: 6495287344296965284, guid: 65cb2e0523497de44a9652c90150c3b8,
         type: 3}
