@@ -341,4 +341,35 @@ public class CharacterMovement : MonoBehaviour
             this.transform.position = destination;
         }
     }
+
+    private GameObject throwObj = null;
+
+    public void pickUpCheck()
+    {
+        if (throwObj != null)
+        {
+            throwObj.GetComponent<ThrowableObjectLogic>().throwOut();
+            throwObj = null;
+        }
+        else
+        {
+            Collider[] hitColliders = Physics.OverlapBox(transform.position, transform.localScale, Quaternion.identity, 1 << 13);
+            int i = 0;
+            //Check when there is a new collider coming into contact with the box
+            while (i < hitColliders.Length)
+            {
+                //Output all of the collider names
+                if (hitColliders[i].tag == "Throwable")
+                {
+                    Debug.Log("Hit : " + hitColliders[i].name + i);
+                    throwObj = hitColliders[i].gameObject;
+                    throwObj.GetComponent<ThrowableObjectLogic>().pickUp(this.gameObject);
+                    break;
+                }
+                //Increase the number of Colliders in the array
+                i++;
+            }
+        }
+    }
+
 }

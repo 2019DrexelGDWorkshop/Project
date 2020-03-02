@@ -1,1 +1,10 @@
-sceneSetups: []
+sceneSetups:
+- path: Assets/Scenes/Testing/ProjectileThrow.unity
+  isLoaded: 1
+  isActive: 1
+- path: Assets/Scenes/GenericScenes/init.unity
+  isLoaded: 1
+  isActive: 0
+- path: Assets/Scenes/GenericScenes/Player.unity
+  isLoaded: 1
+  isActive: 0
