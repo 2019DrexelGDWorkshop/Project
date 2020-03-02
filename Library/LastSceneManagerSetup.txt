@@ -1,4 +1,5 @@
 sceneSetups:
+<<<<<<< Updated upstream
 - path: Assets/Scenes/ScienceLevels/Science1/Science1_MAIN.unity
   isLoaded: 1
   isActive: 1
@@ -12,6 +13,21 @@ sceneSetups:
   isLoaded: 1
   isActive: 0
 - path: Assets/Scenes/ScienceLevels/Science1/Science1_Lighting.unity
+=======
+- path: Assets/Scenes/GymLevels/Gym1/Gym1_Main.unity
+  isLoaded: 1
+  isActive: 1
+- path: Assets/Scenes/GymLevels/Gym1/Gym1_Platforms.unity
+  isLoaded: 1
+  isActive: 0
+- path: Assets/Scenes/GymLevels/Gym1/Gym1_Lighting.unity
+  isLoaded: 1
+  isActive: 0
+- path: Assets/Scenes/GymLevels/Gym1/Gym1_Environment.unity
+  isLoaded: 1
+  isActive: 0
+- path: Assets/Scenes/GenericScenes/Player.unity
+>>>>>>> Stashed changes
   isLoaded: 1
   isActive: 0
 - path: Assets/Scenes/GenericScenes/UI.unity
