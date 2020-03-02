@@ -313,6 +313,11 @@ PrefabInstance:
       propertyPath: cameraBrain
       value: 
       objectReference: {fileID: 1841395357}
+    - target: {fileID: 8489958907362346122, guid: 9d9e69c0fb1e84e479b7e2aa07f48dac,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 8756275435899069324, guid: 9d9e69c0fb1e84e479b7e2aa07f48dac,
         type: 3}
       propertyPath: links.Array.data[0]
@@ -422,11 +427,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Orthographic
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8489958907362346122, guid: 9d9e69c0fb1e84e479b7e2aa07f48dac,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9d9e69c0fb1e84e479b7e2aa07f48dac, type: 3}
