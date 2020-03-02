@@ -1467,11 +1467,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 136580869}
     m_Modifications:
-    - target: {fileID: 36747957714999124, guid: 0a619f0c2e6af024c8559c645125ab21,
-        type: 3}
-      propertyPath: m_Name
-      value: green_plat_1
-      objectReference: {fileID: 0}
     - target: {fileID: 36747957715159924, guid: 0a619f0c2e6af024c8559c645125ab21,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1527,16 +1522,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 36747957715159926, guid: 0a619f0c2e6af024c8559c645125ab21,
+    - target: {fileID: 36747957714999124, guid: 0a619f0c2e6af024c8559c645125ab21,
         type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -26.44
+      propertyPath: m_Name
+      value: green_plat_1
       objectReference: {fileID: 0}
     - target: {fileID: 36747957716928918, guid: 0a619f0c2e6af024c8559c645125ab21,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 52cb7ff216882924c90de172f89bdcc8, type: 2}
+    - target: {fileID: 36747957715159926, guid: 0a619f0c2e6af024c8559c645125ab21,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2432893381077894154, guid: 0a619f0c2e6af024c8559c645125ab21,
+        type: 3}
+      propertyPath: m_Convex
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0a619f0c2e6af024c8559c645125ab21, type: 3}
 --- !u!1001 &1695863129
@@ -2194,11 +2199,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 136580869}
     m_Modifications:
-    - target: {fileID: 36747957714999124, guid: 0a619f0c2e6af024c8559c645125ab21,
-        type: 3}
-      propertyPath: m_Name
-      value: greenplay_2
-      objectReference: {fileID: 0}
     - target: {fileID: 36747957715159924, guid: 0a619f0c2e6af024c8559c645125ab21,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2254,11 +2254,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 36747957714999124, guid: 0a619f0c2e6af024c8559c645125ab21,
+        type: 3}
+      propertyPath: m_Name
+      value: greenplay_2
+      objectReference: {fileID: 0}
     - target: {fileID: 36747957716928918, guid: 0a619f0c2e6af024c8559c645125ab21,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 52cb7ff216882924c90de172f89bdcc8, type: 2}
+    - target: {fileID: 2432893381077894154, guid: 0a619f0c2e6af024c8559c645125ab21,
+        type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0a619f0c2e6af024c8559c645125ab21, type: 3}
 --- !u!1001 &2122850169
@@ -2505,6 +2515,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: EndOfLevel
       objectReference: {fileID: 0}
+    - target: {fileID: 6495287343980355844, guid: 65cb2e0523497de44a9652c90150c3b8,
+        type: 3}
+      propertyPath: nextSceneInteger
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6495287343980355844, guid: 65cb2e0523497de44a9652c90150c3b8,
+        type: 3}
+      propertyPath: loadingScreen
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6495287343980355844, guid: 65cb2e0523497de44a9652c90150c3b8,
+        type: 3}
+      propertyPath: slider
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6495287343980355844, guid: 65cb2e0523497de44a9652c90150c3b8,
+        type: 3}
+      propertyPath: levelToLoad
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 6495287344296965284, guid: 65cb2e0523497de44a9652c90150c3b8,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2565,35 +2595,15 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: ce3d0e08614969e4c9314fa42c97da09, type: 2}
-    - target: {fileID: 6495287344121926411, guid: 65cb2e0523497de44a9652c90150c3b8,
-        type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: d23ede58fbbf9b34ab3a3f48b3e562fb, type: 2}
     - target: {fileID: 6495287345336879456, guid: 65cb2e0523497de44a9652c90150c3b8,
         type: 3}
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 025cbf2d0d00ffa4eb7ff8dda8cb32e1, type: 2}
-    - target: {fileID: 6495287343980355844, guid: 65cb2e0523497de44a9652c90150c3b8,
+    - target: {fileID: 6495287344121926411, guid: 65cb2e0523497de44a9652c90150c3b8,
         type: 3}
-      propertyPath: nextSceneInteger
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 6495287343980355844, guid: 65cb2e0523497de44a9652c90150c3b8,
-        type: 3}
-      propertyPath: loadingScreen
+      propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 6495287343980355844, guid: 65cb2e0523497de44a9652c90150c3b8,
-        type: 3}
-      propertyPath: slider
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 6495287343980355844, guid: 65cb2e0523497de44a9652c90150c3b8,
-        type: 3}
-      propertyPath: levelToLoad
-      value: 5
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 9100000, guid: d23ede58fbbf9b34ab3a3f48b3e562fb, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 65cb2e0523497de44a9652c90150c3b8, type: 3}

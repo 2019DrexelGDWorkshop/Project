@@ -181,6 +181,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 49.207, y: -43.507004, z: -10.307}
+--- !u!4 &787513743 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2125078366713038190, guid: 8a9f565aaa9f1bc4a962855df6d5e545,
+    type: 3}
+  m_PrefabInstance: {fileID: 2100795845}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1943199611
 GameObject:
   m_ObjectHideFlags: 0
@@ -420,12 +426,12 @@ PrefabInstance:
     - target: {fileID: 2125078366713038190, guid: 8a9f565aaa9f1bc4a962855df6d5e545,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.9004192
+      value: -0.9
       objectReference: {fileID: 0}
     - target: {fileID: 2125078366713038190, guid: 8a9f565aaa9f1bc4a962855df6d5e545,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.7474246
+      value: 4.92
       objectReference: {fileID: 0}
     - target: {fileID: 2125078366713038190, guid: 8a9f565aaa9f1bc4a962855df6d5e545,
         type: 3}
@@ -497,6 +503,11 @@ PrefabInstance:
       propertyPath: lastCheckPoint
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 4929246349709113310, guid: 8a9f565aaa9f1bc4a962855df6d5e545,
+        type: 3}
+      propertyPath: initialSpawnLocation
+      value: 
+      objectReference: {fileID: 787513743}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8a9f565aaa9f1bc4a962855df6d5e545, type: 3}
 --- !u!114 &2100795846 stripped
