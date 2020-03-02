@@ -422,40 +422,45 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5636621571728747137}
     m_Modifications:
+    - target: {fileID: 3927407779643011225, guid: f29853d3971b7a342bcc826bdf008f0d,
+        type: 3}
+      propertyPath: m_Name
+      value: CameraBrain
+      objectReference: {fileID: 0}
     - target: {fileID: 3927407779643011207, guid: f29853d3971b7a342bcc826bdf008f0d,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 499.18616
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3927407779643011207, guid: f29853d3971b7a342bcc826bdf008f0d,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.86
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 3927407779643011207, guid: f29853d3971b7a342bcc826bdf008f0d,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.36995658
+      value: -6
       objectReference: {fileID: 0}
     - target: {fileID: 3927407779643011207, guid: f29853d3971b7a342bcc826bdf008f0d,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0.1670368
       objectReference: {fileID: 0}
     - target: {fileID: 3927407779643011207, guid: f29853d3971b7a342bcc826bdf008f0d,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.7071068
+      value: -0.015592081
       objectReference: {fileID: 0}
     - target: {fileID: 3927407779643011207, guid: f29853d3971b7a342bcc826bdf008f0d,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0.09162424
       objectReference: {fileID: 0}
     - target: {fileID: 3927407779643011207, guid: f29853d3971b7a342bcc826bdf008f0d,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.7071068
+      value: 0.9815603
       objectReference: {fileID: 0}
     - target: {fileID: 3927407779643011207, guid: f29853d3971b7a342bcc826bdf008f0d,
         type: 3}
@@ -477,15 +482,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3927407779643011225, guid: f29853d3971b7a342bcc826bdf008f0d,
-        type: 3}
-      propertyPath: m_Name
-      value: CameraBrain
-      objectReference: {fileID: 0}
     - target: {fileID: 3927407779643011206, guid: f29853d3971b7a342bcc826bdf008f0d,
         type: 3}
       propertyPath: field of view
-      value: 1
+      value: 60
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f29853d3971b7a342bcc826bdf008f0d, type: 3}
