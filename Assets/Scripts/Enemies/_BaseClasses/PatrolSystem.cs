@@ -37,21 +37,25 @@ public class PatrolSystem : MoveAndAnchorSystem
     // Update is called once per frame
     protected override void Update()
     {
-        CalcDistAndDir();
+        float distance = 0f;
+        Vector3 direction = new Vector3(0, 0, 0);
+        CalcDistAndDir(ref distance, ref direction);
         Rigidbody rb_Obj = movingObj.GetComponent<Rigidbody>();
        
         if (player)
         {
             Vector3 target = new Vector3(player.transform.position.x, movingObj.transform.position.y, player.transform.position.z);
-            movingObj.transform.LookAt(target, movingObj.transform.up);
+            //movingObj.transform.LookAt(target, movingObj.transform.up);
+            movingObj.transform.GetChild(0).transform.LookAt(target, movingObj.transform.up);
         }
         else
         {
             Vector3 target = new Vector3(anchor[targetNumb].transform.position.x, movingObj.transform.position.y, anchor[targetNumb].transform.position.z);
-            movingObj.transform.LookAt(target, movingObj.transform.up);
+            //movingObj.transform.LookAt(target, movingObj.transform.up);
+            movingObj.transform.GetChild(0).transform.LookAt(target, movingObj.transform.up);
         }
 
-        rb_Obj.velocity = speed * movingObj.transform.forward;
+        rb_Obj.velocity = speed * direction;
 
         if (!(Physics.Raycast(edgeCheckSource.position, Vector3.down, 10)))
         {
@@ -63,7 +67,7 @@ public class PatrolSystem : MoveAndAnchorSystem
         }
     }
 
-    public override void CalcDistAndDir()
+    public void CalcDistAndDir(ref float distance, ref Vector3 direction)
     {
         if (player)
         {
@@ -77,6 +81,7 @@ public class PatrolSystem : MoveAndAnchorSystem
             distance = heading.magnitude;
             direction = heading / distance;
         }
+
     }
 
     public void playerFound(GameObject target)
