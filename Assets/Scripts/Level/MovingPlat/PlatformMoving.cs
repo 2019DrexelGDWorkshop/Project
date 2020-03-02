@@ -8,32 +8,28 @@ public class PlatformMoving : MoveAndAnchorSystem
     public float rateDecay = 0.2f;
     private float i = 0;
 
-    protected void FixedUpdate()
+    protected override void Update()
     {
         if (rb_Obj.isKinematic == true)
         {
             i += Time.deltaTime;
         }
-        
+
         CalcDistAndDir();
-
-        
-        
-
 
         if (rb_Obj.velocity.magnitude > speed)
         {
-                rb_Obj.velocity = rb_Obj.velocity.normalized * speed;
+            rb_Obj.velocity = rb_Obj.velocity.normalized * speed;
         }
 
         else if (reachedTarget)
         {
-            
-            TargetReached();    
+
+            TargetReached();
         }
-       
+
         else
-        { 
+        {
             rb_Obj.AddForce(speed * direction);
         }
     }
@@ -55,10 +51,10 @@ public class PlatformMoving : MoveAndAnchorSystem
             }
         }
 
-        
-            
 
-        
+
+
+
 
     }
 

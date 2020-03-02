@@ -49,24 +49,15 @@ public class MoveAndAnchorSystem : MonoBehaviour
     // Update is called once per frame
     protected virtual void Update()
     {
-        if (reachedTarget == true)
+        CalcDistAndDir();
+        Rigidbody rb_Obj = movingObj.GetComponent<Rigidbody>();
+        if (rb_Obj.velocity.magnitude > speed)
         {
-            i += Time.deltaTime;
+            rb_Obj.velocity = rb_Obj.velocity.normalized * speed;
         }
-        
-            CalcDistAndDir();
-            if (i >= pauseTime )
-            {
-                rb_Obj = movingObj.GetComponent<Rigidbody>();
-            if (rb_Obj.velocity.magnitude > speed)
-            {
-                rb_Obj.velocity = rb_Obj.velocity.normalized * speed;
-            }
-            else
-            {
-                rb_Obj.AddForce(speed * direction);
-            }
-            i = 0;
+        else
+        {
+            rb_Obj.AddForce(speed * direction);
         }
     }
 
@@ -79,7 +70,7 @@ public class MoveAndAnchorSystem : MonoBehaviour
 
     public virtual void TargetReached()
     {
- 
+
     }
 
     public virtual void Next()
@@ -99,7 +90,7 @@ public class MoveAndAnchorSystem : MonoBehaviour
                 targetNumb = 0;
             }
         }
-        else if(targetNumb == 0)
+        else if (targetNumb == 0)
         {
             if (pingPong)
             {

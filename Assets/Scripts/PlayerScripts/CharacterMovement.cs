@@ -322,12 +322,12 @@ public class CharacterMovement : MonoBehaviour
                 Debug.DrawRay(downCheck, Vector3.down * 2f, Color.red, 100000f);
                 Debug.Log("Down " + hit.transform.gameObject.name);
             }
-            else if (isRight && Physics.Raycast(sideCheck, Vector3.right, out hit, 200f, platformLayer))
+            else if (isRight && Physics.Raycast(sideCheck, Vector3.right, out hit, 500f, platformLayer))
             {
                 Debug.DrawRay(sideCheck, Vector3.right * 200f, Color.red, 100000f);
                 Debug.Log("Right " + hit.transform.gameObject.name);
             }
-            else if (!isRight && Physics.Raycast(sideCheck, Vector3.left, out hit, 200f, platformLayer))
+            else if (!isRight && Physics.Raycast(sideCheck, Vector3.left, out hit, 500f, platformLayer))
             {
                 Debug.DrawRay(sideCheck, Vector3.left * 200f, Color.red, 100000f);
                 Debug.Log("Left " + hit.transform.gameObject.name);
