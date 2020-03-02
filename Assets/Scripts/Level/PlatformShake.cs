@@ -3,6 +3,7 @@ using System.Collections;
 
 public class PlatformShake : MonoBehaviour
 {
+    [Range(0f,.05f)]
     public float shakeStrength;
 
     private float shakeIntensity;
@@ -23,11 +24,11 @@ public class PlatformShake : MonoBehaviour
         while (shaking)
         {
             _transform.localPosition = origPosition + Random.insideUnitSphere * shakeIntensity;
-            _transform.localRotation = new Quaternion(
+            /*_transform.localRotation = new Quaternion(
                 origRotation.x + Random.Range(-shakeIntensity, shakeIntensity) * .2f,
                 origRotation.y + Random.Range(-shakeIntensity, shakeIntensity) * .2f,
                 origRotation.z + Random.Range(-shakeIntensity, shakeIntensity) * .2f,
-                origRotation.w + Random.Range(-shakeIntensity, shakeIntensity) * .2f);
+                origRotation.w + Random.Range(-shakeIntensity, shakeIntensity) * .2f);*/
             yield return null;
         }
 

@@ -313,6 +313,7 @@ public class CharacterMovement : MonoBehaviour
             Vector3 downCheck = destination + Vector3.up;
             Vector3 sideCheck = destination - (Vector3.up*.05f);
 
+            yield return new WaitForEndOfFrame();
             yield return new WaitForEndOfFrame(); // So 2d collider turns off
 
 
@@ -320,19 +321,16 @@ public class CharacterMovement : MonoBehaviour
             {
                 Debug.DrawRay(downCheck, Vector3.down * 2f, Color.red, 100000f);
                 Debug.Log("Down " + hit.transform.gameObject.name);
-                //destination.x = hit.point.x;
             }
             else if (isRight && Physics.Raycast(sideCheck, Vector3.right, out hit, 200f, platformLayer))
             {
                 Debug.DrawRay(sideCheck, Vector3.right * 200f, Color.red, 100000f);
                 Debug.Log("Right " + hit.transform.gameObject.name);
-                //xHit = hit.point.x;
             }
             else if (!isRight && Physics.Raycast(sideCheck, Vector3.left, out hit, 200f, platformLayer))
             {
                 Debug.DrawRay(sideCheck, Vector3.left * 200f, Color.red, 100000f);
                 Debug.Log("Left " + hit.transform.gameObject.name);
-                //xHit = hit.point.x;
             }
 
             destination.y = transform.position.y;
