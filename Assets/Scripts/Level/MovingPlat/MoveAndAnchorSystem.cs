@@ -26,12 +26,16 @@ public class MoveAndAnchorSystem : MonoBehaviour
     protected Vector3 direction;
 
 
+    public float pauseTime = 3;
 
+    private float i = 0;
 
+    protected Rigidbody rb_Obj;
 
     // Start is called before the first frame update
     protected virtual void Start()
     {
+        rb_Obj = movingObj.GetComponent<Rigidbody>();
         movingObj.transform.position = anchor[0].transform.position;
 
         foreach (GameObject obj in anchor)
@@ -45,15 +49,24 @@ public class MoveAndAnchorSystem : MonoBehaviour
     // Update is called once per frame
     protected virtual void Update()
     {
-        CalcDistAndDir();
-        Rigidbody rb_Obj = movingObj.GetComponent<Rigidbody>();
-        if (rb_Obj.velocity.magnitude > speed)
+        if (reachedTarget == true)
         {
-            rb_Obj.velocity = rb_Obj.velocity.normalized * speed;
+            i += Time.deltaTime;
         }
-        else
-        {
-            rb_Obj.AddForce(speed * direction);
+        
+            CalcDistAndDir();
+            if (i >= pauseTime )
+            {
+                rb_Obj = movingObj.GetComponent<Rigidbody>();
+            if (rb_Obj.velocity.magnitude > speed)
+            {
+                rb_Obj.velocity = rb_Obj.velocity.normalized * speed;
+            }
+            else
+            {
+                rb_Obj.AddForce(speed * direction);
+            }
+            i = 0;
         }
     }
 
