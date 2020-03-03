@@ -171,7 +171,7 @@ GameObject:
   - component: {fileID: 930460461174422216}
   - component: {fileID: 2673957653425180950}
   - component: {fileID: 3975194952474008593}
-  - component: {fileID: 4349806348543482338}
+  - component: {fileID: 7774965892907978974}
   m_Layer: 0
   m_Name: Patrol_Enemy3D
   m_TagString: Untagged
@@ -269,7 +269,7 @@ MonoBehaviour:
   health: 1
   maxHealth: 1
   minHealth: 0
---- !u!114 &4349806348543482338
+--- !u!114 &7774965892907978974
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -278,9 +278,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1773610075724549468}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 845437091e893b64a93cbb36b8d352ef, type: 3}
+  m_Script: {fileID: 11500000, guid: 3eb9c70fd6cd1d743b8fcc5ba26ca50c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MeshColliderIn2D: {fileID: 6600482620035320653}
 --- !u!1 &6027817024942537252
 GameObject:
   m_ObjectHideFlags: 0
@@ -305,7 +306,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6027817024942537252}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.32, z: 1.349}
+  m_LocalPosition: {x: 0, y: -0.32, z: 0.74}
   m_LocalScale: {x: 0.752502, y: 0.752502, z: 0.752502}
   m_Children: []
   m_Father: {fileID: 6516042524855361382}
@@ -321,7 +322,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1357056800033650296}
   - component: {fileID: 2130327165118780910}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Patrol_Enemy2D
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -365,6 +366,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6867403816842703625}
   - component: {fileID: 1281855912789047482}
+  - component: {fileID: 5415716440445233049}
   m_Layer: 0
   m_Name: Patrol_Enemy
   m_TagString: Untagged
@@ -402,8 +404,20 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!114 &5415716440445233049
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6691808059847285659}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 845437091e893b64a93cbb36b8d352ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8451803737543861558
 GameObject:
   m_ObjectHideFlags: 0

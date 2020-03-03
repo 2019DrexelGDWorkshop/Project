@@ -4,19 +4,12 @@ using UnityEngine;
 
 public class PatrolSystem : MoveAndAnchorSystem
 {
-    //public bool canJump;
 
     public Transform edgeCheckSource;
 
     public GameObject player = null;
 
-   // public int jumpForce;
-
     public int gravity;
-
-    //protected float distToGround;
-
-   // float jumpStart;
 
     private Vector3 startPos;
 
@@ -45,15 +38,14 @@ public class PatrolSystem : MoveAndAnchorSystem
         if (player)
         {
             Vector3 target = new Vector3(player.transform.position.x, movingObj.transform.position.y, player.transform.position.z);
-            //movingObj.transform.LookAt(target, movingObj.transform.up);
             movingObj.transform.GetChild(0).transform.LookAt(target, movingObj.transform.up);
         }
         else
         {
             Vector3 target = new Vector3(anchor[targetNumb].transform.position.x, movingObj.transform.position.y, anchor[targetNumb].transform.position.z);
-            //movingObj.transform.LookAt(target, movingObj.transform.up);
             movingObj.transform.GetChild(0).transform.LookAt(target, movingObj.transform.up);
         }
+
 
         rb_Obj.velocity = speed * direction;
 
