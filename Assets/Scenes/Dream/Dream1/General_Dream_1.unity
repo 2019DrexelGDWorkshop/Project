@@ -305,33 +305,6 @@ MonoBehaviour:
     _data:
       data: []
   - _sourceObject: {fileID: 2100795846}
-    _sourceField: lastCheckPoint
-    DEPRECATED_fromObject:
-      scene:
-        editorAssetGUID: 
-        name: 
-        _path: 
-      fullPath: 
-      componentName: 
-      componentIndex: 0
-      editorLocalId: 0
-      editorPrefabRelativePath: 
-      version: 0
-    _toObject:
-      scene:
-        editorAssetGUID: e4b24c71540569b43a19931e1884989b
-        name: Dream1_Platforms
-        _path: Assets/Scenes/Dream/Dream1/Dream1_Platforms.unity
-      fullPath: /Level_1/StartPos
-      componentName: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-      componentIndex: 0
-      editorLocalId: -789864928
-      editorPrefabRelativePath: 
-      version: 1
-    _data:
-      data: []
-  - _sourceObject: {fileID: 2100795846}
     _sourceField: camera3D
     DEPRECATED_fromObject:
       scene:
@@ -431,7 +404,7 @@ PrefabInstance:
     - target: {fileID: 2125078366713038190, guid: 8a9f565aaa9f1bc4a962855df6d5e545,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.92
+      value: 4.3
       objectReference: {fileID: 0}
     - target: {fileID: 2125078366713038190, guid: 8a9f565aaa9f1bc4a962855df6d5e545,
         type: 3}
