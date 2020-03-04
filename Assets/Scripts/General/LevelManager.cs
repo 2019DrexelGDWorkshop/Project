@@ -15,6 +15,8 @@ public class LevelManager : MonoBehaviour
 
     public static LevelManager Instance;
 
+    [SerializeField] private Transform initialSpawnLocation;
+
     #endregion
 
     #region Monobehaviour
@@ -44,6 +46,12 @@ public class LevelManager : MonoBehaviour
         }
 
         player = FindObjectOfType<PlayerInput>().gameObject;
+
+        if(initialSpawnLocation != null)
+        {
+            player.transform.position = initialSpawnLocation.position;
+            player.transform.rotation = initialSpawnLocation.rotation;
+        }
 
         CameraManager.Instance.UpdateCameraReferences(camera2D, cameraTransition, camera3D, GameObject.FindObjectOfType<Cinemachine.CinemachineBrain>().gameObject);
         CameraManager.Instance.SetCharacterMovement(player.GetComponent<CharacterMovement>());

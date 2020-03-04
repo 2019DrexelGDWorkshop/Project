@@ -46,8 +46,9 @@ public class PlayerInput : MonoBehaviour
                 UpdateJumpInput();
                 UpdateMovementInput();
                 UpdateCameraStateInput();
+                UpdatePickupInput();
             }
-            catch(System.Exception e)
+            catch (System.Exception e)
             {
                 Debug.LogError("EXCEPTION THROWN:\n\n " + e);
             }
@@ -100,6 +101,14 @@ public class PlayerInput : MonoBehaviour
             }
 
             CameraManager.Instance.Toggle3D2D();
+        }
+    }
+
+    private void UpdatePickupInput()
+    {
+        if (rewiredPlayer.GetButtonDown(RewiredConsts.Action.Projectile))//Input.GetKeyDown(KeyCode.J))    // Tmp used for testing
+        {
+            characterMovement.pickUpCheck();
         }
     }
 

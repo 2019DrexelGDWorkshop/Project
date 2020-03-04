@@ -9,7 +9,7 @@ public class CharacterMovement : MonoBehaviour
     public float jumpSpeed = 8.0f;
     public float jumpUpTime = 0.5f;
     public float gravity = 10.0f;
-    public float jetpackForce = 0;
+    public float jetpackForce = 1;
     [SerializeField] private bool isGrounded;
     [SerializeField] private bool wasGrounded = false;
 
@@ -28,6 +28,7 @@ public class CharacterMovement : MonoBehaviour
     private bool isFlying = false;
     private float delayJetpack = 0.0f;
     private float timer = 0.0f;
+    private bool canUseJetpack = false;
 
 
     CharacterController cc;
@@ -38,8 +39,11 @@ public class CharacterMovement : MonoBehaviour
     public delegate void OnGroundedHandler(bool isGrounded);
     public event OnGroundedHandler OnGrounded;
 
+    private Rewired.Player rewiredPlayer;
+
     public void Init()
     {
+        rewiredPlayer = Rewired.ReInput.players.GetPlayer(0);
         delayJetpack = jetpackForce;
         cc = GetComponent<CharacterController>();
     }
@@ -51,13 +55,11 @@ public class CharacterMovement : MonoBehaviour
 
     private void Update()
     {
-        IsGrounded();
-
-        if (Input.GetButton("Jump"))
+        if (rewiredPlayer.GetButton(RewiredConsts.Action.Jump))
         {
             timer += Time.deltaTime;
         }
-        else if (Input.GetButtonUp("Jump"))
+        else if (rewiredPlayer.GetButtonUp(RewiredConsts.Action.Jump))
         {
             timer = 0;
         }
@@ -68,7 +70,8 @@ public class CharacterMovement : MonoBehaviour
                 ActivateFlying();
             }
         }
-        JetPack();
+        if(canUseJetpack)
+            JetPack();
     }
 
     private void ActivateFlying()
@@ -182,7 +185,7 @@ public class CharacterMovement : MonoBehaviour
     {
         if (other.gameObject.tag == "PowerUp")
         {
-            jetpackForce = 1;
+            canUseJetpack = true;// jetpackForce = 1;
             Destroy(other.gameObject);
         }
     }
@@ -191,7 +194,7 @@ public class CharacterMovement : MonoBehaviour
     {
         if (isFlying)
         {
-            if (Input.GetButton("Jump") && jetpackForce > 0)
+            if (rewiredPlayer.GetButton(RewiredConsts.Action.Jump) && jetpackForce > 0)
             {
                 GetComponentInChildren<Animator>().enabled = false;
                 jetpackForce -= Time.deltaTime;
@@ -208,7 +211,7 @@ public class CharacterMovement : MonoBehaviour
             {
                 currentJetpackForce -= Time.deltaTime;
             }
-            if (!Input.GetButton("Jump"))
+            if (!rewiredPlayer.GetButton(RewiredConsts.Action.Jump))
             {
                 if (currentJetpackForce > 0)
                 {
@@ -233,17 +236,17 @@ public class CharacterMovement : MonoBehaviour
                 moveVec = Vector3.up;
                 if (CameraManager.Instance.cameraState == CameraState.SIDE_SCROLLER)
                 {
-                    if (Input.GetAxis("Horizontal") > 0)
+                    if (rewiredPlayer.GetAxis(RewiredConsts.Action.MoveRight) > 0)
                     {
                         transform.Translate(new Vector3(0, 0, 1) * moveSpeed * Time.deltaTime);
                     }
-                    else if (Input.GetAxis("Horizontal") < 0)
+                    else if (rewiredPlayer.GetAxis(RewiredConsts.Action.MoveRight) < 0)
                         transform.Translate(new Vector3(0, 0, 1) * moveSpeed * Time.deltaTime);
                 }
                 if (CameraManager.Instance.cameraState == CameraState.THIRD_PERSON)
                 {
-                    moveVec += transform.right * Input.GetAxis("Horizontal");
-                    moveVec += transform.forward * Input.GetAxis("Vertical");
+                    moveVec += transform.right * rewiredPlayer.GetAxis(RewiredConsts.Action.MoveRight);
+                    moveVec += transform.forward * rewiredPlayer.GetAxis(RewiredConsts.Action.MoveForward);
                 }
 
                 cc.Move((moveVec * moveSpeed * Time.deltaTime - cc.velocity * Time.deltaTime) * currentJetpackForce);
@@ -299,10 +302,6 @@ public class CharacterMovement : MonoBehaviour
             Vector3 objPos = hit.point;
             bool isRight = true;
 
-            if(objPos.x > hit.transform.position.x)
-            {
-                isRight = false;
-            }
 
             Vector3 destination = objPos;
             destination.z = transform.position.z;
@@ -310,6 +309,7 @@ public class CharacterMovement : MonoBehaviour
             Vector3 downCheck = destination + Vector3.up;
             Vector3 sideCheck = destination - (Vector3.up*.05f);
 
+            yield return new WaitForEndOfFrame();
             yield return new WaitForEndOfFrame(); // So 2d collider turns off
 
 
@@ -317,19 +317,16 @@ public class CharacterMovement : MonoBehaviour
             {
                 Debug.DrawRay(downCheck, Vector3.down * 2f, Color.red, 100000f);
                 Debug.Log("Down " + hit.transform.gameObject.name);
-                //destination.x = hit.point.x;
             }
-            else if (isRight && Physics.Raycast(sideCheck, Vector3.right, out hit, 200f, platformLayer))
+            else if (Physics.Raycast(sideCheck, Vector3.right, out hit, 500f, platformLayer))
             {
                 Debug.DrawRay(sideCheck, Vector3.right * 200f, Color.red, 100000f);
                 Debug.Log("Right " + hit.transform.gameObject.name);
-                //xHit = hit.point.x;
             }
-            else if (!isRight && Physics.Raycast(sideCheck, Vector3.left, out hit, 200f, platformLayer))
+            else if (Physics.Raycast(sideCheck, Vector3.left, out hit, 500f, platformLayer))
             {
                 Debug.DrawRay(sideCheck, Vector3.left * 200f, Color.red, 100000f);
                 Debug.Log("Left " + hit.transform.gameObject.name);
-                //xHit = hit.point.x;
             }
 
             destination.y = transform.position.y;
@@ -338,4 +335,35 @@ public class CharacterMovement : MonoBehaviour
             this.transform.position = destination;
         }
     }
+
+    private GameObject throwObj = null;
+
+    public void pickUpCheck()
+    {
+        if (throwObj != null)
+        {
+            throwObj.GetComponent<ThrowableObjectLogic>().throwOut();
+            throwObj = null;
+        }
+        else
+        {
+            Collider[] hitColliders = Physics.OverlapBox(transform.position, transform.localScale, Quaternion.identity, 1 << 13);
+            int i = 0;
+            //Check when there is a new collider coming into contact with the box
+            while (i < hitColliders.Length)
+            {
+                //Output all of the collider names
+                if (hitColliders[i].tag == "Throwable")
+                {
+                    Debug.Log("Hit : " + hitColliders[i].name + i);
+                    throwObj = hitColliders[i].gameObject;
+                    throwObj.GetComponent<ThrowableObjectLogic>().pickUp(this.gameObject);
+                    break;
+                }
+                //Increase the number of Colliders in the array
+                i++;
+            }
+        }
+    }
+
 }
