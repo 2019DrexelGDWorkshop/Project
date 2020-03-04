@@ -106,7 +106,7 @@ public class PlayerInput : MonoBehaviour
 
     private void UpdatePickupInput()
     {
-        if (Input.GetKeyDown(KeyCode.J))    // Tmp used for testing
+        if (rewiredPlayer.GetButtonDown(RewiredConsts.Action.Projectile))//Input.GetKeyDown(KeyCode.J))    // Tmp used for testing
         {
             characterMovement.pickUpCheck();
         }

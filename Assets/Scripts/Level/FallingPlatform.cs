@@ -11,6 +11,7 @@ public class FallingPlatform : MonoBehaviour
     public float respawnDelay = 5.0f;
 
     private Vector3 origPosition;
+    private Quaternion origRotation;
     [SerializeField]
     private bool falling;
     public PlatformShake platShake;
@@ -21,6 +22,7 @@ public class FallingPlatform : MonoBehaviour
     {
         canFall = true;
         origPosition = gameObject.transform.position;
+        origRotation = gameObject.transform.rotation;
     }
 
     private void OnTriggerEnter(Collider col)
@@ -77,6 +79,7 @@ public class FallingPlatform : MonoBehaviour
         falling = false;
         canFall = true;
         gameObject.transform.position = origPosition;
+        gameObject.transform.rotation = origRotation;
         GetComponent<Rigidbody>().isKinematic = true;
 
     }

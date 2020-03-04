@@ -61,7 +61,7 @@ GameObject:
   - component: {fileID: 6353576594535697205}
   - component: {fileID: 2834084259453992124}
   m_Layer: 10
-  m_Name: Falling Platform (1)
+  m_Name: Falling Platform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -179,10 +179,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 9090998680253610156}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dd1fe30bf6574d247b549d0f8105956e, type: 3}
+  m_Script: {fileID: 11500000, guid: 1ac6f0478688f3d42a89f4e00b5ab1e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shakeStrength: 0.05
+  shakeStrength: 0.04
   shaking: 0
 --- !u!114 &2834084259453992124
 MonoBehaviour:
@@ -198,6 +198,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fallDelay: 2
   respawnDelay: 5
+  falling: 0
   platShake: {fileID: 6353576594535697205}
   stillFallAfterJumpingOff: 1
 --- !u!1 &9090998680900306008

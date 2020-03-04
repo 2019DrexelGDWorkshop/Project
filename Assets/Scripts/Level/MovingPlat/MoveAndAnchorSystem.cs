@@ -26,12 +26,16 @@ public class MoveAndAnchorSystem : MonoBehaviour
     protected Vector3 direction;
 
 
+    public float pauseTime = 3;
 
+    private float i = 0;
 
+    protected Rigidbody rb_Obj;
 
     // Start is called before the first frame update
     protected virtual void Start()
     {
+        rb_Obj = movingObj.GetComponent<Rigidbody>();
         movingObj.transform.position = anchor[0].transform.position;
 
         foreach (GameObject obj in anchor)
@@ -66,7 +70,7 @@ public class MoveAndAnchorSystem : MonoBehaviour
 
     public virtual void TargetReached()
     {
- 
+
     }
 
     public virtual void Next()
@@ -86,7 +90,7 @@ public class MoveAndAnchorSystem : MonoBehaviour
                 targetNumb = 0;
             }
         }
-        else if(targetNumb == 0)
+        else if (targetNumb == 0)
         {
             if (pingPong)
             {

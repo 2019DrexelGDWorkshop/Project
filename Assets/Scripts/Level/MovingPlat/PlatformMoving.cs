@@ -6,33 +6,60 @@ public class PlatformMoving : MoveAndAnchorSystem
 {
 
     public float rateDecay = 0.2f;
+    private float i = 0;
 
-    protected void FixedUpdate()
+    protected override void Update()
     {
+        if (rb_Obj.isKinematic == true)
+        {
+            i += Time.deltaTime;
+        }
+
         CalcDistAndDir();
 
-        Rigidbody rb_mPlat = movingObj.GetComponent<Rigidbody>();
-        if (rb_mPlat.velocity.magnitude > speed)
+        if (rb_Obj.velocity.magnitude > speed)
         {
-            rb_mPlat.velocity = rb_mPlat.velocity.normalized * speed;
+            rb_Obj.velocity = rb_Obj.velocity.normalized * speed;
         }
+
         else if (reachedTarget)
         {
+
             TargetReached();
         }
+
         else
         {
-            rb_mPlat.AddForce(speed * direction);
+            rb_Obj.AddForce(speed * direction);
         }
     }
+
 
     public override void TargetReached()
     {
         movingObj.GetComponent<Rigidbody>().velocity = movingObj.GetComponent<Rigidbody>().velocity * Mathf.Pow((1 - rateDecay), Time.time - timeReached);
         //print(movingObj.GetComponent<Rigidbody>().velocity);
-        if (movingObj.GetComponent<Rigidbody>().velocity.magnitude < 0.1f)
+        rb_Obj.isKinematic = true;
+        i += Time.deltaTime;
+        if (i >= pauseTime)
         {
-            reachedTarget = false;
+            rb_Obj.isKinematic = false;
+            if (movingObj.GetComponent<Rigidbody>().velocity.magnitude < 0.1f)
+            {
+                reachedTarget = false;
+                i = 0;
+            }
         }
+
+
+
+
+
+
+    }
+
+    private IEnumerator Wait()
+    {
+        yield return new WaitForSeconds(pauseTime);
     }
 }
