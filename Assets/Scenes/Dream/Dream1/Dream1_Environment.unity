@@ -219,6 +219,8 @@ MonoBehaviour:
   - {fileID: 1429315975}
   - {fileID: 201813258}
   - {fileID: 1024694105}
+  - {fileID: 1004830403}
+  - {fileID: 333225718}
   Prefabs:
   - {fileID: 4397294823281286154, guid: d7732b78780b7c647a5e3f7bf0a5c502, type: 3}
   - {fileID: 5375332360616530504, guid: 98208dcbcc81b8140ae817f892da0a09, type: 3}
@@ -274,6 +276,8 @@ Transform:
   - {fileID: 1429315975}
   - {fileID: 201813258}
   - {fileID: 1024694105}
+  - {fileID: 1004830403}
+  - {fileID: 333225718}
   m_Father: {fileID: 32979210}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -336,6 +340,36 @@ Transform:
   m_Children: []
   m_Father: {fileID: 134481062}
   m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &333225717
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 333225718}
+  m_Layer: 0
+  m_Name: cloudSpawner (13)
+  m_TagString: Untagged
+  m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &333225718
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 333225717}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 17.04, y: -2.64, z: -1.19}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 134481062}
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &360004870
 GameObject:
@@ -693,6 +727,36 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 973779650}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1004830402
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1004830403}
+  m_Layer: 0
+  m_Name: cloudSpawner (12)
+  m_TagString: Untagged
+  m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1004830403
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1004830402}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 11.9, y: -2.64, z: -1.19}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 134481062}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1024694104
 GameObject:
   m_ObjectHideFlags: 0

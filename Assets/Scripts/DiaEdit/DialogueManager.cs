@@ -5,7 +5,10 @@ using UnityEngine.UI;
 
 public class DialogueManager : MonoBehaviour
 {
-    
+    //public AudioSource AudioSource;
+    public int i = 0;
+    public AudioSource[] OyuVoiceLines;
+    public AudioSource nextVoiceLine;
     public Text nameText;
     public Text dialogueText;
     public bool inChat = false;
@@ -52,6 +55,10 @@ public class DialogueManager : MonoBehaviour
 
     public void DisplayNextSentence()
     {
+        nextVoiceLine = OyuVoiceLines[i];
+        i++;
+        nextVoiceLine.Play();
+
         if (sentences.Count == 0)
         {
             EndDialogue();
