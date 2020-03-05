@@ -11,7 +11,7 @@ public class ChangeSceneTrigger : MonoBehaviour
     public GameObject loadingScreen;
     public Slider slider;
 	
-	public bool returnTo3D;
+	public static bool returnTo3D;
 
     private void OnTriggerEnter(Collider other)
     {
