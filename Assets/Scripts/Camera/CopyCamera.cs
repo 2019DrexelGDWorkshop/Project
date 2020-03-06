@@ -8,12 +8,13 @@ public class CopyCamera : MonoBehaviour
     [SerializeField] private Transform followTransform;
     [SerializeField] private LayerMask myCullingMask;
 
-    private Camera myCam;
+    private Camera myCam, skyboxCam;
     private LayerMask originalCullingMask;
 
     private void Start()
     {
         myCam = GetComponent<Camera>();
+        skyboxCam = GetComponentInChildren<Camera>();
         CameraManager.Instance.onPerspectiveSwitch += PerspectiveSwitchHandler;
         CameraManager.Instance.onCameraTransition += CameraTransitionHandler;
     }
@@ -76,14 +77,18 @@ public class CopyCamera : MonoBehaviour
         if (_is2D)
         {
             myCam.enabled = true;
+            skyboxCam.enabled = true;
             originalCullingMask = cmBrainCam.cullingMask;
             cmBrainCam.cullingMask = ~myCullingMask;
             myCam.cullingMask = myCullingMask;
+            cmBrainCam.clearFlags = CameraClearFlags.Nothing;
         }
         else
         {
             myCam.enabled = false;
+            skyboxCam.enabled = false;
             cmBrainCam.cullingMask = CameraManager.Instance.originalCullingMask;
+            cmBrainCam.clearFlags = CameraClearFlags.Skybox;
 
         }
     }
