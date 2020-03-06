@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 276898981213946711}
   - component: {fileID: 276898981213946708}
   - component: {fileID: 7217194927046840465}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: Vision
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -114,7 +114,7 @@ GameObject:
   m_Component:
   - component: {fileID: 276898982527627743}
   - component: {fileID: 1199314614944467785}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: PatrolEnemySystem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -155,6 +155,7 @@ MonoBehaviour:
   movingObj: {fileID: 6691808059847285659}
   speed: 3
   pingPong: 1
+  pauseTime: 3
   edgeCheckSource: {fileID: 874641212287499572}
   player: {fileID: 0}
   gravity: 10
@@ -172,7 +173,7 @@ GameObject:
   - component: {fileID: 2673957653425180950}
   - component: {fileID: 3975194952474008593}
   - component: {fileID: 4349806348543482338}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Patrol_Enemy3D
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -290,7 +291,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 874641212287499572}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: EdgeCheck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -321,7 +322,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1357056800033650296}
   - component: {fileID: 2130327165118780910}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Patrol_Enemy2D
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -365,7 +366,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6867403816842703625}
   - component: {fileID: 1281855912789047482}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Patrol_Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -413,7 +414,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 678793398724303936}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Anchors
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -447,6 +448,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: anchor
+      objectReference: {fileID: 0}
+    - target: {fileID: 4606708649791252940, guid: 6d3c3c29fea9cd445b7d1467683272be,
+        type: 3}
+      propertyPath: m_Layer
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 4606708649791252941, guid: 6d3c3c29fea9cd445b7d1467683272be,
         type: 3}
@@ -528,6 +534,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: anchor
+      objectReference: {fileID: 0}
+    - target: {fileID: 4606708649791252940, guid: 6d3c3c29fea9cd445b7d1467683272be,
+        type: 3}
+      propertyPath: m_Layer
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 4606708649791252941, guid: 6d3c3c29fea9cd445b7d1467683272be,
         type: 3}

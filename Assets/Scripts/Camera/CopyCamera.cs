@@ -15,19 +15,22 @@ public class CopyCamera : MonoBehaviour
     {
         myCam = GetComponent<Camera>();
         CameraManager.Instance.onPerspectiveSwitch += PerspectiveSwitchHandler;
+        CameraManager.Instance.onCameraTransition += CameraTransitionHandler;
     }
 
     private void OnDisable()
     {
         CameraManager.Instance.onPerspectiveSwitch -= PerspectiveSwitchHandler;
+        CameraManager.Instance.onCameraTransition -= CameraTransitionHandler;
     }
 
     private void OnDestroy()
     {
         CameraManager.Instance.onPerspectiveSwitch -= PerspectiveSwitchHandler;
+        CameraManager.Instance.onCameraTransition -= CameraTransitionHandler;
     }
 
-    void FixedUpdate()
+    void Update()
     {
         this.transform.position = followTransform.position;
         this.transform.rotation = followTransform.rotation;
@@ -36,12 +39,20 @@ public class CopyCamera : MonoBehaviour
     private void PerspectiveSwitchHandler(bool _is2D)
     {
         if(_is2D)
+         {
+             StartCoroutine(waitForCameraBlend(_is2D));
+         }
+         else
+         {
+             PerspectiveSwitch(_is2D);
+         }
+    }
+
+    private void CameraTransitionHandler(bool _going2D)
+    {
+        if(!_going2D)
         {
-            StartCoroutine(waitForCameraBlend(_is2D));
-        }
-        else
-        {
-            PerspectiveSwitch(_is2D);
+            PerspectiveSwitch(false);
         }
     }
 

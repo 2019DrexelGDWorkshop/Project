@@ -23,7 +23,7 @@ public class SwitcherIn3D : MonoBehaviour
 
     private void PerspectiveChangeHandler(bool _is2D)
     {
-        if(!_is2D)
+        if(_is2D)
         {
             obj.SetActive(false);
         }

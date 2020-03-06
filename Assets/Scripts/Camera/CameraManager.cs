@@ -43,6 +43,9 @@ public class CameraManager : MonoBehaviour
     #region Events
     public delegate void SwitchPerspectiveHandler(bool _is2D);
     public event SwitchPerspectiveHandler onPerspectiveSwitch;
+
+    public delegate void CameraTransitioningHandler(bool _going2D);
+    public event CameraTransitioningHandler onCameraTransition;
     #endregion
 
 
@@ -89,9 +92,11 @@ public class CameraManager : MonoBehaviour
         {
             case CameraState.THIRD_PERSON:
                 StartCoroutine(SwitchTo2D());
+                onCameraTransition?.Invoke(true);
                 break;
             case CameraState.SIDE_SCROLLER:
                 StartCoroutine(SwitchTo3D());
+                onCameraTransition?.Invoke(false);
                 break;
             default:
                 Debug.Log(cameraState + " is unsupported camera transition.");
