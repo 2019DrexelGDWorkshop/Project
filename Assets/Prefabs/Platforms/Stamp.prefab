@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8194037690050591437}
   - component: {fileID: 6810328579368974406}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: 2D_Col
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -56,7 +56,7 @@ GameObject:
   - component: {fileID: 3870079426092115899}
   - component: {fileID: 6106751120727092463}
   - component: {fileID: 992848629362317805}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Stamp_SM
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -146,7 +146,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6172020767782404660}
   - component: {fileID: 1678990066606501018}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: 2D_Col
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -189,7 +189,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2350343518395608501}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: 2D_Cols
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -223,7 +223,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6083412932356994391}
   - component: {fileID: 1977868082541883066}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: 2D_Col
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -267,7 +267,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4878110566523430170}
   - component: {fileID: 6313684513002361619}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Stamp
   m_TagString: Untagged
   m_Icon: {fileID: 0}

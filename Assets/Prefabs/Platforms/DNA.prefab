@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2165600407641189615}
   - component: {fileID: 6131642012113014914}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: DNA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -58,7 +58,7 @@ GameObject:
   - component: {fileID: 4917494322360384239}
   - component: {fileID: 6636443018276157866}
   - component: {fileID: 3740587068764108174}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SNA_SM
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -148,7 +148,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8186789002769284160}
   - component: {fileID: 7287322873299772933}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: 2D_Col
   m_TagString: Untagged
   m_Icon: {fileID: 0}

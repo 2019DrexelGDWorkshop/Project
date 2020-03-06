@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2097706287853432779}
   - component: {fileID: 2861677090564476353}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: 2D_Col
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -54,7 +54,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7846071157781286749}
   - component: {fileID: 3374725480060110542}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Protractor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -102,7 +102,7 @@ GameObject:
   - component: {fileID: 3311654516349535035}
   - component: {fileID: 1849128794351337315}
   - component: {fileID: 7228941005879197921}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Protractor_SM
   m_TagString: Untagged
   m_Icon: {fileID: 0}

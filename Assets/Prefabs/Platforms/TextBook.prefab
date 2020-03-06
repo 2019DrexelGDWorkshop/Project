@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7259695776506199872}
   - component: {fileID: 4681632174857198106}
   - component: {fileID: 519636275923502569}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Textbook_SM
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -87,7 +87,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4608010698710681108}
   - component: {fileID: 4482870763678690144}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: 2D_Col
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -131,7 +131,7 @@ GameObject:
   m_Component:
   - component: {fileID: 412043599786786474}
   - component: {fileID: 4017591761043778863}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: 3D_Col
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -175,7 +175,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3334324004718879130}
   - component: {fileID: 7901264211478687879}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: TextBook
   m_TagString: Untagged
   m_Icon: {fileID: 0}

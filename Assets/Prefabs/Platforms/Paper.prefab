@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4566406788549127443}
   - component: {fileID: 4343038284033433613}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: 2D_Col
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -55,7 +55,7 @@ GameObject:
   - component: {fileID: 3596969444385451669}
   - component: {fileID: 928005281857710285}
   - component: {fileID: 6008799778359111569}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Paper_SM
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -131,7 +131,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6831745258519115377}
   - component: {fileID: 1119067250174423816}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Paper
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -178,7 +178,7 @@ GameObject:
   m_Component:
   - component: {fileID: 584115164889806762}
   - component: {fileID: 492698282281046056}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: 3D_Col
   m_TagString: Untagged
   m_Icon: {fileID: 0}

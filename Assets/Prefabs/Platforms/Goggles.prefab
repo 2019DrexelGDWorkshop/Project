@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3835078438007064459}
   - component: {fileID: 838294278829033706}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: 2D_Col (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -53,7 +53,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8770610771545893999}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: 2D_Cols
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -90,7 +90,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8696983428667439698}
   - component: {fileID: 5991214402809924633}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: 2D_Col
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 5329236152007267275}
   - component: {fileID: 7618415618216472882}
   - component: {fileID: 6954222219936929235}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Goggles_SM
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -226,7 +226,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8271242485748771287}
   - component: {fileID: 3391046367800620411}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Goggles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -272,7 +272,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1504539852996794854}
   - component: {fileID: 234664622352844574}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: 2D_Col (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -316,7 +316,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6341241564130972359}
   - component: {fileID: 784076946627291851}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: 2D_Col (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -360,7 +360,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4795517895409843254}
   - component: {fileID: 2000257361702387675}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: 2D_Col (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -404,7 +404,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1481057186684589312}
   - component: {fileID: 6768812723989376368}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: 2D_Col
   m_TagString: Untagged
   m_Icon: {fileID: 0}

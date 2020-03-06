@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 725416879765060094}
   - component: {fileID: 8386351078920906915}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Top_Col
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -54,7 +54,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2092308159656181352}
   - component: {fileID: 3141265864964651627}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Leg_Col (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -98,7 +98,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7704397330201275471}
   - component: {fileID: 2008795463115665953}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Top_Col
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -141,7 +141,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5311901538534953463}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: 3D_Col
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -177,7 +177,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5668528636637171653}
   - component: {fileID: 7780946959274483274}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Leg_Col
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -221,7 +221,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3316296442617334213}
   - component: {fileID: 1758968178913840916}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Leg_Col (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -265,7 +265,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2890699673922605220}
   - component: {fileID: 3453883844494367134}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Leg_Col (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -310,7 +310,7 @@ GameObject:
   - component: {fileID: 7211119841473095160}
   - component: {fileID: 5496820334301819165}
   - component: {fileID: 36359245703966919}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Desk_SM
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -386,7 +386,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8922954323930097360}
   - component: {fileID: 6530930439656607235}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Leg_Col (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -430,7 +430,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9114515805108621733}
   - component: {fileID: 2644490570947417284}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Desk
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -477,7 +477,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1262761413070449948}
   - component: {fileID: 2560965369203172274}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Leg_Col
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -520,7 +520,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2067018204289735121}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: 2D_Col
   m_TagString: Untagged
   m_Icon: {fileID: 0}

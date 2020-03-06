@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2484870883149624876}
   - component: {fileID: 4387974241725690355}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: 2D_Col
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -56,7 +56,7 @@ GameObject:
   - component: {fileID: 4801748462930772602}
   - component: {fileID: 8824886225229240850}
   - component: {fileID: 2673155139889833252}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Glass_SM
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -146,7 +146,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5757971718180152164}
   - component: {fileID: 1923099289216645459}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: TestTube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -191,7 +191,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8290085556780853559}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Mesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -227,7 +227,7 @@ GameObject:
   - component: {fileID: 7793406388602738534}
   - component: {fileID: 3296215162567024237}
   - component: {fileID: 4397975093909703147}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cap_SM
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -318,7 +318,7 @@ GameObject:
   - component: {fileID: 6699525937557367910}
   - component: {fileID: 3985393990591159433}
   - component: {fileID: 2034818941260235446}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Liquid_SM
   m_TagString: Untagged
   m_Icon: {fileID: 0}
