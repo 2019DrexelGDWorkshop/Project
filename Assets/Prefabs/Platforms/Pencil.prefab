@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7531800903319752369}
   - component: {fileID: 5161090604322854363}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: 3D_Col
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -54,7 +54,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1904445361886601420}
   - component: {fileID: 7034838395706177281}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: 2D_Col
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -98,7 +98,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2048853600392916814}
   - component: {fileID: 1171324182959687099}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Pencil
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -145,6 +145,14 @@ PrefabInstance:
     - target: {fileID: 100002, guid: 369f79a15e985844da98f4ddeac8aedf, type: 3}
       propertyPath: m_Name
       value: pencil4
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 369f79a15e985844da98f4ddeac8aedf, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 369f79a15e985844da98f4ddeac8aedf, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 369f79a15e985844da98f4ddeac8aedf, type: 3}
       propertyPath: m_LocalPosition.x

@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4677413031854199810}
   - component: {fileID: 1603320101869199988}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: 2D_Col (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -56,7 +56,7 @@ GameObject:
   - component: {fileID: 7705549078710509894}
   - component: {fileID: 9202753292521377266}
   - component: {fileID: 7697471519400447837}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Chair_SM
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -146,7 +146,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6881810999935845081}
   - component: {fileID: 1737117870778397237}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: 2D_Col (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -189,7 +189,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5578162895904523598}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: 2D_Cols
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -225,7 +225,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1501262313349426603}
   - component: {fileID: 6348440561889166098}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: 2D_Col (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -269,7 +269,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6187105801432183090}
   - component: {fileID: 3743605822177740307}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: 2D_Col
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -313,7 +313,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7387153391381769890}
   - component: {fileID: 6838064424416810648}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Chair
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -359,7 +359,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2273154599717991447}
   - component: {fileID: 3443253527365874067}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: 2D_Col (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

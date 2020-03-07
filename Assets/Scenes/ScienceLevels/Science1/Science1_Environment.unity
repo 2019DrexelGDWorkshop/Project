@@ -262,18 +262,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 247921282}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &262186435 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6495287343980355844, guid: 65cb2e0523497de44a9652c90150c3b8,
-    type: 3}
-  m_PrefabInstance: {fileID: 1373548015}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cdb2bc523f2232c488662cc64b1caa22, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &315276939
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -455,60 +443,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _version: 2
-  _crossSceneReferences:
-  - _sourceObject: {fileID: 262186435}
-    _sourceField: slider
-    DEPRECATED_fromObject:
-      scene:
-        editorAssetGUID: 
-        name: 
-        _path: 
-      fullPath: 
-      componentName: 
-      componentIndex: 0
-      editorLocalId: 0
-      editorPrefabRelativePath: 
-      version: 0
-    _toObject:
-      scene:
-        editorAssetGUID: a4d2b1a760971154abb85181f73de293
-        name: UI
-        _path: Assets/Scenes/GenericScenes/UI.unity
-      fullPath: /Canvas/loadingScreen/Slider
-      componentName: UnityEngine.UI.Slider, UnityEngine.UI, Version=1.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      componentIndex: 0
-      editorLocalId: 1787944012
-      editorPrefabRelativePath: 
-      version: 1
-    _data:
-      data: []
-  - _sourceObject: {fileID: 262186435}
-    _sourceField: loadingScreen
-    DEPRECATED_fromObject:
-      scene:
-        editorAssetGUID: 
-        name: 
-        _path: 
-      fullPath: 
-      componentName: 
-      componentIndex: 0
-      editorLocalId: 0
-      editorPrefabRelativePath: 
-      version: 0
-    _toObject:
-      scene:
-        editorAssetGUID: a4d2b1a760971154abb85181f73de293
-        name: UI
-        _path: Assets/Scenes/GenericScenes/UI.unity
-      fullPath: /Canvas/loadingScreen
-      componentName: 
-      componentIndex: 0
-      editorLocalId: 1899923337
-      editorPrefabRelativePath: 
-      version: 1
-    _data:
-      data: []
+  _crossSceneReferences: []
   _realSceneRootsForPostBuild: []
   _mergedScenes: []
 --- !u!114 &1189718299

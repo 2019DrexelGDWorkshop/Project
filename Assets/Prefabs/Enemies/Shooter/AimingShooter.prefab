@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7050631454562325964}
   - component: {fileID: 2150763650688773648}
   - component: {fileID: 962428588161471205}
-  m_Layer: 10
+  m_Layer: 15
   m_Name: Shooter_SM
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -103,7 +103,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1489162799101281084}
   - component: {fileID: 4279037380123010557}
-  m_Layer: 10
+  m_Layer: 15
   m_Name: 2D_Col
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -146,7 +146,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5193916959678424250}
-  m_Layer: 10
+  m_Layer: 15
   m_Name: BulletSpawnLocation
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -179,7 +179,7 @@ GameObject:
   - component: {fileID: 1216940758055165911}
   - component: {fileID: 8597633804066669273}
   - component: {fileID: 3675184833719358441}
-  m_Layer: 10
+  m_Layer: 15
   m_Name: AimingShooter
   m_TagString: Untagged
   m_Icon: {fileID: 0}

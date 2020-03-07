@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4566406788549127443}
   - component: {fileID: 4343038284033433613}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: 2D_Col
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42,8 +42,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2300.08, y: 0.2, z: 14.25}
-  m_Center: {x: 1.15, y: -5.34, z: 3.27}
+  m_Size: {x: 3.519368, y: 5.7513423, z: 0.044127952}
+  m_Center: {x: 0, y: 0.74385566, z: 2.3228354}
 --- !u!1 &4098791929604578577
 GameObject:
   m_ObjectHideFlags: 0
@@ -55,7 +55,7 @@ GameObject:
   - component: {fileID: 3596969444385451669}
   - component: {fileID: 928005281857710285}
   - component: {fileID: 6008799778359111569}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Paper_SM
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -69,7 +69,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4098791929604578577}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -131,7 +131,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6831745258519115377}
   - component: {fileID: 1119067250174423816}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Paper
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -178,7 +178,7 @@ GameObject:
   m_Component:
   - component: {fileID: 584115164889806762}
   - component: {fileID: 492698282281046056}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: 3D_Col
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -210,5 +210,5 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 23.08, y: 0.2, z: 14.25}
-  m_Center: {x: 1.15, y: -5.34, z: 3.27}
+  m_Size: {x: 3.519368, y: 5.7513423, z: 0.044127952}
+  m_Center: {x: 0, y: 0.74385566, z: 2.3228354}

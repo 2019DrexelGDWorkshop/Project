@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 885079824039129347}
   - component: {fileID: 8550383034653824439}
   - component: {fileID: 4462310470865571500}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Ruler_SM
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -102,7 +102,7 @@ GameObject:
   m_Component:
   - component: {fileID: 893460904743181691}
   - component: {fileID: 1108774091396846777}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: 3D_Col
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -147,7 +147,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5818579259457228376}
   - component: {fileID: 6307404431535006124}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Ruler
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -194,7 +194,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2688604342436951851}
   - component: {fileID: 4240715514668970315}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: 2D_Col
   m_TagString: Untagged
   m_Icon: {fileID: 0}

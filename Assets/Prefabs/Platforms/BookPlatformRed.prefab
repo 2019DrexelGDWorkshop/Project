@@ -57,7 +57,7 @@ GameObject:
   - component: {fileID: 5674257560088494451}
   - component: {fileID: 5674257560088494450}
   m_Layer: 10
-  m_Name: BookPlatform1
+  m_Name: BookPlatformRed
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -117,7 +117,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: f633400e7c7e79a4887c7607f12b531b, type: 2}
+  - {fileID: 2100000, guid: b09f7540acd9cf242936426d84720bcb, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7628452010891829235}
   - component: {fileID: 7695931992262114246}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: 2D_Col
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -56,7 +56,7 @@ GameObject:
   - component: {fileID: 1444391938240357910}
   - component: {fileID: 8679320225186723448}
   - component: {fileID: 5389465055863035696}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: OpenBook_SM
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -148,7 +148,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8904743659340607438}
   - component: {fileID: 597427006448058198}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: OpenBook
   m_TagString: Untagged
   m_Icon: {fileID: 0}

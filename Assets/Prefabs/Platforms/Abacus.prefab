@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8315439680665837750}
   - component: {fileID: 3943739915875771410}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: 2D_Col
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -54,7 +54,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3430086659902616030}
   - component: {fileID: 7097716193534166933}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Abacus
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -102,7 +102,7 @@ GameObject:
   - component: {fileID: 8621988140411611235}
   - component: {fileID: 7146270544378917852}
   - component: {fileID: 6793071123119354858}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Abacus_SM
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -178,7 +178,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5240144439805157380}
   - component: {fileID: 6331972842683115615}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: 3D_Col
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -28,6 +28,7 @@ public class CameraManager : MonoBehaviour
     [SerializeField] private float deadZoneMaxHeight = .4f;
     [SerializeField] private float deadZoneMinHeight = .05f;
     [SerializeField] private float defaultScreenY = .5f;
+    [SerializeField] private float defaultScreenX = .5f;
     public LayerMask originalCullingMask;
 
 
@@ -42,6 +43,9 @@ public class CameraManager : MonoBehaviour
     #region Events
     public delegate void SwitchPerspectiveHandler(bool _is2D);
     public event SwitchPerspectiveHandler onPerspectiveSwitch;
+
+    public delegate void CameraTransitioningHandler(bool _going2D);
+    public event CameraTransitioningHandler onCameraTransition;
     #endregion
 
 
@@ -88,9 +92,11 @@ public class CameraManager : MonoBehaviour
         {
             case CameraState.THIRD_PERSON:
                 StartCoroutine(SwitchTo2D());
+                onCameraTransition?.Invoke(true);
                 break;
             case CameraState.SIDE_SCROLLER:
                 StartCoroutine(SwitchTo3D());
+                onCameraTransition?.Invoke(false);
                 break;
             default:
                 Debug.Log(cameraState + " is unsupported camera transition.");
@@ -186,7 +192,7 @@ public class CameraManager : MonoBehaviour
     /// Shift will always work off of the default. A value of 0 will reset to normal shift ammounts.
     /// </summary>
     /// <param name="_shiftAmount">Shift ammount</param>
-    public void ScreenShift(float _shiftAmount = 0f)
+    public void ScreenShiftY(float _shiftAmount = 0f)
     {
         CinemachineFramingTransposer transposer = ((CinemachineVirtualCamera)camera2D).GetCinemachineComponent<CinemachineFramingTransposer>();
 
@@ -194,6 +200,15 @@ public class CameraManager : MonoBehaviour
 
         transposer.m_ScreenY = shiftAmount;
 
+    }
+
+    public void ScreenShiftX(float _shiftAmount = 0f)
+    {
+        CinemachineFramingTransposer transposer = ((CinemachineVirtualCamera)camera2D).GetCinemachineComponent<CinemachineFramingTransposer>();
+
+        float shiftAmount = Mathf.Clamp01(defaultScreenX + _shiftAmount);
+
+        transposer.m_ScreenX = shiftAmount;
     }
 
     private void OnGroundedChangedHandler(bool _isGrounded)

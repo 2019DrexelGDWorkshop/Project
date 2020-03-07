@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7379380850904793659}
   - component: {fileID: 9211668864168593243}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: 2DButton_Col (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -56,7 +56,7 @@ GameObject:
   - component: {fileID: 6623965219335356932}
   - component: {fileID: 3402906810943336759}
   - component: {fileID: 2719137982330413511}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Calculator_SM
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -146,7 +146,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9070327828298691032}
   - component: {fileID: 696276092991617479}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Calculator
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -192,7 +192,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5248745646937479634}
   - component: {fileID: 835134093743453088}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: 2D_Col
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -236,7 +236,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7007137030456375331}
   - component: {fileID: 8274270762844020086}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: 2DButton_Col (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -280,7 +280,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3565411017347071890}
   - component: {fileID: 8893488786396883892}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: 2DButton_Col
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -324,7 +324,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8105180242133605736}
   - component: {fileID: 1053846951843659744}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: 2DButton_Col (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -367,7 +367,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7567103954863999370}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: 2D_Cols
   m_TagString: Untagged
   m_Icon: {fileID: 0}

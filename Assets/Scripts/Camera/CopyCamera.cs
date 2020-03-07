@@ -8,26 +8,30 @@ public class CopyCamera : MonoBehaviour
     [SerializeField] private Transform followTransform;
     [SerializeField] private LayerMask myCullingMask;
 
-    private Camera myCam;
+    private Camera myCam, skyboxCam;
     private LayerMask originalCullingMask;
 
     private void Start()
     {
         myCam = GetComponent<Camera>();
+        skyboxCam = GetComponentInChildren<Camera>();
         CameraManager.Instance.onPerspectiveSwitch += PerspectiveSwitchHandler;
+        CameraManager.Instance.onCameraTransition += CameraTransitionHandler;
     }
 
     private void OnDisable()
     {
         CameraManager.Instance.onPerspectiveSwitch -= PerspectiveSwitchHandler;
+        CameraManager.Instance.onCameraTransition -= CameraTransitionHandler;
     }
 
     private void OnDestroy()
     {
         CameraManager.Instance.onPerspectiveSwitch -= PerspectiveSwitchHandler;
+        CameraManager.Instance.onCameraTransition -= CameraTransitionHandler;
     }
 
-    void FixedUpdate()
+    void Update()
     {
         this.transform.position = followTransform.position;
         this.transform.rotation = followTransform.rotation;
@@ -36,12 +40,20 @@ public class CopyCamera : MonoBehaviour
     private void PerspectiveSwitchHandler(bool _is2D)
     {
         if(_is2D)
+         {
+             StartCoroutine(waitForCameraBlend(_is2D));
+         }
+         else
+         {
+             PerspectiveSwitch(_is2D);
+         }
+    }
+
+    private void CameraTransitionHandler(bool _going2D)
+    {
+        if(!_going2D)
         {
-            StartCoroutine(waitForCameraBlend(_is2D));
-        }
-        else
-        {
-            PerspectiveSwitch(_is2D);
+            PerspectiveSwitch(false);
         }
     }
 
@@ -65,14 +77,18 @@ public class CopyCamera : MonoBehaviour
         if (_is2D)
         {
             myCam.enabled = true;
+            skyboxCam.enabled = true;
             originalCullingMask = cmBrainCam.cullingMask;
             cmBrainCam.cullingMask = ~myCullingMask;
             myCam.cullingMask = myCullingMask;
+            cmBrainCam.clearFlags = CameraClearFlags.Nothing;
         }
         else
         {
             myCam.enabled = false;
+            skyboxCam.enabled = false;
             cmBrainCam.cullingMask = CameraManager.Instance.originalCullingMask;
+            cmBrainCam.clearFlags = CameraClearFlags.Skybox;
 
         }
     }

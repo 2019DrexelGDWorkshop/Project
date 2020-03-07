@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5114203488575454489}
   - component: {fileID: 3027875359667081787}
   - component: {fileID: 7570354155654186611}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Magnet_SM
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -102,7 +102,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5739750636266100883}
   - component: {fileID: 7506707766306293547}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Magnet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -148,7 +148,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2355892717370363274}
   - component: {fileID: 3967802722749974760}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: 2D_Col
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -180,5 +180,5 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 6.83, y: 7.58, z: 1}
+  m_Size: {x: 500, y: 7.58, z: 1}
   m_Center: {x: 0, y: 3.37, z: 0}

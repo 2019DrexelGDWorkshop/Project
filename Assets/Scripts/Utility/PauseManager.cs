@@ -173,9 +173,11 @@ public class PauseManager : Singleton<PauseManager>
         Paused = !paused;
 
         if(Paused){
+            Cursor.visible = true;
             OnPause?.Invoke();
         }
         else{
+            Cursor.visible = false;
             OnResume?.Invoke();
         }
     }

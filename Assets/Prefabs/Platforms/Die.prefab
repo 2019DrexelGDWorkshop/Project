@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1120328038428764693}
   - component: {fileID: 4447001138318336899}
   - component: {fileID: 3745203967499490050}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Die_SM
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -87,7 +87,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2238647959865538147}
   - component: {fileID: 2708532692411029526}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: 2D_Col
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -131,7 +131,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3948714169585242748}
   - component: {fileID: 3218199715668028361}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Die
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -178,7 +178,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3491360536350924839}
   - component: {fileID: 2633652348747934993}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: 3D_Col
   m_TagString: Untagged
   m_Icon: {fileID: 0}

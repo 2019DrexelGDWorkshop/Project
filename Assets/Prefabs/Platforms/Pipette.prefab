@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 118511592215719260}
   - component: {fileID: 7551421730104048459}
   - component: {fileID: 4991632398801776769}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Pipette_SM
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -101,7 +101,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7492802543166456176}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: 2D_Cols
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -135,7 +135,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2084664034110520072}
   - component: {fileID: 5898646046132374711}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: 2D_Col
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -179,7 +179,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7562247884337503535}
   - component: {fileID: 434377381871743715}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: 2D_Col
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -223,7 +223,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2200330814754921573}
   - component: {fileID: 5879108417705019658}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: 2D_Col
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -267,7 +267,7 @@ GameObject:
   m_Component:
   - component: {fileID: 946022806897266751}
   - component: {fileID: 4694440242390133568}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Pipette
   m_TagString: Untagged
   m_Icon: {fileID: 0}
