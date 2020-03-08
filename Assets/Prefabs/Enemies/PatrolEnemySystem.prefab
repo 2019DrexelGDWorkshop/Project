@@ -120,7 +120,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &276898982527627743
 Transform:
   m_ObjectHideFlags: 0
@@ -155,6 +155,8 @@ MonoBehaviour:
   movingObj: {fileID: 6691808059847285659}
   speed: 3
   pingPong: 1
+  reachedTarget: 0
+  targetNumb: 1
   pauseTime: 3
   edgeCheckSource: {fileID: 874641212287499572}
   player: {fileID: 0}
