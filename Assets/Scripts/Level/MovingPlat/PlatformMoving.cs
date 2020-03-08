@@ -43,6 +43,10 @@ public class PlatformMoving : MoveAndAnchorSystem
                 rb_Obj.velocity = rb_Obj.velocity * Mathf.Pow((1 + growthRate), Time.time - JourneyStart);
             }
         }
+        else if(Mathf.Abs(rb_Obj.velocity.magnitude) < 0.001)
+        {
+            rb_Obj.velocity = direction.normalized * speed;
+        }
 
        // Debug.Log(rb_Obj.velocity);
     }
