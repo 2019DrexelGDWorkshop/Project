@@ -67,6 +67,13 @@ public class CameraManager : MonoBehaviour
 
     private void Update()
     {
+        if(cameraState != CameraState.TRANSITION)
+        {
+            if((Object)cmBrain.ActiveVirtualCamera == cameraTransition)
+            {
+                cameraTransition.Priority = 5;
+            }
+        }
         if(PauseManager.Instance.Paused)
         {
             ((CinemachineFreeLook)camera3D).m_XAxis.m_InputAxisValue = 0;
@@ -141,8 +148,9 @@ public class CameraManager : MonoBehaviour
             yield return null;
         }
 
-        SetCamHighestPriority(camera3D);
+
         yield return new WaitForEndOfFrame();
+        SetCamHighestPriority(camera3D);
 
         while (cmBrain.ActiveBlend != null && !cmBrain.ActiveBlend.IsComplete)
         {
@@ -155,8 +163,29 @@ public class CameraManager : MonoBehaviour
 
     public void SetCamHighestPriority(CinemachineVirtualCameraBase camera)
     {
-        originalCamPriorities[camera] = camera.Priority;
+        if (camera == null)
+        {
+            Debug.LogError("camera Null");
+            return;
+        }
 
+        if (cmBrain == null)
+        {
+            Debug.LogError("camera brain Null");
+            return;
+        }
+        if (cmBrain.ActiveVirtualCamera == null)
+        {
+            Debug.LogError("camera brain active virtual camera Null");
+            return;
+        }
+
+        if((Object)cmBrain.ActiveVirtualCamera == camera)
+        {
+            return;
+        }
+
+        originalCamPriorities[camera] = camera.Priority;
         int currPriority = cmBrain.ActiveVirtualCamera.Priority;
         int oldPriority = originalCamPriorities[(CinemachineVirtualCameraBase)cmBrain.ActiveVirtualCamera];
 

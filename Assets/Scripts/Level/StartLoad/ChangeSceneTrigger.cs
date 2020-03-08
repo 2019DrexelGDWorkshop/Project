@@ -11,7 +11,7 @@ public class ChangeSceneTrigger : MonoBehaviour
     public GameObject loadingScreen;
     public Slider slider;
 	
-	public static bool returnTo3D;
+	private bool returnTo3D = true;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -19,7 +19,9 @@ public class ChangeSceneTrigger : MonoBehaviour
         if (!returnTo3D && CameraManager.Instance.cameraState == CameraState.THIRD_PERSON)
         {
             CameraManager.Instance.Toggle3D2D();
-		} else if (returnTo3D && CameraManager.Instance.cameraState == CameraState.SIDE_SCROLLER) {
+		}
+        else if (returnTo3D && CameraManager.Instance.cameraState == CameraState.SIDE_SCROLLER)
+        {
 			CameraManager.Instance.Toggle3D2D();
 		}
         
