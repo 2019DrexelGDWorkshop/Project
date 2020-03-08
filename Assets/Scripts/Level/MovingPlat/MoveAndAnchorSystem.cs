@@ -13,22 +13,21 @@ public class MoveAndAnchorSystem : MonoBehaviour
 
     public bool pingPong = false;
 
-    protected bool reachedTarget = false;
+    public bool reachedTarget = false;
 
     protected bool endOfPathReached = false;
 
     protected float timeReached;
 
-    protected int targetNumb = 1;
+    public int targetNumb = 1;
 
     protected float distance;
 
     protected Vector3 direction;
 
-
     public float pauseTime = 3;
 
-    private float i = 0;
+    //private float i = 0;
 
     protected Rigidbody rb_Obj;
 
@@ -50,7 +49,7 @@ public class MoveAndAnchorSystem : MonoBehaviour
     protected virtual void Update()
     {
         CalcDistAndDir();
-        Rigidbody rb_Obj = movingObj.GetComponent<Rigidbody>();
+        //Rigidbody rb_Obj = movingObj.GetComponent<Rigidbody>();
         if (rb_Obj.velocity.magnitude > speed)
         {
             rb_Obj.velocity = rb_Obj.velocity.normalized * speed;
@@ -66,6 +65,7 @@ public class MoveAndAnchorSystem : MonoBehaviour
         Vector3 heading = anchor[targetNumb].transform.position - movingObj.transform.position;
         distance = heading.magnitude;
         direction = heading / distance;
+        Debug.DrawRay(this.movingObj.transform.position, direction, Color.red);
     }
 
     public virtual void TargetReached()
@@ -77,6 +77,7 @@ public class MoveAndAnchorSystem : MonoBehaviour
     {
         timeReached = Time.time;
         reachedTarget = true;
+
         anchor[targetNumb].SetActive(false);
         if (targetNumb == anchor.Length - 1)
         {
