@@ -69,9 +69,12 @@ public class CameraManager : MonoBehaviour
     {
         if(cameraState != CameraState.TRANSITION)
         {
-            if((Object)cmBrain.ActiveVirtualCamera == cameraTransition)
+            if(cameraTransition != null)
             {
-                cameraTransition.Priority = 5;
+                if ((Object)cmBrain.ActiveVirtualCamera == cameraTransition)
+                {
+                    cameraTransition.Priority = 5;
+                }
             }
         }
         if(PauseManager.Instance.Paused)

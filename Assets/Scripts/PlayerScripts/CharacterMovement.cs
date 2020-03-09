@@ -312,18 +312,18 @@ public class CharacterMovement : MonoBehaviour
             yield return new WaitForEndOfFrame();
             yield return new WaitForEndOfFrame(); // So 2d collider turns off
 
-
-            if (Physics.Raycast(downCheck, Vector3.down, out hit, 2f, platformLayer))
+            Debug.DrawRay(downCheck, Vector3.down * 5f, Color.red, 100000f);
+            if (Physics.SphereCast(downCheck, .25f, Vector3.down, out hit, 5f, platformLayer))
             {
-                Debug.DrawRay(downCheck, Vector3.down * 2f, Color.red, 100000f);
+                Debug.DrawRay(downCheck, Vector3.down * 5f, Color.red, 100000f);
                 Debug.Log("Down " + hit.transform.gameObject.name);
             }
-            else if (Physics.Raycast(sideCheck, Vector3.right, out hit, 500f, platformLayer))
+            else if (Physics.SphereCast(sideCheck, .25f, Vector3.right, out hit, 500f, platformLayer))
             {
                 Debug.DrawRay(sideCheck, Vector3.right * 200f, Color.red, 100000f);
                 Debug.Log("Right " + hit.transform.gameObject.name);
             }
-            else if (Physics.Raycast(sideCheck, Vector3.left, out hit, 500f, platformLayer))
+            else if (Physics.SphereCast(sideCheck, .25f, Vector3.left, out hit, 500f, platformLayer))
             {
                 Debug.DrawRay(sideCheck, Vector3.left * 200f, Color.red, 100000f);
                 Debug.Log("Left " + hit.transform.gameObject.name);
