@@ -12,6 +12,10 @@ public class AI_Coll_and_Trig : MonoBehaviour
             //Debug.Log(other.name);
             this.transform.parent.GetComponent<PatrolSystem>().Next();
         }
+        else if (other.tag == "Player")
+        {
+            other.gameObject.GetComponent<CharacterMovement>().Kill();
+        }
     }
 
     private void OnCollisionEnter(Collision collision)
