@@ -29,7 +29,7 @@ PrefabInstance:
     - target: {fileID: 3804404617364975897, guid: c285575cdc81ae042a8d622c79764cf5,
         type: 3}
       propertyPath: m_Name
-      value: mathEquals Variant
+      value: mathEquals Variant Variant
       objectReference: {fileID: 0}
     - target: {fileID: 3804404617364811065, guid: c285575cdc81ae042a8d622c79764cf5,
         type: 3}
@@ -85,6 +85,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3804404617364811065, guid: c285575cdc81ae042a8d622c79764cf5,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3804404617364811065, guid: c285575cdc81ae042a8d622c79764cf5,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3804404617364811065, guid: c285575cdc81ae042a8d622c79764cf5,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c285575cdc81ae042a8d622c79764cf5, type: 3}
