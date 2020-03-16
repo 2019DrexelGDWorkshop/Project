@@ -1,17 +1,17 @@
 sceneSetups:
-- path: Assets/Scenes/GymLevels/Gym1/Gym1_Main.unity
+- path: Assets/Scenes/MathLevels/Math1/Math1_Main.unity
   isLoaded: 1
   isActive: 1
-- path: Assets/Scenes/GymLevels/Gym1/Gym1_Platforms.unity
+- path: Assets/Scenes/MathLevels/Math1/Math1_Environment.unity
   isLoaded: 1
   isActive: 0
-- path: Assets/Scenes/GymLevels/Gym1/Gym1_Lighting.unity
-  isLoaded: 1
-  isActive: 0
-- path: Assets/Scenes/GymLevels/Gym1/Gym1_Environment.unity
+- path: Assets/Scenes/MathLevels/Math1/Math1_Platforms.unity
   isLoaded: 1
   isActive: 0
 - path: Assets/Scenes/GenericScenes/Player.unity
+  isLoaded: 1
+  isActive: 0
+- path: Assets/Scenes/MathLevels/Math1/Math1_Lighting.unity
   isLoaded: 1
   isActive: 0
 - path: Assets/Scenes/GenericScenes/UI.unity
