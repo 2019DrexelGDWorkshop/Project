@@ -5,7 +5,9 @@ using UnityEngine;
 public class CharacterMovement : MonoBehaviour
 {
     public GameObject DEGO;
-
+    public GameObject jetpackViz;
+    public GameObject fire1;
+    public GameObject fire2;
 
     public float moveSpeed = 6.0f;
     public float rotationSpeed = 10.0f;
@@ -195,8 +197,11 @@ public class CharacterMovement : MonoBehaviour
 
     private void JetPack()
     {
+        jetpackViz.SetActive(true);
         if (isFlying)
         {
+            fire1.SetActive(true);
+            fire2.SetActive(true);
             if (rewiredPlayer.GetButton(RewiredConsts.Action.Jump) && jetpackForce > 0)
             {
                 GetComponentInChildren<Animator>().enabled = false;
@@ -257,6 +262,8 @@ public class CharacterMovement : MonoBehaviour
         }
         else
         {
+            fire1.SetActive(false);
+            fire2.SetActive(false);
             GetComponentInChildren<Animator>().enabled = true;
         }
     }
