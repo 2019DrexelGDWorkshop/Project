@@ -156,7 +156,7 @@ PrefabInstance:
     - target: {fileID: 7628632298015922898, guid: 8c0a2ee2ccc95844694023004f3246f6,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.09
+      value: 0.29
       objectReference: {fileID: 0}
     - target: {fileID: 7628632298015922898, guid: 8c0a2ee2ccc95844694023004f3246f6,
         type: 3}
@@ -213,8 +213,36 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1753659493, guid: 8c0a2ee2ccc95844694023004f3246f6, type: 3}
+      propertyPath: OyuVoiceLine
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1753659493, guid: 8c0a2ee2ccc95844694023004f3246f6, type: 3}
+      propertyPath: nameText
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1753659493, guid: 8c0a2ee2ccc95844694023004f3246f6, type: 3}
+      propertyPath: dialogueText
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1753659493, guid: 8c0a2ee2ccc95844694023004f3246f6, type: 3}
+      propertyPath: DiaUIobj
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8c0a2ee2ccc95844694023004f3246f6, type: 3}
+--- !u!114 &1074537938 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1753659493, guid: 8c0a2ee2ccc95844694023004f3246f6,
+    type: 3}
+  m_PrefabInstance: {fileID: 1074537937}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 859548c0f6cc43541aca9c191aef97e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1159349713 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2125078366713038190, guid: 8a9f565aaa9f1bc4a962855df6d5e545,
@@ -602,6 +630,113 @@ MonoBehaviour:
       version: 1
     _data:
       data: []
+  - _sourceObject: {fileID: 1074537938}
+    _sourceField: DiaUIobj
+    DEPRECATED_fromObject:
+      scene:
+        editorAssetGUID: 
+        name: 
+        _path: 
+      fullPath: 
+      componentName: 
+      componentIndex: 0
+      editorLocalId: 0
+      editorPrefabRelativePath: 
+      version: 0
+    _toObject:
+      scene:
+        editorAssetGUID: a4d2b1a760971154abb85181f73de293
+        name: UI
+        _path: Assets/Scenes/GenericScenes/UI.unity
+      fullPath: /Canvas/DiaUI
+      componentName: 
+      componentIndex: 0
+      editorLocalId: 1905357431
+      editorPrefabRelativePath: 
+      version: 1
+    _data:
+      data: []
+  - _sourceObject: {fileID: 1074537938}
+    _sourceField: dialogueText
+    DEPRECATED_fromObject:
+      scene:
+        editorAssetGUID: 
+        name: 
+        _path: 
+      fullPath: 
+      componentName: 
+      componentIndex: 0
+      editorLocalId: 0
+      editorPrefabRelativePath: 
+      version: 0
+    _toObject:
+      scene:
+        editorAssetGUID: a4d2b1a760971154abb85181f73de293
+        name: UI
+        _path: Assets/Scenes/GenericScenes/UI.unity
+      fullPath: /Canvas/DiaUI/diaTest
+      componentName: UnityEngine.UI.Text, UnityEngine.UI, Version=1.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      componentIndex: 0
+      editorLocalId: 1974243360
+      editorPrefabRelativePath: 
+      version: 1
+    _data:
+      data: []
+  - _sourceObject: {fileID: 1074537938}
+    _sourceField: nameText
+    DEPRECATED_fromObject:
+      scene:
+        editorAssetGUID: 
+        name: 
+        _path: 
+      fullPath: 
+      componentName: 
+      componentIndex: 0
+      editorLocalId: 0
+      editorPrefabRelativePath: 
+      version: 0
+    _toObject:
+      scene:
+        editorAssetGUID: a4d2b1a760971154abb85181f73de293
+        name: UI
+        _path: Assets/Scenes/GenericScenes/UI.unity
+      fullPath: /Canvas/DiaUI/diaTest (1)
+      componentName: UnityEngine.UI.Text, UnityEngine.UI, Version=1.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      componentIndex: 0
+      editorLocalId: 1995551596
+      editorPrefabRelativePath: 
+      version: 1
+    _data:
+      data: []
+  - _sourceObject: {fileID: 1074537938}
+    _sourceField: OyuVoiceLine
+    DEPRECATED_fromObject:
+      scene:
+        editorAssetGUID: 
+        name: 
+        _path: 
+      fullPath: 
+      componentName: 
+      componentIndex: 0
+      editorLocalId: 0
+      editorPrefabRelativePath: 
+      version: 0
+    _toObject:
+      scene:
+        editorAssetGUID: a4d2b1a760971154abb85181f73de293
+        name: UI
+        _path: Assets/Scenes/GenericScenes/UI.unity
+      fullPath: /Canvas/voice (1)
+      componentName: UnityEngine.AudioSource, UnityEngine.AudioModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      componentIndex: 0
+      editorLocalId: 427302458
+      editorPrefabRelativePath: 
+      version: 1
+    _data:
+      data: []
   - _sourceObject: {fileID: 240671476}
     _sourceField: slider
     DEPRECATED_fromObject:
@@ -722,32 +857,32 @@ PrefabInstance:
       propertyPath: m_Name
       value: EndOfLevel
       objectReference: {fileID: 0}
-    - target: {fileID: 2698568763382408092, guid: 65cb2e0523497de44a9652c90150c3b8,
+    - target: {fileID: 6635303122173655108, guid: 65cb2e0523497de44a9652c90150c3b8,
         type: 3}
       propertyPath: levelToLoad
       value: 3
       objectReference: {fileID: 0}
-    - target: {fileID: 2698568763382408092, guid: 65cb2e0523497de44a9652c90150c3b8,
+    - target: {fileID: 6635303122173655108, guid: 65cb2e0523497de44a9652c90150c3b8,
         type: 3}
       propertyPath: loadingScreen
       value: 
       objectReference: {fileID: 0}
-    - target: {fileID: 2698568763382408092, guid: 65cb2e0523497de44a9652c90150c3b8,
+    - target: {fileID: 6635303122173655108, guid: 65cb2e0523497de44a9652c90150c3b8,
         type: 3}
       propertyPath: slider
       value: 
       objectReference: {fileID: 0}
-    - target: {fileID: 6635303122173655108, guid: 65cb2e0523497de44a9652c90150c3b8,
+    - target: {fileID: 2698568763382408092, guid: 65cb2e0523497de44a9652c90150c3b8,
         type: 3}
       propertyPath: levelToLoad
       value: 3
       objectReference: {fileID: 0}
-    - target: {fileID: 6635303122173655108, guid: 65cb2e0523497de44a9652c90150c3b8,
+    - target: {fileID: 2698568763382408092, guid: 65cb2e0523497de44a9652c90150c3b8,
         type: 3}
       propertyPath: loadingScreen
       value: 
       objectReference: {fileID: 0}
-    - target: {fileID: 6635303122173655108, guid: 65cb2e0523497de44a9652c90150c3b8,
+    - target: {fileID: 2698568763382408092, guid: 65cb2e0523497de44a9652c90150c3b8,
         type: 3}
       propertyPath: slider
       value: 

@@ -7,8 +7,8 @@ public class DialogueManager : MonoBehaviour
 {
     //public AudioSource AudioSource;
     public int i = 0;
-    public AudioSource[] OyuVoiceLines;
-    public AudioSource nextVoiceLine;
+    public AudioSource OyuVoiceLine;
+    //public AudioSource nextVoiceLine;
     public Text nameText;
     public Text dialogueText;
     public bool inChat = false;
@@ -22,6 +22,7 @@ public class DialogueManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        
         sentences = new Queue<string>();
     }
 
@@ -39,6 +40,7 @@ public class DialogueManager : MonoBehaviour
     public void StartDialogue (Dialogue dialogue)
     {
         //animator.SetBool("IsOpen", true);
+        OyuVoiceLine.Play();
         inChat = true;
         DiaUIobj.SetActive(inChat);
         Debug.Log("Starting conversation with " + dialogue.name);
@@ -55,18 +57,21 @@ public class DialogueManager : MonoBehaviour
 
     public void DisplayNextSentence()
     {
-        nextVoiceLine = OyuVoiceLines[i];
-        i++;
-        nextVoiceLine.Play();
+        
+        //nextVoiceLine = OyuVoiceLines[i];
+        //i++;
+        
 
-        if (sentences.Count == 0)
+        if (sentences.Count == 1)
         {
+            Debug.Log("ummmm");
             EndDialogue();
             return;
         }
+        //nextVoiceLine.Play();
 
         string sentence = sentences.Dequeue();
-        //Debug.Log(sentence);
+        //Debug.Log(sentence);wa
         //dialogueText.text = sentence;
         StopAllCoroutines();
         StartCoroutine(TypeSentence(sentence));
