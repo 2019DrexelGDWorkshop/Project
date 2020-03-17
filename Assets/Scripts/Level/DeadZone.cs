@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class DeadZone : MonoBehaviour
 {
+    public GameObject DEGO;
     public Transform startPos;
     public AudioSource audioSource;
     private void Start()
@@ -16,6 +17,7 @@ public class DeadZone : MonoBehaviour
         if (other.gameObject.name == "Player")
         {
             audioSource.Play();
+            DEGO.GetComponent<DeathEffectManager>().DeathEffect();
             other.gameObject.transform.position = LevelManager.Instance.lastCheckPoint.position;
         }
     } 

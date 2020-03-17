@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.6939691, g: 0.7673812, b: 0.9742232, a: 1}
+  m_IndirectSpecularColor: {r: 0.69366443, g: 0.76740193, b: 0.9744597, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -460,6 +460,18 @@ Transform:
   m_Father: {fileID: 32979210}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &418361832 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2809083081669260639, guid: be96af1448e93fd4b8bc458ef1c49773,
+    type: 3}
+  m_PrefabInstance: {fileID: 1127625894}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2cc21d538529a2a4fad62d8b84a41dff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &444376106
 GameObject:
   m_ObjectHideFlags: 0
@@ -872,6 +884,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2809083081669260639, guid: be96af1448e93fd4b8bc458ef1c49773,
+        type: 3}
+      propertyPath: DEGO
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: be96af1448e93fd4b8bc458ef1c49773, type: 3}
 --- !u!4 &1127625895 stripped
@@ -1143,6 +1160,32 @@ MonoBehaviour:
       version: 1
     _data:
       data: []
+  - _sourceObject: {fileID: 418361832}
+    _sourceField: DEGO
+    DEPRECATED_fromObject:
+      scene:
+        editorAssetGUID: 
+        name: 
+        _path: 
+      fullPath: 
+      componentName: 
+      componentIndex: 0
+      editorLocalId: 0
+      editorPrefabRelativePath: 
+      version: 0
+    _toObject:
+      scene:
+        editorAssetGUID: c181a30ec4221d54c9b5283dd42e48da
+        name: Player
+        _path: Assets/Scenes/GenericScenes/Player.unity
+      fullPath: /DeathEffectManagerGO
+      componentName: 
+      componentIndex: 0
+      editorLocalId: 573882046
+      editorPrefabRelativePath: 
+      version: 1
+    _data:
+      data: []
   _realSceneRootsForPostBuild: []
   _mergedScenes: []
 --- !u!1 &1601462048
@@ -1337,32 +1380,32 @@ PrefabInstance:
       propertyPath: m_Name
       value: EndOfLevel
       objectReference: {fileID: 0}
-    - target: {fileID: 2698568763382408092, guid: 65cb2e0523497de44a9652c90150c3b8,
+    - target: {fileID: 6635303122173655108, guid: 65cb2e0523497de44a9652c90150c3b8,
         type: 3}
       propertyPath: levelToLoad
       value: 5
       objectReference: {fileID: 0}
-    - target: {fileID: 2698568763382408092, guid: 65cb2e0523497de44a9652c90150c3b8,
+    - target: {fileID: 6635303122173655108, guid: 65cb2e0523497de44a9652c90150c3b8,
         type: 3}
       propertyPath: loadingScreen
       value: 
       objectReference: {fileID: 0}
-    - target: {fileID: 2698568763382408092, guid: 65cb2e0523497de44a9652c90150c3b8,
+    - target: {fileID: 6635303122173655108, guid: 65cb2e0523497de44a9652c90150c3b8,
         type: 3}
       propertyPath: slider
       value: 
       objectReference: {fileID: 0}
-    - target: {fileID: 6635303122173655108, guid: 65cb2e0523497de44a9652c90150c3b8,
+    - target: {fileID: 2698568763382408092, guid: 65cb2e0523497de44a9652c90150c3b8,
         type: 3}
       propertyPath: levelToLoad
       value: 5
       objectReference: {fileID: 0}
-    - target: {fileID: 6635303122173655108, guid: 65cb2e0523497de44a9652c90150c3b8,
+    - target: {fileID: 2698568763382408092, guid: 65cb2e0523497de44a9652c90150c3b8,
         type: 3}
       propertyPath: loadingScreen
       value: 
       objectReference: {fileID: 0}
-    - target: {fileID: 6635303122173655108, guid: 65cb2e0523497de44a9652c90150c3b8,
+    - target: {fileID: 2698568763382408092, guid: 65cb2e0523497de44a9652c90150c3b8,
         type: 3}
       propertyPath: slider
       value: 

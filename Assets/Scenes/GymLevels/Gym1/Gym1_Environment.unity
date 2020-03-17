@@ -526,7 +526,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _version: 2
-  _crossSceneReferences: []
+  _crossSceneReferences:
+  - _sourceObject: {fileID: 1932823734}
+    _sourceField: DEGO
+    DEPRECATED_fromObject:
+      scene:
+        editorAssetGUID: 
+        name: 
+        _path: 
+      fullPath: 
+      componentName: 
+      componentIndex: 0
+      editorLocalId: 0
+      editorPrefabRelativePath: 
+      version: 0
+    _toObject:
+      scene:
+        editorAssetGUID: c181a30ec4221d54c9b5283dd42e48da
+        name: Player
+        _path: Assets/Scenes/GenericScenes/Player.unity
+      fullPath: /DeathEffectManagerGO
+      componentName: 
+      componentIndex: 0
+      editorLocalId: 573882046
+      editorPrefabRelativePath: 
+      version: 1
+    _data:
+      data: []
   _realSceneRootsForPostBuild: []
   _mergedScenes: []
 --- !u!1 &261125590
@@ -934,17 +960,17 @@ PrefabInstance:
     - target: {fileID: 5369214852819480624, guid: 2bbfdcaf644e63a4693845e0fce3aec9,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 94.5
+      value: 113.2
       objectReference: {fileID: 0}
     - target: {fileID: 5369214852819480624, guid: 2bbfdcaf644e63a4693845e0fce3aec9,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -10.9
+      value: -14.7
       objectReference: {fileID: 0}
     - target: {fileID: 5369214852819480624, guid: 2bbfdcaf644e63a4693845e0fce3aec9,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -69.21161
+      value: -46.5
       objectReference: {fileID: 0}
     - target: {fileID: 5369214852819480624, guid: 2bbfdcaf644e63a4693845e0fce3aec9,
         type: 3}
@@ -989,7 +1015,7 @@ PrefabInstance:
     - target: {fileID: 5369214852819480624, guid: 2bbfdcaf644e63a4693845e0fce3aec9,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 6.4405417
+      value: 4.582758
       objectReference: {fileID: 0}
     - target: {fileID: 5369214852819480624, guid: 2bbfdcaf644e63a4693845e0fce3aec9,
         type: 3}
@@ -2684,6 +2710,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 346.62537
       objectReference: {fileID: 0}
+    - target: {fileID: 2809083081669260639, guid: be96af1448e93fd4b8bc458ef1c49773,
+        type: 3}
+      propertyPath: DEGO
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: be96af1448e93fd4b8bc458ef1c49773, type: 3}
 --- !u!1 &1932823729 stripped
@@ -2743,6 +2774,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1932823728}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1932823734 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2809083081669260639, guid: be96af1448e93fd4b8bc458ef1c49773,
+    type: 3}
+  m_PrefabInstance: {fileID: 1932823728}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1932823729}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2cc21d538529a2a4fad62d8b84a41dff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2053435449
 PrefabInstance:
   m_ObjectHideFlags: 0

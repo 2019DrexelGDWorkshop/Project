@@ -8,8 +8,14 @@ public class PixelateImageEffect : MonoBehaviour
     public Material effectMaterial;
     public int decInt = 200;
     public bool goDown;
+    public GameObject GOofThis;
 
     void Start()
+    {
+        decInt = 200;
+        goDown = true;
+    }
+    public void resetPixo()
     {
         decInt = 200;
         goDown = true;
@@ -20,11 +26,11 @@ public class PixelateImageEffect : MonoBehaviour
         effectMaterial.SetFloat("_Rows", decInt);
         if (goDown)
         {
-            decInt -= 3;
+            decInt -= 30;
         }
         if (!goDown)
         {
-            decInt += 10;
+            decInt += 3;
         }
         if (decInt <= 0)
         {
@@ -32,7 +38,9 @@ public class PixelateImageEffect : MonoBehaviour
         }
         if (decInt >= 500)
         {
-            //kill this script
+            decInt = 200;
+            goDown = true;
+            GOofThis.GetComponent<PixelateImageEffect>().enabled = false;
         }
     }
 

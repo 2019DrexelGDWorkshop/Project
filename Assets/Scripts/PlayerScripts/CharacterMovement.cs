@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class CharacterMovement : MonoBehaviour
 {
+    public GameObject DEGO;
+
+
     public float moveSpeed = 6.0f;
     public float rotationSpeed = 10.0f;
     public float jumpSpeed = 8.0f;
@@ -284,6 +287,7 @@ public class CharacterMovement : MonoBehaviour
 
     public void Kill()
     {
+        DEGO.GetComponent<DeathEffectManager>().DeathEffect();
         transform.position = LevelManager.Instance.lastCheckPoint.position;
     }
 

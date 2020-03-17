@@ -29,13 +29,13 @@ public class RightCloudsHider : MonoBehaviour
     }
     IEnumerator ExampleCoroutine()
     {
-        yield return new WaitForSeconds(.5f);
+        yield return new WaitForSeconds(.2f);
         rend.enabled = true;
     }
 
     IEnumerator WaitThenOff()
     {
-        yield return new WaitForSeconds(.5f);
+        yield return new WaitForSeconds(.2f);
         rend.enabled = false;
     }
 }

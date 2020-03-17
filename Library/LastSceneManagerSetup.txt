@@ -1,7 +1,19 @@
 sceneSetups:
-- path: Assets/Scenes/GenericScenes/MenuScene.unity
+- path: Assets/Scenes/Dream/Dream1/General_Dream_1.unity
   isLoaded: 1
   isActive: 1
+- path: Assets/Scenes/Dream/Dream1/Dream1_Environment.unity
+  isLoaded: 1
+  isActive: 0
+- path: Assets/Scenes/Dream/Dream1/Dream1_Platforms.unity
+  isLoaded: 1
+  isActive: 0
+- path: Assets/Scenes/GenericScenes/Player.unity
+  isLoaded: 1
+  isActive: 0
+- path: Assets/Scenes/GenericScenes/UI.unity
+  isLoaded: 1
+  isActive: 0
 - path: Assets/Scenes/GenericScenes/init.unity
   isLoaded: 1
   isActive: 0
