@@ -270,6 +270,51 @@ PrefabInstance:
       propertyPath: DiaUIobj
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 7628632299088432382, guid: 8c0a2ee2ccc95844694023004f3246f6,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7628632299088432382, guid: 8c0a2ee2ccc95844694023004f3246f6,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[0]
+      value: Hello!
+      objectReference: {fileID: 0}
+    - target: {fileID: 7628632299088432382, guid: 8c0a2ee2ccc95844694023004f3246f6,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[1]
+      value: My name's Oyu!
+      objectReference: {fileID: 0}
+    - target: {fileID: 7628632299088432382, guid: 8c0a2ee2ccc95844694023004f3246f6,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[2]
+      value: I think that, uh... well...
+      objectReference: {fileID: 0}
+    - target: {fileID: 7628632299088432382, guid: 8c0a2ee2ccc95844694023004f3246f6,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[3]
+      value: We're inside your dream.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7628632299088432382, guid: 8c0a2ee2ccc95844694023004f3246f6,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[5]
+      value: Try using Left Mouse to proceed ahead.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7628632299088432382, guid: 8c0a2ee2ccc95844694023004f3246f6,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[6]
+      value: I'll see you in the next dream!
+      objectReference: {fileID: 0}
+    - target: {fileID: 7628632299088432382, guid: 8c0a2ee2ccc95844694023004f3246f6,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[4]
+      value: Don't panic!
+      objectReference: {fileID: 0}
+    - target: {fileID: 7628632299088432382, guid: 8c0a2ee2ccc95844694023004f3246f6,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[7]
+      value: See ya!
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8c0a2ee2ccc95844694023004f3246f6, type: 3}
 --- !u!114 &1753659493 stripped

@@ -156,7 +156,7 @@ PrefabInstance:
     - target: {fileID: 7628632298015922898, guid: 8c0a2ee2ccc95844694023004f3246f6,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.29
+      value: 0.34
       objectReference: {fileID: 0}
     - target: {fileID: 7628632298015922898, guid: 8c0a2ee2ccc95844694023004f3246f6,
         type: 3}
@@ -203,16 +203,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7628632298843764018, guid: 8c0a2ee2ccc95844694023004f3246f6,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7628632299376579189, guid: 8c0a2ee2ccc95844694023004f3246f6,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1753659493, guid: 8c0a2ee2ccc95844694023004f3246f6, type: 3}
       propertyPath: OyuVoiceLine
       value: 
@@ -228,6 +218,56 @@ PrefabInstance:
     - target: {fileID: 1753659493, guid: 8c0a2ee2ccc95844694023004f3246f6, type: 3}
       propertyPath: DiaUIobj
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7628632299088432382, guid: 8c0a2ee2ccc95844694023004f3246f6,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7628632299088432382, guid: 8c0a2ee2ccc95844694023004f3246f6,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[0]
+      value: Hello.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7628632299088432382, guid: 8c0a2ee2ccc95844694023004f3246f6,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[1]
+      value: Why are you dreaming about...
+      objectReference: {fileID: 0}
+    - target: {fileID: 7628632299088432382, guid: 8c0a2ee2ccc95844694023004f3246f6,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[2]
+      value: DIRTY SOCKS?!?!
+      objectReference: {fileID: 0}
+    - target: {fileID: 7628632299088432382, guid: 8c0a2ee2ccc95844694023004f3246f6,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[3]
+      value: I hate gym class...
+      objectReference: {fileID: 0}
+    - target: {fileID: 7628632299088432382, guid: 8c0a2ee2ccc95844694023004f3246f6,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[5]
+      value: I'm gonna go now.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7628632299088432382, guid: 8c0a2ee2ccc95844694023004f3246f6,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[6]
+      value: See ya!
+      objectReference: {fileID: 0}
+    - target: {fileID: 7628632299088432382, guid: 8c0a2ee2ccc95844694023004f3246f6,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[4]
+      value: Are you messing with me?
+      objectReference: {fileID: 0}
+    - target: {fileID: 7628632298843764018, guid: 8c0a2ee2ccc95844694023004f3246f6,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7628632299376579189, guid: 8c0a2ee2ccc95844694023004f3246f6,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8c0a2ee2ccc95844694023004f3246f6, type: 3}
@@ -857,36 +897,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: EndOfLevel
       objectReference: {fileID: 0}
-    - target: {fileID: 6635303122173655108, guid: 65cb2e0523497de44a9652c90150c3b8,
-        type: 3}
-      propertyPath: levelToLoad
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 6635303122173655108, guid: 65cb2e0523497de44a9652c90150c3b8,
-        type: 3}
-      propertyPath: loadingScreen
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 6635303122173655108, guid: 65cb2e0523497de44a9652c90150c3b8,
-        type: 3}
-      propertyPath: slider
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 2698568763382408092, guid: 65cb2e0523497de44a9652c90150c3b8,
-        type: 3}
-      propertyPath: levelToLoad
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2698568763382408092, guid: 65cb2e0523497de44a9652c90150c3b8,
-        type: 3}
-      propertyPath: loadingScreen
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 2698568763382408092, guid: 65cb2e0523497de44a9652c90150c3b8,
-        type: 3}
-      propertyPath: slider
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 6495287344296965284, guid: 65cb2e0523497de44a9652c90150c3b8,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -941,6 +951,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6635303122173655108, guid: 65cb2e0523497de44a9652c90150c3b8,
+        type: 3}
+      propertyPath: levelToLoad
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6635303122173655108, guid: 65cb2e0523497de44a9652c90150c3b8,
+        type: 3}
+      propertyPath: loadingScreen
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6635303122173655108, guid: 65cb2e0523497de44a9652c90150c3b8,
+        type: 3}
+      propertyPath: slider
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2698568763382408092, guid: 65cb2e0523497de44a9652c90150c3b8,
+        type: 3}
+      propertyPath: levelToLoad
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2698568763382408092, guid: 65cb2e0523497de44a9652c90150c3b8,
+        type: 3}
+      propertyPath: loadingScreen
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2698568763382408092, guid: 65cb2e0523497de44a9652c90150c3b8,
+        type: 3}
+      propertyPath: slider
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 6495287343980355844, guid: 65cb2e0523497de44a9652c90150c3b8,
         type: 3}

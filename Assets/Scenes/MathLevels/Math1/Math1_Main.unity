@@ -162,7 +162,7 @@ PrefabInstance:
     - target: {fileID: 8829157925510464945, guid: 78bf87db11d482f49acecf2b3be4e738,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8829157925510464945, guid: 78bf87db11d482f49acecf2b3be4e738,
         type: 3}
@@ -285,7 +285,7 @@ PrefabInstance:
     - target: {fileID: 2125078366713038190, guid: 8a9f565aaa9f1bc4a962855df6d5e545,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2125078366713038190, guid: 8a9f565aaa9f1bc4a962855df6d5e545,
         type: 3}
@@ -351,17 +351,17 @@ PrefabInstance:
     - target: {fileID: 7628632298015922898, guid: 8c0a2ee2ccc95844694023004f3246f6,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.58
+      value: -3.12
       objectReference: {fileID: 0}
     - target: {fileID: 7628632298015922898, guid: 8c0a2ee2ccc95844694023004f3246f6,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.18
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 7628632298015922898, guid: 8c0a2ee2ccc95844694023004f3246f6,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 10.79
+      value: 2.9
       objectReference: {fileID: 0}
     - target: {fileID: 7628632298015922898, guid: 8c0a2ee2ccc95844694023004f3246f6,
         type: 3}
@@ -418,6 +418,51 @@ PrefabInstance:
     - target: {fileID: 1753659493, guid: 8c0a2ee2ccc95844694023004f3246f6, type: 3}
       propertyPath: OyuVoiceLine
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7628632299088432382, guid: 8c0a2ee2ccc95844694023004f3246f6,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7628632299088432382, guid: 8c0a2ee2ccc95844694023004f3246f6,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[0]
+      value: Hello!
+      objectReference: {fileID: 0}
+    - target: {fileID: 7628632299088432382, guid: 8c0a2ee2ccc95844694023004f3246f6,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[1]
+      value: This is weird...
+      objectReference: {fileID: 0}
+    - target: {fileID: 7628632299088432382, guid: 8c0a2ee2ccc95844694023004f3246f6,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[2]
+      value: Why are there numbers everywhere?
+      objectReference: {fileID: 0}
+    - target: {fileID: 7628632299088432382, guid: 8c0a2ee2ccc95844694023004f3246f6,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[3]
+      value: Whatever the reason, I don't like them one bit!
+      objectReference: {fileID: 0}
+    - target: {fileID: 7628632299088432382, guid: 8c0a2ee2ccc95844694023004f3246f6,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[5]
+      value: And now there are letters?!
+      objectReference: {fileID: 0}
+    - target: {fileID: 7628632299088432382, guid: 8c0a2ee2ccc95844694023004f3246f6,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[6]
+      value: Yeah, I'm going to leave NOW.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7628632299088432382, guid: 8c0a2ee2ccc95844694023004f3246f6,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[4]
+      value: I was never good at math...
+      objectReference: {fileID: 0}
+    - target: {fileID: 7628632299088432382, guid: 8c0a2ee2ccc95844694023004f3246f6,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[7]
+      value: See ya!
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8c0a2ee2ccc95844694023004f3246f6, type: 3}
@@ -530,84 +575,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _version: 2
   _crossSceneReferences:
-  - _sourceObject: {fileID: 983144287}
-    _sourceField: camera3D
-    DEPRECATED_fromObject:
-      scene:
-        editorAssetGUID: 
-        name: 
-        _path: 
-      fullPath: 
-      componentName: 
-      componentIndex: 0
-      editorLocalId: 0
-      editorPrefabRelativePath: 
-      version: 0
-    _toObject:
-      scene:
-        editorAssetGUID: c181a30ec4221d54c9b5283dd42e48da
-        name: Player
-        _path: Assets/Scenes/GenericScenes/Player.unity
-      fullPath: /Cameras/3rdPersonCamera
-      componentName: 
-      componentIndex: 0
-      editorLocalId: 107935830
-      editorPrefabRelativePath: 3rdPersonCamera
-      version: 1
-    _data:
-      data: []
-  - _sourceObject: {fileID: 983144287}
-    _sourceField: cameraTransition
-    DEPRECATED_fromObject:
-      scene:
-        editorAssetGUID: 
-        name: 
-        _path: 
-      fullPath: 
-      componentName: 
-      componentIndex: 0
-      editorLocalId: 0
-      editorPrefabRelativePath: 
-      version: 0
-    _toObject:
-      scene:
-        editorAssetGUID: c181a30ec4221d54c9b5283dd42e48da
-        name: Player
-        _path: Assets/Scenes/GenericScenes/Player.unity
-      fullPath: /Cameras/CameraTransition
-      componentName: 
-      componentIndex: 0
-      editorLocalId: 107935830
-      editorPrefabRelativePath: CameraTransition
-      version: 1
-    _data:
-      data: []
-  - _sourceObject: {fileID: 983144287}
-    _sourceField: camera2D
-    DEPRECATED_fromObject:
-      scene:
-        editorAssetGUID: 
-        name: 
-        _path: 
-      fullPath: 
-      componentName: 
-      componentIndex: 0
-      editorLocalId: 0
-      editorPrefabRelativePath: 
-      version: 0
-    _toObject:
-      scene:
-        editorAssetGUID: c181a30ec4221d54c9b5283dd42e48da
-        name: Player
-        _path: Assets/Scenes/GenericScenes/Player.unity
-      fullPath: /Cameras/2DCameraSideScrollCam
-      componentName: 
-      componentIndex: 0
-      editorLocalId: 107935830
-      editorPrefabRelativePath: 2DCameraSideScrollCam
-      version: 1
-    _data:
-      data: []
   - _sourceObject: {fileID: 1455206170}
     _sourceField: DiaUIobj
     DEPRECATED_fromObject:
@@ -712,6 +679,84 @@ MonoBehaviour:
       componentIndex: 0
       editorLocalId: 427302458
       editorPrefabRelativePath: 
+      version: 1
+    _data:
+      data: []
+  - _sourceObject: {fileID: 983144287}
+    _sourceField: camera3D
+    DEPRECATED_fromObject:
+      scene:
+        editorAssetGUID: 
+        name: 
+        _path: 
+      fullPath: 
+      componentName: 
+      componentIndex: 0
+      editorLocalId: 0
+      editorPrefabRelativePath: 
+      version: 0
+    _toObject:
+      scene:
+        editorAssetGUID: c181a30ec4221d54c9b5283dd42e48da
+        name: Player
+        _path: Assets/Scenes/GenericScenes/Player.unity
+      fullPath: /Cameras/3rdPersonCamera
+      componentName: 
+      componentIndex: 0
+      editorLocalId: 107935830
+      editorPrefabRelativePath: 3rdPersonCamera
+      version: 1
+    _data:
+      data: []
+  - _sourceObject: {fileID: 983144287}
+    _sourceField: cameraTransition
+    DEPRECATED_fromObject:
+      scene:
+        editorAssetGUID: 
+        name: 
+        _path: 
+      fullPath: 
+      componentName: 
+      componentIndex: 0
+      editorLocalId: 0
+      editorPrefabRelativePath: 
+      version: 0
+    _toObject:
+      scene:
+        editorAssetGUID: c181a30ec4221d54c9b5283dd42e48da
+        name: Player
+        _path: Assets/Scenes/GenericScenes/Player.unity
+      fullPath: /Cameras/CameraTransition
+      componentName: 
+      componentIndex: 0
+      editorLocalId: 107935830
+      editorPrefabRelativePath: CameraTransition
+      version: 1
+    _data:
+      data: []
+  - _sourceObject: {fileID: 983144287}
+    _sourceField: camera2D
+    DEPRECATED_fromObject:
+      scene:
+        editorAssetGUID: 
+        name: 
+        _path: 
+      fullPath: 
+      componentName: 
+      componentIndex: 0
+      editorLocalId: 0
+      editorPrefabRelativePath: 
+      version: 0
+    _toObject:
+      scene:
+        editorAssetGUID: c181a30ec4221d54c9b5283dd42e48da
+        name: Player
+        _path: Assets/Scenes/GenericScenes/Player.unity
+      fullPath: /Cameras/2DCameraSideScrollCam
+      componentName: 
+      componentIndex: 0
+      editorLocalId: 107935830
+      editorPrefabRelativePath: 2DCameraSideScrollCam
       version: 1
     _data:
       data: []
